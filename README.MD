@@ -1,4 +1,4 @@
-#RASE order connector
+# RASE order connector
 
 You can use this package to easily make a soap connection to RASE order service in PHP.
  
@@ -48,7 +48,7 @@ $soapClient = new RaseConnector\ServiceType\Create($options, true);
 $soapClient->create($createRequest);
  ```
 
-#Regenerate package
+# Regenerate package
 
 ```bash
 php wsdltophp.phar generate:package \
