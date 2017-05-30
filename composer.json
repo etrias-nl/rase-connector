@@ -14,13 +14,7 @@
     },
     "require-dev": {
         "wsdltophp/packagegenerator": "^2.7"
-    },
-    "scripts": {
-      "pre-update-cmd": [
-      ],
-      "pre-install-cmd": [
-      ]
-    },
+    }
     "authors": [
         {
             "name": "Christ-Jan",
@@ -29,7 +23,8 @@
     ],
     "minimum-stability": "stable",
     "extra": {
-        "magento-root-dir": ".",
-        "with-bootstrap-patch": false
+        "branch-alias": {
+            "dev-develop": "1.0.x-dev"
+        }
     }
 }
