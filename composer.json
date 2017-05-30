@@ -7,7 +7,8 @@
         }
     },
     "require": {
-
+        "wsdltophp/packagebase": "^1.0",
+        "jamesiarmes/php-ntlm": "1.0.x-dev"
     },
     "require-dev": {
         "wsdltophp/packagegenerator": "^2.7"
