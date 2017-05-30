@@ -51,9 +51,10 @@ $soapClient->create($createRequest);
 # Regenerate package
 
 ```bash
+wget https://phar.wsdltophp.com/wsdltophp.phar
 php wsdltophp.phar generate:package \
     --urlorpath="http://webservice.ra-group.be:4751/salesorderservice.svc?wsdl" \
-    --destination ./src \
+    --destination ./ \
     --composer-name="etrias/rase-connector" \
     --namespace RaseConnector --force
 ```
