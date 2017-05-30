@@ -1,0 +1,32 @@
+{
+    "name": "etrias/rase-connector",
+    "description": "",
+    "autoload": {
+        "psr-4": {
+            "RaseConnector\\": "src"
+        }
+    },
+    "require": {
+
+    },
+    "require-dev": {
+        "wsdltophp/packagegenerator": "^2.7"
+    },
+    "scripts": {
+      "pre-update-cmd": [
+      ],
+      "pre-install-cmd": [
+      ]
+    },
+    "authors": [
+        {
+            "name": "Christ-Jan",
+            "email": "christ-jan@etrias.nl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "magento-root-dir": ".",
+        "with-bootstrap-patch": false
+    }
+}
