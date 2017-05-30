@@ -14,7 +14,7 @@
     },
     "require-dev": {
         "wsdltophp/packagegenerator": "^2.7"
-    }
+    },
     "authors": [
         {
             "name": "Christ-Jan",
