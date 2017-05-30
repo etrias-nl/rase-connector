@@ -14,13 +14,13 @@ class KeyData extends AbstractStructBase
      * The KeyField
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \rase\StructType\KeyField[]
+     * @var \RaseConnector\StructType\KeyField[]
      */
     public $KeyField;
     /**
      * Constructor method for KeyData
      * @uses KeyData::setKeyField()
-     * @param \rase\StructType\KeyField[] $keyField
+     * @param \RaseConnector\StructType\KeyField[] $keyField
      */
     public function __construct(array $keyField = array())
     {
@@ -29,7 +29,7 @@ class KeyData extends AbstractStructBase
     }
     /**
      * Get KeyField value
-     * @return \rase\StructType\KeyField[]|null
+     * @return \RaseConnector\StructType\KeyField[]|null
      */
     public function getKeyField()
     {
@@ -38,15 +38,15 @@ class KeyData extends AbstractStructBase
     /**
      * Set KeyField value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\KeyField[] $keyField
-     * @return \rase\StructType\KeyData
+     * @param \RaseConnector\StructType\KeyField[] $keyField
+     * @return \RaseConnector\StructType\KeyData
      */
     public function setKeyField(array $keyField = array())
     {
         foreach ($keyField as $keyDataKeyFieldItem) {
             // validation for constraint: itemType
-            if (!$keyDataKeyFieldItem instanceof \rase\StructType\KeyField) {
-                throw new \InvalidArgumentException(sprintf('The KeyField property can only contain items of \rase\StructType\KeyField, "%s" given', is_object($keyDataKeyFieldItem) ? get_class($keyDataKeyFieldItem) : gettype($keyDataKeyFieldItem)), __LINE__);
+            if (!$keyDataKeyFieldItem instanceof \RaseConnector\StructType\KeyField) {
+                throw new \InvalidArgumentException(sprintf('The KeyField property can only contain items of \RaseConnector\StructType\KeyField, "%s" given', is_object($keyDataKeyFieldItem) ? get_class($keyDataKeyFieldItem) : gettype($keyDataKeyFieldItem)), __LINE__);
             }
         }
         $this->KeyField = $keyField;
@@ -55,14 +55,14 @@ class KeyData extends AbstractStructBase
     /**
      * Add item to KeyField value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\KeyField $item
-     * @return \rase\StructType\KeyData
+     * @param \RaseConnector\StructType\KeyField $item
+     * @return \RaseConnector\StructType\KeyData
      */
-    public function addToKeyField(\rase\StructType\KeyField $item)
+    public function addToKeyField(\RaseConnector\StructType\KeyField $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \rase\StructType\KeyField) {
-            throw new \InvalidArgumentException(sprintf('The KeyField property can only contain items of \rase\StructType\KeyField, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \RaseConnector\StructType\KeyField) {
+            throw new \InvalidArgumentException(sprintf('The KeyField property can only contain items of \RaseConnector\StructType\KeyField, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->KeyField[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class KeyData extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\KeyData
+     * @return \RaseConnector\StructType\KeyData
      */
     public static function __set_state(array $array)
     {

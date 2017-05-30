@@ -34,7 +34,7 @@ class FaultMessageList extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - nillable: true
-     * @var \rase\ArrayType\ArrayOfFaultMessage
+     * @var \RaseConnector\ArrayType\ArrayOfFaultMessage
      */
     public $FaultMessageArray;
     /**
@@ -107,7 +107,7 @@ class FaultMessageList extends AbstractStructBase
      * @uses FaultMessageList::setXmlPosition()
      * @param string $document
      * @param string $documentOperation
-     * @param \rase\ArrayType\ArrayOfFaultMessage $faultMessageArray
+     * @param \RaseConnector\ArrayType\ArrayOfFaultMessage $faultMessageArray
      * @param string $field
      * @param string $service
      * @param string $serviceOperation
@@ -116,7 +116,7 @@ class FaultMessageList extends AbstractStructBase
      * @param string $xmlLine
      * @param string $xmlPosition
      */
-    public function __construct($document = null, $documentOperation = null, \rase\ArrayType\ArrayOfFaultMessage $faultMessageArray = null, $field = null, $service = null, $serviceOperation = null, $serviceOperationParameter = null, $xPath = null, $xmlLine = null, $xmlPosition = null)
+    public function __construct($document = null, $documentOperation = null, \RaseConnector\ArrayType\ArrayOfFaultMessage $faultMessageArray = null, $field = null, $service = null, $serviceOperation = null, $serviceOperationParameter = null, $xPath = null, $xmlLine = null, $xmlPosition = null)
     {
         $this
             ->setDocument($document)
@@ -146,7 +146,7 @@ class FaultMessageList extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $document
-     * @return \rase\StructType\FaultMessageList
+     * @return \RaseConnector\StructType\FaultMessageList
      */
     public function setDocument($document = null)
     {
@@ -177,7 +177,7 @@ class FaultMessageList extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $documentOperation
-     * @return \rase\StructType\FaultMessageList
+     * @return \RaseConnector\StructType\FaultMessageList
      */
     public function setDocumentOperation($documentOperation = null)
     {
@@ -197,7 +197,7 @@ class FaultMessageList extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \rase\ArrayType\ArrayOfFaultMessage|null
+     * @return \RaseConnector\ArrayType\ArrayOfFaultMessage|null
      */
     public function getFaultMessageArray()
     {
@@ -207,10 +207,10 @@ class FaultMessageList extends AbstractStructBase
      * Set FaultMessageArray value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @param \rase\ArrayType\ArrayOfFaultMessage $faultMessageArray
-     * @return \rase\StructType\FaultMessageList
+     * @param \RaseConnector\ArrayType\ArrayOfFaultMessage $faultMessageArray
+     * @return \RaseConnector\StructType\FaultMessageList
      */
-    public function setFaultMessageArray(\rase\ArrayType\ArrayOfFaultMessage $faultMessageArray = null)
+    public function setFaultMessageArray(\RaseConnector\ArrayType\ArrayOfFaultMessage $faultMessageArray = null)
     {
         if (is_null($faultMessageArray) || (is_array($faultMessageArray) && empty($faultMessageArray))) {
             unset($this->FaultMessageArray);
@@ -235,7 +235,7 @@ class FaultMessageList extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $field
-     * @return \rase\StructType\FaultMessageList
+     * @return \RaseConnector\StructType\FaultMessageList
      */
     public function setField($field = null)
     {
@@ -266,7 +266,7 @@ class FaultMessageList extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $service
-     * @return \rase\StructType\FaultMessageList
+     * @return \RaseConnector\StructType\FaultMessageList
      */
     public function setService($service = null)
     {
@@ -297,7 +297,7 @@ class FaultMessageList extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $serviceOperation
-     * @return \rase\StructType\FaultMessageList
+     * @return \RaseConnector\StructType\FaultMessageList
      */
     public function setServiceOperation($serviceOperation = null)
     {
@@ -328,7 +328,7 @@ class FaultMessageList extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $serviceOperationParameter
-     * @return \rase\StructType\FaultMessageList
+     * @return \RaseConnector\StructType\FaultMessageList
      */
     public function setServiceOperationParameter($serviceOperationParameter = null)
     {
@@ -359,7 +359,7 @@ class FaultMessageList extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $xPath
-     * @return \rase\StructType\FaultMessageList
+     * @return \RaseConnector\StructType\FaultMessageList
      */
     public function setXPath($xPath = null)
     {
@@ -390,7 +390,7 @@ class FaultMessageList extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $xmlLine
-     * @return \rase\StructType\FaultMessageList
+     * @return \RaseConnector\StructType\FaultMessageList
      */
     public function setXmlLine($xmlLine = null)
     {
@@ -421,7 +421,7 @@ class FaultMessageList extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $xmlPosition
-     * @return \rase\StructType\FaultMessageList
+     * @return \RaseConnector\StructType\FaultMessageList
      */
     public function setXmlPosition($xmlPosition = null)
     {
@@ -442,7 +442,7 @@ class FaultMessageList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\FaultMessageList
+     * @return \RaseConnector\StructType\FaultMessageList
      */
     public static function __set_state(array $array)
     {

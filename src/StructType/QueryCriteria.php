@@ -14,22 +14,22 @@ class QueryCriteria extends AbstractStructBase
 {
     /**
      * The CriteriaElement
-     * @var \rase\StructType\CriteriaElement
+     * @var \RaseConnector\StructType\CriteriaElement
      */
     public $CriteriaElement;
     /**
      * Constructor method for QueryCriteria
      * @uses QueryCriteria::setCriteriaElement()
-     * @param \rase\StructType\CriteriaElement $criteriaElement
+     * @param \RaseConnector\StructType\CriteriaElement $criteriaElement
      */
-    public function __construct(\rase\StructType\CriteriaElement $criteriaElement = null)
+    public function __construct(\RaseConnector\StructType\CriteriaElement $criteriaElement = null)
     {
         $this
             ->setCriteriaElement($criteriaElement);
     }
     /**
      * Get CriteriaElement value
-     * @return \rase\StructType\CriteriaElement|null
+     * @return \RaseConnector\StructType\CriteriaElement|null
      */
     public function getCriteriaElement()
     {
@@ -37,10 +37,10 @@ class QueryCriteria extends AbstractStructBase
     }
     /**
      * Set CriteriaElement value
-     * @param \rase\StructType\CriteriaElement $criteriaElement
-     * @return \rase\StructType\QueryCriteria
+     * @param \RaseConnector\StructType\CriteriaElement $criteriaElement
+     * @return \RaseConnector\StructType\QueryCriteria
      */
-    public function setCriteriaElement(\rase\StructType\CriteriaElement $criteriaElement = null)
+    public function setCriteriaElement(\RaseConnector\StructType\CriteriaElement $criteriaElement = null)
     {
         $this->CriteriaElement = $criteriaElement;
         return $this;
@@ -51,7 +51,7 @@ class QueryCriteria extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\QueryCriteria
+     * @return \RaseConnector\StructType\QueryCriteria
      */
     public static function __set_state(array $array)
     {

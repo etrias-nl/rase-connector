@@ -14,22 +14,22 @@ class EntityKey extends AbstractStructBase
 {
     /**
      * The KeyData
-     * @var \rase\StructType\KeyData
+     * @var \RaseConnector\StructType\KeyData
      */
     public $KeyData;
     /**
      * Constructor method for EntityKey
      * @uses EntityKey::setKeyData()
-     * @param \rase\StructType\KeyData $keyData
+     * @param \RaseConnector\StructType\KeyData $keyData
      */
-    public function __construct(\rase\StructType\KeyData $keyData = null)
+    public function __construct(\RaseConnector\StructType\KeyData $keyData = null)
     {
         $this
             ->setKeyData($keyData);
     }
     /**
      * Get KeyData value
-     * @return \rase\StructType\KeyData|null
+     * @return \RaseConnector\StructType\KeyData|null
      */
     public function getKeyData()
     {
@@ -37,10 +37,10 @@ class EntityKey extends AbstractStructBase
     }
     /**
      * Set KeyData value
-     * @param \rase\StructType\KeyData $keyData
-     * @return \rase\StructType\EntityKey
+     * @param \RaseConnector\StructType\KeyData $keyData
+     * @return \RaseConnector\StructType\EntityKey
      */
-    public function setKeyData(\rase\StructType\KeyData $keyData = null)
+    public function setKeyData(\RaseConnector\StructType\KeyData $keyData = null)
     {
         $this->KeyData = $keyData;
         return $this;
@@ -51,7 +51,7 @@ class EntityKey extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\EntityKey
+     * @return \RaseConnector\StructType\EntityKey
      */
     public static function __set_state(array $array)
     {

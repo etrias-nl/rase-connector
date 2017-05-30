@@ -15,7 +15,7 @@ class SalesOrderServiceUpdateRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - ref: q10:EntityKeyList
-     * @var \rase\StructType\EntityKeyList
+     * @var \RaseConnector\StructType\EntityKeyList
      */
     public $EntityKeyList;
     /**
@@ -23,17 +23,17 @@ class SalesOrderServiceUpdateRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - ref: q11:SalesOrder
-     * @var \rase\StructType\AxdSalesOrder
+     * @var \RaseConnector\StructType\AxdSalesOrder
      */
     public $SalesOrder;
     /**
      * Constructor method for SalesOrderServiceUpdateRequest
      * @uses SalesOrderServiceUpdateRequest::setEntityKeyList()
      * @uses SalesOrderServiceUpdateRequest::setSalesOrder()
-     * @param \rase\StructType\EntityKeyList $entityKeyList
-     * @param \rase\StructType\AxdSalesOrder $salesOrder
+     * @param \RaseConnector\StructType\EntityKeyList $entityKeyList
+     * @param \RaseConnector\StructType\AxdSalesOrder $salesOrder
      */
-    public function __construct(\rase\StructType\EntityKeyList $entityKeyList = null, \rase\StructType\AxdSalesOrder $salesOrder = null)
+    public function __construct(\RaseConnector\StructType\EntityKeyList $entityKeyList = null, \RaseConnector\StructType\AxdSalesOrder $salesOrder = null)
     {
         $this
             ->setEntityKeyList($entityKeyList)
@@ -41,7 +41,7 @@ class SalesOrderServiceUpdateRequest extends AbstractStructBase
     }
     /**
      * Get EntityKeyList value
-     * @return \rase\StructType\EntityKeyList|null
+     * @return \RaseConnector\StructType\EntityKeyList|null
      */
     public function getEntityKeyList()
     {
@@ -49,17 +49,17 @@ class SalesOrderServiceUpdateRequest extends AbstractStructBase
     }
     /**
      * Set EntityKeyList value
-     * @param \rase\StructType\EntityKeyList $entityKeyList
-     * @return \rase\StructType\SalesOrderServiceUpdateRequest
+     * @param \RaseConnector\StructType\EntityKeyList $entityKeyList
+     * @return \RaseConnector\StructType\SalesOrderServiceUpdateRequest
      */
-    public function setEntityKeyList(\rase\StructType\EntityKeyList $entityKeyList = null)
+    public function setEntityKeyList(\RaseConnector\StructType\EntityKeyList $entityKeyList = null)
     {
         $this->EntityKeyList = $entityKeyList;
         return $this;
     }
     /**
      * Get SalesOrder value
-     * @return \rase\StructType\AxdSalesOrder|null
+     * @return \RaseConnector\StructType\AxdSalesOrder|null
      */
     public function getSalesOrder()
     {
@@ -67,10 +67,10 @@ class SalesOrderServiceUpdateRequest extends AbstractStructBase
     }
     /**
      * Set SalesOrder value
-     * @param \rase\StructType\AxdSalesOrder $salesOrder
-     * @return \rase\StructType\SalesOrderServiceUpdateRequest
+     * @param \RaseConnector\StructType\AxdSalesOrder $salesOrder
+     * @return \RaseConnector\StructType\SalesOrderServiceUpdateRequest
      */
-    public function setSalesOrder(\rase\StructType\AxdSalesOrder $salesOrder = null)
+    public function setSalesOrder(\RaseConnector\StructType\AxdSalesOrder $salesOrder = null)
     {
         $this->SalesOrder = $salesOrder;
         return $this;
@@ -81,7 +81,7 @@ class SalesOrderServiceUpdateRequest extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\SalesOrderServiceUpdateRequest
+     * @return \RaseConnector\StructType\SalesOrderServiceUpdateRequest
      */
     public static function __set_state(array $array)
     {

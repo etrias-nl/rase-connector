@@ -58,7 +58,7 @@ class FaultMessage extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $code
-     * @return \rase\StructType\FaultMessage
+     * @return \RaseConnector\StructType\FaultMessage
      */
     public function setCode($code = null)
     {
@@ -89,7 +89,7 @@ class FaultMessage extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $message
-     * @return \rase\StructType\FaultMessage
+     * @return \RaseConnector\StructType\FaultMessage
      */
     public function setMessage($message = null)
     {
@@ -110,7 +110,7 @@ class FaultMessage extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\FaultMessage
+     * @return \RaseConnector\StructType\FaultMessage
      */
     public static function __set_state(array $array)
     {

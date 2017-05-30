@@ -15,22 +15,22 @@ class SalesOrderServiceFindRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - ref: q3:QueryCriteria
-     * @var \rase\StructType\QueryCriteria
+     * @var \RaseConnector\StructType\QueryCriteria
      */
     public $QueryCriteria;
     /**
      * Constructor method for SalesOrderServiceFindRequest
      * @uses SalesOrderServiceFindRequest::setQueryCriteria()
-     * @param \rase\StructType\QueryCriteria $queryCriteria
+     * @param \RaseConnector\StructType\QueryCriteria $queryCriteria
      */
-    public function __construct(\rase\StructType\QueryCriteria $queryCriteria = null)
+    public function __construct(\RaseConnector\StructType\QueryCriteria $queryCriteria = null)
     {
         $this
             ->setQueryCriteria($queryCriteria);
     }
     /**
      * Get QueryCriteria value
-     * @return \rase\StructType\QueryCriteria|null
+     * @return \RaseConnector\StructType\QueryCriteria|null
      */
     public function getQueryCriteria()
     {
@@ -38,10 +38,10 @@ class SalesOrderServiceFindRequest extends AbstractStructBase
     }
     /**
      * Set QueryCriteria value
-     * @param \rase\StructType\QueryCriteria $queryCriteria
-     * @return \rase\StructType\SalesOrderServiceFindRequest
+     * @param \RaseConnector\StructType\QueryCriteria $queryCriteria
+     * @return \RaseConnector\StructType\SalesOrderServiceFindRequest
      */
-    public function setQueryCriteria(\rase\StructType\QueryCriteria $queryCriteria = null)
+    public function setQueryCriteria(\RaseConnector\StructType\QueryCriteria $queryCriteria = null)
     {
         $this->QueryCriteria = $queryCriteria;
         return $this;
@@ -52,7 +52,7 @@ class SalesOrderServiceFindRequest extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\SalesOrderServiceFindRequest
+     * @return \RaseConnector\StructType\SalesOrderServiceFindRequest
      */
     public static function __set_state(array $array)
     {

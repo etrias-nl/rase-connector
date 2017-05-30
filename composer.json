@@ -1,9 +1,9 @@
 {
     "name": "etrias/rase-connector",
-    "description": "",
+    "description": "Package generated from http://webservice.ra-group.be:4751/salesorderservice.svc?wsdl using wsdltophp/packagegenerator",
     "autoload": {
         "psr-4": {
-            "RaseConnector\\": "src"
+            "RaseConnector\\": "./src/"
         }
     },
     "require": {

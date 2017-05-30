@@ -15,22 +15,22 @@ class SalesOrderServiceReadRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - ref: q5:EntityKeyList
-     * @var \rase\StructType\EntityKeyList
+     * @var \RaseConnector\StructType\EntityKeyList
      */
     public $EntityKeyList;
     /**
      * Constructor method for SalesOrderServiceReadRequest
      * @uses SalesOrderServiceReadRequest::setEntityKeyList()
-     * @param \rase\StructType\EntityKeyList $entityKeyList
+     * @param \RaseConnector\StructType\EntityKeyList $entityKeyList
      */
-    public function __construct(\rase\StructType\EntityKeyList $entityKeyList = null)
+    public function __construct(\RaseConnector\StructType\EntityKeyList $entityKeyList = null)
     {
         $this
             ->setEntityKeyList($entityKeyList);
     }
     /**
      * Get EntityKeyList value
-     * @return \rase\StructType\EntityKeyList|null
+     * @return \RaseConnector\StructType\EntityKeyList|null
      */
     public function getEntityKeyList()
     {
@@ -38,10 +38,10 @@ class SalesOrderServiceReadRequest extends AbstractStructBase
     }
     /**
      * Set EntityKeyList value
-     * @param \rase\StructType\EntityKeyList $entityKeyList
-     * @return \rase\StructType\SalesOrderServiceReadRequest
+     * @param \RaseConnector\StructType\EntityKeyList $entityKeyList
+     * @return \RaseConnector\StructType\SalesOrderServiceReadRequest
      */
-    public function setEntityKeyList(\rase\StructType\EntityKeyList $entityKeyList = null)
+    public function setEntityKeyList(\RaseConnector\StructType\EntityKeyList $entityKeyList = null)
     {
         $this->EntityKeyList = $entityKeyList;
         return $this;
@@ -52,7 +52,7 @@ class SalesOrderServiceReadRequest extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\SalesOrderServiceReadRequest
+     * @return \RaseConnector\StructType\SalesOrderServiceReadRequest
      */
     public static function __set_state(array $array)
     {

@@ -250,7 +250,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
     /**
      * Set class value
      * @param string $class
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setClass($class = null)
     {
@@ -277,7 +277,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $actualCompanyId
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setActualCompanyId($actualCompanyId = null)
     {
@@ -316,7 +316,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $authorId
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setAuthorId($authorId = null)
     {
@@ -355,7 +355,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $contactPersonId
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setContactPersonId($contactPersonId = null)
     {
@@ -394,7 +394,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $encyclopediaItemId
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setEncyclopediaItemId($encyclopediaItemId = null)
     {
@@ -433,7 +433,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $name
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setName($name = null)
     {
@@ -472,7 +472,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $notes
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setNotes($notes = null)
     {
@@ -507,7 +507,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $partyId
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setPartyId($partyId = null)
     {
@@ -546,7 +546,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $recId
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setRecId($recId = null)
     {
@@ -577,7 +577,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $recVersion
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setRecVersion($recVersion = null)
     {
@@ -608,7 +608,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $refCompanyId
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setRefCompanyId($refCompanyId = null)
     {
@@ -647,7 +647,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $refRecId
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setRefRecId($refRecId = null)
     {
@@ -678,7 +678,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $refTableId
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setRefTableId($refTableId = null)
     {
@@ -708,17 +708,17 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * Set Restriction value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_DocuRestriction::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_DocuRestriction::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_DocuRestriction::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_DocuRestriction::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $restriction
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setRestriction($restriction = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_DocuRestriction::valueIsValid($restriction)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $restriction, implode(', ', \rase\EnumType\AxdEnum_DocuRestriction::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_DocuRestriction::valueIsValid($restriction)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $restriction, implode(', ', \RaseConnector\EnumType\AxdEnum_DocuRestriction::getValidValues())), __LINE__);
         }
         if (is_null($restriction) || (is_array($restriction) && empty($restriction))) {
             unset($this->Restriction);
@@ -742,17 +742,17 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * Set smmTable value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_boolean::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_boolean::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_boolean::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_boolean::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $smmTable
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setSmmTable($smmTable = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_boolean::valueIsValid($smmTable)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $smmTable, implode(', ', \rase\EnumType\AxdEnum_boolean::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_boolean::valueIsValid($smmTable)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $smmTable, implode(', ', \RaseConnector\EnumType\AxdEnum_boolean::getValidValues())), __LINE__);
         }
         if (is_null($smmTable) || (is_array($smmTable) && empty($smmTable))) {
             unset($this->smmTable);
@@ -777,7 +777,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $typeId
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setTypeId($typeId = null)
     {
@@ -810,17 +810,17 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
     }
     /**
      * Set action value
-     * @uses \rase\EnumType\AxdEnum_AxdEntityAction::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_AxdEntityAction::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_AxdEntityAction::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_AxdEntityAction::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $action
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public function setAction($action = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_AxdEntityAction::valueIsValid($action)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $action, implode(', ', \rase\EnumType\AxdEnum_AxdEntityAction::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_AxdEntityAction::valueIsValid($action)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $action, implode(', ', \RaseConnector\EnumType\AxdEnum_AxdEntityAction::getValidValues())), __LINE__);
         }
         $this->action = $action;
         return $this;
@@ -831,7 +831,7 @@ class AxdEntity_DocuRefLine extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\AxdEntity_DocuRefLine
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefLine
      */
     public static function __set_state(array $array)
     {

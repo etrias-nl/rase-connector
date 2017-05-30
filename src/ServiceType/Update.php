@@ -16,10 +16,10 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \rase\StructType\SalesOrderServiceUpdateRequest $parameters
+     * @param \RaseConnector\StructType\SalesOrderServiceUpdateRequest $parameters
      * @return void|bool
      */
-    public function update(\rase\StructType\SalesOrderServiceUpdateRequest $parameters)
+    public function update(\RaseConnector\StructType\SalesOrderServiceUpdateRequest $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->update($parameters));

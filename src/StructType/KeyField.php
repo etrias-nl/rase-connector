@@ -44,7 +44,7 @@ class KeyField extends AbstractStructBase
     /**
      * Set Field value
      * @param string $field
-     * @return \rase\StructType\KeyField
+     * @return \RaseConnector\StructType\KeyField
      */
     public function setField($field = null)
     {
@@ -66,7 +66,7 @@ class KeyField extends AbstractStructBase
     /**
      * Set Value value
      * @param string $value
-     * @return \rase\StructType\KeyField
+     * @return \RaseConnector\StructType\KeyField
      */
     public function setValue($value = null)
     {
@@ -83,7 +83,7 @@ class KeyField extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\KeyField
+     * @return \RaseConnector\StructType\KeyField
      */
     public static function __set_state(array $array)
     {

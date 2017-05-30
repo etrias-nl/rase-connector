@@ -70,7 +70,7 @@ class CriteriaElement extends AbstractStructBase
     /**
      * Set DataSourceName value
      * @param string $dataSourceName
-     * @return \rase\StructType\CriteriaElement
+     * @return \RaseConnector\StructType\CriteriaElement
      */
     public function setDataSourceName($dataSourceName = null)
     {
@@ -92,7 +92,7 @@ class CriteriaElement extends AbstractStructBase
     /**
      * Set FieldName value
      * @param string $fieldName
-     * @return \rase\StructType\CriteriaElement
+     * @return \RaseConnector\StructType\CriteriaElement
      */
     public function setFieldName($fieldName = null)
     {
@@ -113,17 +113,17 @@ class CriteriaElement extends AbstractStructBase
     }
     /**
      * Set Operator value
-     * @uses \rase\EnumType\Operator::valueIsValid()
-     * @uses \rase\EnumType\Operator::getValidValues()
+     * @uses \RaseConnector\EnumType\Operator::valueIsValid()
+     * @uses \RaseConnector\EnumType\Operator::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $operator
-     * @return \rase\StructType\CriteriaElement
+     * @return \RaseConnector\StructType\CriteriaElement
      */
     public function setOperator($operator = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\Operator::valueIsValid($operator)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $operator, implode(', ', \rase\EnumType\Operator::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\Operator::valueIsValid($operator)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $operator, implode(', ', \RaseConnector\EnumType\Operator::getValidValues())), __LINE__);
         }
         $this->Operator = $operator;
         return $this;
@@ -139,7 +139,7 @@ class CriteriaElement extends AbstractStructBase
     /**
      * Set Value1 value
      * @param string $value1
-     * @return \rase\StructType\CriteriaElement
+     * @return \RaseConnector\StructType\CriteriaElement
      */
     public function setValue1($value1 = null)
     {
@@ -161,7 +161,7 @@ class CriteriaElement extends AbstractStructBase
     /**
      * Set Value2 value
      * @param string $value2
-     * @return \rase\StructType\CriteriaElement
+     * @return \RaseConnector\StructType\CriteriaElement
      */
     public function setValue2($value2 = null)
     {
@@ -178,7 +178,7 @@ class CriteriaElement extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\CriteriaElement
+     * @return \RaseConnector\StructType\CriteriaElement
      */
     public static function __set_state(array $array)
     {

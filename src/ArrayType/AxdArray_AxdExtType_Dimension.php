@@ -44,7 +44,7 @@ class AxdArray_AxdExtType_Dimension extends AbstractStructArrayBase
      * Set element value
      * @throws \InvalidArgumentException
      * @param string[] $element
-     * @return \rase\ArrayType\AxdArray_AxdExtType_Dimension
+     * @return \RaseConnector\ArrayType\AxdArray_AxdExtType_Dimension
      */
     public function setElement(array $element = array())
     {
@@ -69,7 +69,7 @@ class AxdArray_AxdExtType_Dimension extends AbstractStructArrayBase
      * Add item to element value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \rase\ArrayType\AxdArray_AxdExtType_Dimension
+     * @return \RaseConnector\ArrayType\AxdArray_AxdExtType_Dimension
      */
     public function addToElement($item)
     {
@@ -150,7 +150,7 @@ class AxdArray_AxdExtType_Dimension extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\ArrayType\AxdArray_AxdExtType_Dimension
+     * @return \RaseConnector\ArrayType\AxdArray_AxdExtType_Dimension
      */
     public static function __set_state(array $array)
     {

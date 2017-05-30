@@ -16,10 +16,10 @@ class Read extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \rase\StructType\SalesOrderServiceReadRequest $parameters
-     * @return \rase\StructType\SalesOrderServiceReadResponse|bool
+     * @param \RaseConnector\StructType\SalesOrderServiceReadRequest $parameters
+     * @return \RaseConnector\StructType\SalesOrderServiceReadResponse|bool
      */
-    public function read(\rase\StructType\SalesOrderServiceReadRequest $parameters)
+    public function read(\RaseConnector\StructType\SalesOrderServiceReadRequest $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->read($parameters));
@@ -32,7 +32,7 @@ class Read extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \rase\StructType\SalesOrderServiceReadResponse
+     * @return \RaseConnector\StructType\SalesOrderServiceReadResponse
      */
     public function getResult()
     {

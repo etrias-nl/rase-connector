@@ -2,7 +2,6 @@
 
 namespace RaseConnector\StructType;
 
-use DateTime;
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -315,7 +314,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - nillable: true
-     * @var \rase\ArrayType\AxdArray_AxdExtType_Dimension
+     * @var \RaseConnector\ArrayType\AxdArray_AxdExtType_Dimension
      */
     public $Dimension;
     /**
@@ -1342,7 +1341,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \rase\StructType\AxdEntity_SalesLine[]
+     * @var \RaseConnector\StructType\AxdEntity_SalesLine[]
      */
     public $SalesLine;
     /**
@@ -1350,7 +1349,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \rase\StructType\AxdEntity_DocuRefHeader[]
+     * @var \RaseConnector\StructType\AxdEntity_DocuRefHeader[]
      */
     public $DocuRefHeader;
     /**
@@ -1358,7 +1357,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \rase\StructType\AxdEntity_MarkupTransHeader[]
+     * @var \RaseConnector\StructType\AxdEntity_MarkupTransHeader[]
      */
     public $MarkupTransHeader;
     /**
@@ -1538,7 +1537,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * @param string $deliveryState
      * @param string $deliveryStreet
      * @param string $deliveryZipCode
-     * @param \rase\ArrayType\AxdArray_AxdExtType_Dimension $dimension
+     * @param \RaseConnector\ArrayType\AxdArray_AxdExtType_Dimension $dimension
      * @param int $directDebitMandate
      * @param float $discPercent
      * @param string $dlvMode
@@ -1642,12 +1641,12 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * @param string $uRL
      * @param string $vATNum
      * @param string $wMSIsRush
-     * @param \rase\StructType\AxdEntity_SalesLine[] $salesLine
-     * @param \rase\StructType\AxdEntity_DocuRefHeader[] $docuRefHeader
-     * @param \rase\StructType\AxdEntity_MarkupTransHeader[] $markupTransHeader
+     * @param \RaseConnector\StructType\AxdEntity_SalesLine[] $salesLine
+     * @param \RaseConnector\StructType\AxdEntity_DocuRefHeader[] $docuRefHeader
+     * @param \RaseConnector\StructType\AxdEntity_MarkupTransHeader[] $markupTransHeader
      * @param string $action
      */
-    public function __construct($deliveryDate = null, $purchOrderFormNum = null, $salesOriginId = null, $salesTaker = null, $class = null, $_DocumentHash = null, $amountExclTax = null, $backOrder = null, $caseTagging = null, $cashDisc = null, $cashDiscPercent = null, $commissionGroup = null, $complete = null, $contactPersonId = null, $covStatus = null, $currencyCode = null, $custAccount = null, $custGroup = null, $custInvoiceId = null, $customerRef = null, $dateCreated = null, $deadline = null, $deliveryAddress = null, $deliveryCity = null, $deliveryCountryRegionId = null, $deliveryCounty = null, $deliveryDateControlType = null, $deliveryName = null, $deliveryState = null, $deliveryStreet = null, $deliveryZipCode = null, \rase\ArrayType\AxdArray_AxdExtType_Dimension $dimension = null, $directDebitMandate = null, $discPercent = null, $dlvMode = null, $dlvReason = null, $dlvTerm = null, $documentStatus = null, $eInvoiceAccountCode = null, $eInvoiceLineSpec = null, $email = null, $endDisc = null, $enterpriseNumber = null, $estimate = null, $exportReason = null, $fixedDueDate = null, $fixedExchRate = null, $freightSlipType = null, $freightZone = null, $giroType = null, $ignoreMarkup = null, $inclTax = null, $interCompanyOriginalCustAccount = null, $interCompanyOriginalSalesId = null, $inventLocationId = null, $inventLocationIdCollect = null, $inventSiteId = null, $invoiceAccount = null, $invoiceFrequenceId = null, $itemTagging = null, $languageId = null, $lineDisc = null, $listcode = null, $markupGroup = null, $multiLineDisc = null, $noCheckCreditLimit = null, $numberSequenceGroup = null, $oneTimeCustomer = null, $orderComplete = null, $palletTagging = null, $payment = null, $paymentSched = null, $paymMode = null, $paymSpec = null, $port = null, $postingProfile = null, $priceGroupId = null, $printPricesPackingSlip = null, $projId = null, $purchId = null, $quotationId = null, $receiptDateConfirmed = null, $receiptDateRequested = null, $recId = null, $recVersion = null, $reservation = null, $returnDeadline = null, $returnItemNum = null, $returnReasonCodeId = null, $returnReplacementCreated = null, $returnReplacementId = null, $returnStatus = null, $salesGroup = null, $salesId = null, $salesName = null, $salesPoolId = null, $salesResponsible = null, $salesStatus = null, $salesType = null, $salesUnitId = null, $settleVoucher = null, $shipCarrierAccount = null, $shipCarrierAccountCode = null, $shipCarrierBlindShipment = null, $shipCarrierDeliveryContact = null, $shipCarrierDlvType = null, $shipCarrierExpeditedShipment = null, $shipCarrierFuelSurcharge = null, $shipCarrierID = null, $shipCarrierResidential = null, $shippingDateConfirmed = null, $shippingDateRequested = null, $sLGFinancialCompany = null, $sLGIntrastat = null, $sLGTaxRepresentativeAddress = null, $sLGTaxRepresentativeCity = null, $sLGTaxRepresentativeCountryId = null, $sLGTaxRepresentativeStreet = null, $sLGTaxRepresentativeVATNum = null, $sLGTaxRepresentativeZipCodeId = null, $smmCampaignId = null, $smmSalesAmountTotal = null, $solvability = null, $statProcId = null, $taxGroup = null, $totalBalance = null, $totalCashDiscount = null, $totalInvoice = null, $totalMiscCharges = null, $totalSalesTax = null, $transactionCode = null, $transport = null, $uRL = null, $vATNum = null, $wMSIsRush = null, array $salesLine = array(), array $docuRefHeader = array(), array $markupTransHeader = array(), $action = null)
+    public function __construct($deliveryDate = null, $purchOrderFormNum = null, $salesOriginId = null, $salesTaker = null, $class = null, $_DocumentHash = null, $amountExclTax = null, $backOrder = null, $caseTagging = null, $cashDisc = null, $cashDiscPercent = null, $commissionGroup = null, $complete = null, $contactPersonId = null, $covStatus = null, $currencyCode = null, $custAccount = null, $custGroup = null, $custInvoiceId = null, $customerRef = null, $dateCreated = null, $deadline = null, $deliveryAddress = null, $deliveryCity = null, $deliveryCountryRegionId = null, $deliveryCounty = null, $deliveryDateControlType = null, $deliveryName = null, $deliveryState = null, $deliveryStreet = null, $deliveryZipCode = null, \RaseConnector\ArrayType\AxdArray_AxdExtType_Dimension $dimension = null, $directDebitMandate = null, $discPercent = null, $dlvMode = null, $dlvReason = null, $dlvTerm = null, $documentStatus = null, $eInvoiceAccountCode = null, $eInvoiceLineSpec = null, $email = null, $endDisc = null, $enterpriseNumber = null, $estimate = null, $exportReason = null, $fixedDueDate = null, $fixedExchRate = null, $freightSlipType = null, $freightZone = null, $giroType = null, $ignoreMarkup = null, $inclTax = null, $interCompanyOriginalCustAccount = null, $interCompanyOriginalSalesId = null, $inventLocationId = null, $inventLocationIdCollect = null, $inventSiteId = null, $invoiceAccount = null, $invoiceFrequenceId = null, $itemTagging = null, $languageId = null, $lineDisc = null, $listcode = null, $markupGroup = null, $multiLineDisc = null, $noCheckCreditLimit = null, $numberSequenceGroup = null, $oneTimeCustomer = null, $orderComplete = null, $palletTagging = null, $payment = null, $paymentSched = null, $paymMode = null, $paymSpec = null, $port = null, $postingProfile = null, $priceGroupId = null, $printPricesPackingSlip = null, $projId = null, $purchId = null, $quotationId = null, $receiptDateConfirmed = null, $receiptDateRequested = null, $recId = null, $recVersion = null, $reservation = null, $returnDeadline = null, $returnItemNum = null, $returnReasonCodeId = null, $returnReplacementCreated = null, $returnReplacementId = null, $returnStatus = null, $salesGroup = null, $salesId = null, $salesName = null, $salesPoolId = null, $salesResponsible = null, $salesStatus = null, $salesType = null, $salesUnitId = null, $settleVoucher = null, $shipCarrierAccount = null, $shipCarrierAccountCode = null, $shipCarrierBlindShipment = null, $shipCarrierDeliveryContact = null, $shipCarrierDlvType = null, $shipCarrierExpeditedShipment = null, $shipCarrierFuelSurcharge = null, $shipCarrierID = null, $shipCarrierResidential = null, $shippingDateConfirmed = null, $shippingDateRequested = null, $sLGFinancialCompany = null, $sLGIntrastat = null, $sLGTaxRepresentativeAddress = null, $sLGTaxRepresentativeCity = null, $sLGTaxRepresentativeCountryId = null, $sLGTaxRepresentativeStreet = null, $sLGTaxRepresentativeVATNum = null, $sLGTaxRepresentativeZipCodeId = null, $smmCampaignId = null, $smmSalesAmountTotal = null, $solvability = null, $statProcId = null, $taxGroup = null, $totalBalance = null, $totalCashDiscount = null, $totalInvoice = null, $totalMiscCharges = null, $totalSalesTax = null, $transactionCode = null, $transport = null, $uRL = null, $vATNum = null, $wMSIsRush = null, array $salesLine = array(), array $docuRefHeader = array(), array $markupTransHeader = array(), $action = null)
     {
         $this
             ->setDeliveryDate($deliveryDate)
@@ -1798,20 +1797,18 @@ class AxdEntity_SalesTable extends AbstractStructBase
     {
         return $this->DeliveryDate;
     }
-
     /**
      * Set DeliveryDate value
-     * @param DateTime|string $deliveryDate
-     * @return AxdEntity_SalesTable
+     * @param string $deliveryDate
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
-    public function setDeliveryDate(DateTime $deliveryDate = null)
+    public function setDeliveryDate($deliveryDate = null)
     {
         // validation for constraint: string
-        if (!is_null($deliveryDate)) {
-            $this->DeliveryDate = $deliveryDate->format('Y-m-d');
-        } else {
-            $this->DeliveryDate = $deliveryDate;
+        if (!is_null($deliveryDate) && !is_string($deliveryDate)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($deliveryDate)), __LINE__);
         }
+        $this->DeliveryDate = $deliveryDate;
         return $this;
     }
     /**
@@ -1825,7 +1822,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
     /**
      * Set PurchOrderFormNum value
      * @param string $purchOrderFormNum
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPurchOrderFormNum($purchOrderFormNum = null)
     {
@@ -1855,7 +1852,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
     /**
      * Set SalesOriginId value
      * @param string $salesOriginId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesOriginId($salesOriginId = null)
     {
@@ -1885,7 +1882,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
     /**
      * Set SalesTaker value
      * @param string $salesTaker
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesTaker($salesTaker = null)
     {
@@ -1915,7 +1912,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
     /**
      * Set class value
      * @param string $class
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setClass($class = null)
     {
@@ -1942,7 +1939,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $_DocumentHash
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function set_DocumentHash($_DocumentHash = null)
     {
@@ -1973,7 +1970,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $amountExclTax
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setAmountExclTax($amountExclTax = null)
     {
@@ -2003,17 +2000,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set BackOrder value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_Backorder::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_Backorder::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_Backorder::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_Backorder::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $backOrder
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setBackOrder($backOrder = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_Backorder::valueIsValid($backOrder)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $backOrder, implode(', ', \rase\EnumType\AxdExtType_Backorder::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_Backorder::valueIsValid($backOrder)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $backOrder, implode(', ', \RaseConnector\EnumType\AxdExtType_Backorder::getValidValues())), __LINE__);
         }
         if (is_null($backOrder) || (is_array($backOrder) && empty($backOrder))) {
             unset($this->BackOrder);
@@ -2037,17 +2034,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set CaseTagging value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_RFIDCaseTagging::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_RFIDCaseTagging::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_RFIDCaseTagging::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_RFIDCaseTagging::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $caseTagging
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setCaseTagging($caseTagging = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_RFIDCaseTagging::valueIsValid($caseTagging)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $caseTagging, implode(', ', \rase\EnumType\AxdExtType_RFIDCaseTagging::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_RFIDCaseTagging::valueIsValid($caseTagging)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $caseTagging, implode(', ', \RaseConnector\EnumType\AxdExtType_RFIDCaseTagging::getValidValues())), __LINE__);
         }
         if (is_null($caseTagging) || (is_array($caseTagging) && empty($caseTagging))) {
             unset($this->CaseTagging);
@@ -2072,7 +2069,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $cashDisc
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setCashDisc($cashDisc = null)
     {
@@ -2111,7 +2108,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $cashDiscPercent
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setCashDiscPercent($cashDiscPercent = null)
     {
@@ -2142,7 +2139,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $commissionGroup
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setCommissionGroup($commissionGroup = null)
     {
@@ -2180,17 +2177,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set Complete value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_LineComplete::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_LineComplete::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_LineComplete::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_LineComplete::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $complete
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setComplete($complete = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_LineComplete::valueIsValid($complete)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $complete, implode(', ', \rase\EnumType\AxdExtType_LineComplete::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_LineComplete::valueIsValid($complete)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $complete, implode(', ', \RaseConnector\EnumType\AxdExtType_LineComplete::getValidValues())), __LINE__);
         }
         if (is_null($complete) || (is_array($complete) && empty($complete))) {
             unset($this->Complete);
@@ -2215,7 +2212,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $contactPersonId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setContactPersonId($contactPersonId = null)
     {
@@ -2254,7 +2251,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $covStatus
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setCovStatus($covStatus = null)
     {
@@ -2285,7 +2282,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $currencyCode
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setCurrencyCode($currencyCode = null)
     {
@@ -2316,7 +2313,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $custAccount
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setCustAccount($custAccount = null)
     {
@@ -2347,7 +2344,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $custGroup
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setCustGroup($custGroup = null)
     {
@@ -2386,7 +2383,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $custInvoiceId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setCustInvoiceId($custInvoiceId = null)
     {
@@ -2425,7 +2422,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $customerRef
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setCustomerRef($customerRef = null)
     {
@@ -2464,7 +2461,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $dateCreated
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDateCreated($dateCreated = null)
     {
@@ -2495,7 +2492,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deadline
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDeadline($deadline = null)
     {
@@ -2526,7 +2523,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryAddress
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDeliveryAddress($deliveryAddress = null)
     {
@@ -2565,7 +2562,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryCity
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDeliveryCity($deliveryCity = null)
     {
@@ -2604,7 +2601,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryCountryRegionId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDeliveryCountryRegionId($deliveryCountryRegionId = null)
     {
@@ -2635,7 +2632,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryCounty
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDeliveryCounty($deliveryCounty = null)
     {
@@ -2665,17 +2662,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set DeliveryDateControlType value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_SalesDeliveryDateControlType::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_SalesDeliveryDateControlType::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_SalesDeliveryDateControlType::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_SalesDeliveryDateControlType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $deliveryDateControlType
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDeliveryDateControlType($deliveryDateControlType = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_SalesDeliveryDateControlType::valueIsValid($deliveryDateControlType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $deliveryDateControlType, implode(', ', \rase\EnumType\AxdEnum_SalesDeliveryDateControlType::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_SalesDeliveryDateControlType::valueIsValid($deliveryDateControlType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $deliveryDateControlType, implode(', ', \RaseConnector\EnumType\AxdEnum_SalesDeliveryDateControlType::getValidValues())), __LINE__);
         }
         if (is_null($deliveryDateControlType) || (is_array($deliveryDateControlType) && empty($deliveryDateControlType))) {
             unset($this->DeliveryDateControlType);
@@ -2700,7 +2697,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryName
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDeliveryName($deliveryName = null)
     {
@@ -2739,7 +2736,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryState
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDeliveryState($deliveryState = null)
     {
@@ -2770,7 +2767,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryStreet
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDeliveryStreet($deliveryStreet = null)
     {
@@ -2809,7 +2806,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryZipCode
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDeliveryZipCode($deliveryZipCode = null)
     {
@@ -2829,7 +2826,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \rase\ArrayType\AxdArray_AxdExtType_Dimension|null
+     * @return \RaseConnector\ArrayType\AxdArray_AxdExtType_Dimension|null
      */
     public function getDimension()
     {
@@ -2839,10 +2836,10 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set Dimension value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @param \rase\ArrayType\AxdArray_AxdExtType_Dimension $dimension
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @param \RaseConnector\ArrayType\AxdArray_AxdExtType_Dimension $dimension
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
-    public function setDimension(\rase\ArrayType\AxdArray_AxdExtType_Dimension $dimension = null)
+    public function setDimension(\RaseConnector\ArrayType\AxdArray_AxdExtType_Dimension $dimension = null)
     {
         if (is_null($dimension) || (is_array($dimension) && empty($dimension))) {
             unset($this->Dimension);
@@ -2867,7 +2864,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $directDebitMandate
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDirectDebitMandate($directDebitMandate = null)
     {
@@ -2898,7 +2895,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $discPercent
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDiscPercent($discPercent = null)
     {
@@ -2929,7 +2926,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $dlvMode
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDlvMode($dlvMode = null)
     {
@@ -2960,7 +2957,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $dlvReason
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDlvReason($dlvReason = null)
     {
@@ -2999,7 +2996,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $dlvTerm
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDlvTerm($dlvTerm = null)
     {
@@ -3029,17 +3026,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set DocumentStatus value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_DocumentStatus::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_DocumentStatus::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_DocumentStatus::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_DocumentStatus::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $documentStatus
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDocumentStatus($documentStatus = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_DocumentStatus::valueIsValid($documentStatus)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $documentStatus, implode(', ', \rase\EnumType\AxdEnum_DocumentStatus::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_DocumentStatus::valueIsValid($documentStatus)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $documentStatus, implode(', ', \RaseConnector\EnumType\AxdEnum_DocumentStatus::getValidValues())), __LINE__);
         }
         if (is_null($documentStatus) || (is_array($documentStatus) && empty($documentStatus))) {
             unset($this->DocumentStatus);
@@ -3064,7 +3061,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $eInvoiceAccountCode
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setEInvoiceAccountCode($eInvoiceAccountCode = null)
     {
@@ -3102,17 +3099,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set EInvoiceLineSpec value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_EInvoiceLineSpecific::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_EInvoiceLineSpecific::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_EInvoiceLineSpecific::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_EInvoiceLineSpecific::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $eInvoiceLineSpec
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setEInvoiceLineSpec($eInvoiceLineSpec = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_EInvoiceLineSpecific::valueIsValid($eInvoiceLineSpec)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $eInvoiceLineSpec, implode(', ', \rase\EnumType\AxdExtType_EInvoiceLineSpecific::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_EInvoiceLineSpecific::valueIsValid($eInvoiceLineSpec)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $eInvoiceLineSpec, implode(', ', \RaseConnector\EnumType\AxdExtType_EInvoiceLineSpecific::getValidValues())), __LINE__);
         }
         if (is_null($eInvoiceLineSpec) || (is_array($eInvoiceLineSpec) && empty($eInvoiceLineSpec))) {
             unset($this->EInvoiceLineSpec);
@@ -3137,7 +3134,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $email
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setEmail($email = null)
     {
@@ -3176,7 +3173,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $endDisc
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setEndDisc($endDisc = null)
     {
@@ -3215,7 +3212,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $enterpriseNumber
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setEnterpriseNumber($enterpriseNumber = null)
     {
@@ -3254,7 +3251,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $estimate
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setEstimate($estimate = null)
     {
@@ -3285,7 +3282,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $exportReason
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setExportReason($exportReason = null)
     {
@@ -3324,7 +3321,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $fixedDueDate
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setFixedDueDate($fixedDueDate = null)
     {
@@ -3355,7 +3352,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $fixedExchRate
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setFixedExchRate($fixedExchRate = null)
     {
@@ -3385,17 +3382,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set FreightSlipType value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_CustFreightSlipType::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_CustFreightSlipType::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_CustFreightSlipType::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_CustFreightSlipType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $freightSlipType
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setFreightSlipType($freightSlipType = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_CustFreightSlipType::valueIsValid($freightSlipType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $freightSlipType, implode(', ', \rase\EnumType\AxdExtType_CustFreightSlipType::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_CustFreightSlipType::valueIsValid($freightSlipType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $freightSlipType, implode(', ', \RaseConnector\EnumType\AxdExtType_CustFreightSlipType::getValidValues())), __LINE__);
         }
         if (is_null($freightSlipType) || (is_array($freightSlipType) && empty($freightSlipType))) {
             unset($this->FreightSlipType);
@@ -3420,7 +3417,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $freightZone
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setFreightZone($freightZone = null)
     {
@@ -3458,17 +3455,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set GiroType value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_PaymentStubInvoiceId::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_PaymentStubInvoiceId::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_PaymentStubInvoiceId::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_PaymentStubInvoiceId::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $giroType
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setGiroType($giroType = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_PaymentStubInvoiceId::valueIsValid($giroType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $giroType, implode(', ', \rase\EnumType\AxdExtType_PaymentStubInvoiceId::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_PaymentStubInvoiceId::valueIsValid($giroType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $giroType, implode(', ', \RaseConnector\EnumType\AxdExtType_PaymentStubInvoiceId::getValidValues())), __LINE__);
         }
         if (is_null($giroType) || (is_array($giroType) && empty($giroType))) {
             unset($this->GiroType);
@@ -3492,17 +3489,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set IgnoreMarkup value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_IgnoreMarkup::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_IgnoreMarkup::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_IgnoreMarkup::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_IgnoreMarkup::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $ignoreMarkup
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setIgnoreMarkup($ignoreMarkup = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_IgnoreMarkup::valueIsValid($ignoreMarkup)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $ignoreMarkup, implode(', ', \rase\EnumType\AxdExtType_IgnoreMarkup::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_IgnoreMarkup::valueIsValid($ignoreMarkup)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $ignoreMarkup, implode(', ', \RaseConnector\EnumType\AxdExtType_IgnoreMarkup::getValidValues())), __LINE__);
         }
         if (is_null($ignoreMarkup) || (is_array($ignoreMarkup) && empty($ignoreMarkup))) {
             unset($this->IgnoreMarkup);
@@ -3526,17 +3523,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set InclTax value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_InclTax::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_InclTax::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_InclTax::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_InclTax::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $inclTax
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setInclTax($inclTax = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_InclTax::valueIsValid($inclTax)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $inclTax, implode(', ', \rase\EnumType\AxdExtType_InclTax::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_InclTax::valueIsValid($inclTax)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $inclTax, implode(', ', \RaseConnector\EnumType\AxdExtType_InclTax::getValidValues())), __LINE__);
         }
         if (is_null($inclTax) || (is_array($inclTax) && empty($inclTax))) {
             unset($this->InclTax);
@@ -3561,7 +3558,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $interCompanyOriginalCustAccount
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setInterCompanyOriginalCustAccount($interCompanyOriginalCustAccount = null)
     {
@@ -3600,7 +3597,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $interCompanyOriginalSalesId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setInterCompanyOriginalSalesId($interCompanyOriginalSalesId = null)
     {
@@ -3639,7 +3636,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $inventLocationId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setInventLocationId($inventLocationId = null)
     {
@@ -3678,7 +3675,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $inventLocationIdCollect
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setInventLocationIdCollect($inventLocationIdCollect = null)
     {
@@ -3717,7 +3714,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $inventSiteId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setInventSiteId($inventSiteId = null)
     {
@@ -3756,7 +3753,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $invoiceAccount
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setInvoiceAccount($invoiceAccount = null)
     {
@@ -3787,7 +3784,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $invoiceFrequenceId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setInvoiceFrequenceId($invoiceFrequenceId = null)
     {
@@ -3817,17 +3814,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set ItemTagging value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_RFIDItemTagging::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_RFIDItemTagging::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_RFIDItemTagging::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_RFIDItemTagging::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $itemTagging
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setItemTagging($itemTagging = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_RFIDItemTagging::valueIsValid($itemTagging)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $itemTagging, implode(', ', \rase\EnumType\AxdExtType_RFIDItemTagging::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_RFIDItemTagging::valueIsValid($itemTagging)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $itemTagging, implode(', ', \RaseConnector\EnumType\AxdExtType_RFIDItemTagging::getValidValues())), __LINE__);
         }
         if (is_null($itemTagging) || (is_array($itemTagging) && empty($itemTagging))) {
             unset($this->ItemTagging);
@@ -3852,7 +3849,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $languageId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setLanguageId($languageId = null)
     {
@@ -3891,7 +3888,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $lineDisc
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setLineDisc($lineDisc = null)
     {
@@ -3929,17 +3926,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set Listcode value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_ListcodeId::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_ListcodeId::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_ListcodeId::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_ListcodeId::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $listcode
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setListcode($listcode = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_ListcodeId::valueIsValid($listcode)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $listcode, implode(', ', \rase\EnumType\AxdExtType_ListcodeId::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_ListcodeId::valueIsValid($listcode)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $listcode, implode(', ', \RaseConnector\EnumType\AxdExtType_ListcodeId::getValidValues())), __LINE__);
         }
         if (is_null($listcode) || (is_array($listcode) && empty($listcode))) {
             unset($this->Listcode);
@@ -3964,7 +3961,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $markupGroup
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setMarkupGroup($markupGroup = null)
     {
@@ -4003,7 +4000,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $multiLineDisc
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setMultiLineDisc($multiLineDisc = null)
     {
@@ -4041,17 +4038,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set NoCheckCreditLimit value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_NoCheckCreditLimit::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_NoCheckCreditLimit::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_NoCheckCreditLimit::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_NoCheckCreditLimit::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $noCheckCreditLimit
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setNoCheckCreditLimit($noCheckCreditLimit = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_NoCheckCreditLimit::valueIsValid($noCheckCreditLimit)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $noCheckCreditLimit, implode(', ', \rase\EnumType\AxdExtType_NoCheckCreditLimit::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_NoCheckCreditLimit::valueIsValid($noCheckCreditLimit)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $noCheckCreditLimit, implode(', ', \RaseConnector\EnumType\AxdExtType_NoCheckCreditLimit::getValidValues())), __LINE__);
         }
         if (is_null($noCheckCreditLimit) || (is_array($noCheckCreditLimit) && empty($noCheckCreditLimit))) {
             unset($this->NoCheckCreditLimit);
@@ -4076,7 +4073,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $numberSequenceGroup
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setNumberSequenceGroup($numberSequenceGroup = null)
     {
@@ -4114,17 +4111,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set OneTimeCustomer value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_OneTimeCustomer::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_OneTimeCustomer::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_OneTimeCustomer::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_OneTimeCustomer::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $oneTimeCustomer
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setOneTimeCustomer($oneTimeCustomer = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_OneTimeCustomer::valueIsValid($oneTimeCustomer)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $oneTimeCustomer, implode(', ', \rase\EnumType\AxdExtType_OneTimeCustomer::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_OneTimeCustomer::valueIsValid($oneTimeCustomer)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $oneTimeCustomer, implode(', ', \RaseConnector\EnumType\AxdExtType_OneTimeCustomer::getValidValues())), __LINE__);
         }
         if (is_null($oneTimeCustomer) || (is_array($oneTimeCustomer) && empty($oneTimeCustomer))) {
             unset($this->OneTimeCustomer);
@@ -4148,17 +4145,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set OrderComplete value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_OrderComplete::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_OrderComplete::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_OrderComplete::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_OrderComplete::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $orderComplete
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setOrderComplete($orderComplete = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_OrderComplete::valueIsValid($orderComplete)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $orderComplete, implode(', ', \rase\EnumType\AxdExtType_OrderComplete::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_OrderComplete::valueIsValid($orderComplete)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $orderComplete, implode(', ', \RaseConnector\EnumType\AxdExtType_OrderComplete::getValidValues())), __LINE__);
         }
         if (is_null($orderComplete) || (is_array($orderComplete) && empty($orderComplete))) {
             unset($this->OrderComplete);
@@ -4182,17 +4179,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set PalletTagging value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_RFIDPalletTagging::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_RFIDPalletTagging::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_RFIDPalletTagging::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_RFIDPalletTagging::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $palletTagging
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPalletTagging($palletTagging = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_RFIDPalletTagging::valueIsValid($palletTagging)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $palletTagging, implode(', ', \rase\EnumType\AxdExtType_RFIDPalletTagging::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_RFIDPalletTagging::valueIsValid($palletTagging)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $palletTagging, implode(', ', \RaseConnector\EnumType\AxdExtType_RFIDPalletTagging::getValidValues())), __LINE__);
         }
         if (is_null($palletTagging) || (is_array($palletTagging) && empty($palletTagging))) {
             unset($this->PalletTagging);
@@ -4217,7 +4214,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $payment
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPayment($payment = null)
     {
@@ -4256,7 +4253,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $paymentSched
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPaymentSched($paymentSched = null)
     {
@@ -4295,7 +4292,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $paymMode
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPaymMode($paymMode = null)
     {
@@ -4334,7 +4331,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $paymSpec
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPaymSpec($paymSpec = null)
     {
@@ -4373,7 +4370,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $port
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPort($port = null)
     {
@@ -4412,7 +4409,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $postingProfile
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPostingProfile($postingProfile = null)
     {
@@ -4451,7 +4448,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $priceGroupId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPriceGroupId($priceGroupId = null)
     {
@@ -4489,17 +4486,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set PrintPricesPackingSlip value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_NoYes::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_NoYes::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_NoYes::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_NoYes::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $printPricesPackingSlip
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPrintPricesPackingSlip($printPricesPackingSlip = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_NoYes::valueIsValid($printPricesPackingSlip)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $printPricesPackingSlip, implode(', ', \rase\EnumType\AxdEnum_NoYes::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_NoYes::valueIsValid($printPricesPackingSlip)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $printPricesPackingSlip, implode(', ', \RaseConnector\EnumType\AxdEnum_NoYes::getValidValues())), __LINE__);
         }
         if (is_null($printPricesPackingSlip) || (is_array($printPricesPackingSlip) && empty($printPricesPackingSlip))) {
             unset($this->PrintPricesPackingSlip);
@@ -4524,7 +4521,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $projId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setProjId($projId = null)
     {
@@ -4563,7 +4560,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $purchId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setPurchId($purchId = null)
     {
@@ -4602,7 +4599,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $quotationId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setQuotationId($quotationId = null)
     {
@@ -4641,7 +4638,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $receiptDateConfirmed
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setReceiptDateConfirmed($receiptDateConfirmed = null)
     {
@@ -4667,20 +4664,23 @@ class AxdEntity_SalesTable extends AbstractStructBase
     {
         return isset($this->ReceiptDateRequested) ? $this->ReceiptDateRequested : null;
     }
-
     /**
      * Set ReceiptDateRequested value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @param DateTime|string $receiptDateRequested
-     * @return AxdEntity_SalesTable
+     * @param string $receiptDateRequested
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
-    public function setReceiptDateRequested(DateTime $receiptDateRequested = null)
+    public function setReceiptDateRequested($receiptDateRequested = null)
     {
+        // validation for constraint: string
+        if (!is_null($receiptDateRequested) && !is_string($receiptDateRequested)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($receiptDateRequested)), __LINE__);
+        }
         if (is_null($receiptDateRequested) || (is_array($receiptDateRequested) && empty($receiptDateRequested))) {
             unset($this->ReceiptDateRequested);
         } else {
-            $this->ReceiptDateRequested = $receiptDateRequested->format('Y-m-d');
+            $this->ReceiptDateRequested = $receiptDateRequested;
         }
         return $this;
     }
@@ -4700,7 +4700,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $recId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setRecId($recId = null)
     {
@@ -4731,7 +4731,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $recVersion
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setRecVersion($recVersion = null)
     {
@@ -4761,17 +4761,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set Reservation value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_ItemReservation::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_ItemReservation::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_ItemReservation::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_ItemReservation::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $reservation
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setReservation($reservation = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_ItemReservation::valueIsValid($reservation)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $reservation, implode(', ', \rase\EnumType\AxdEnum_ItemReservation::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_ItemReservation::valueIsValid($reservation)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $reservation, implode(', ', \RaseConnector\EnumType\AxdEnum_ItemReservation::getValidValues())), __LINE__);
         }
         if (is_null($reservation) || (is_array($reservation) && empty($reservation))) {
             unset($this->Reservation);
@@ -4796,7 +4796,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $returnDeadline
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setReturnDeadline($returnDeadline = null)
     {
@@ -4827,7 +4827,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $returnItemNum
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setReturnItemNum($returnItemNum = null)
     {
@@ -4866,7 +4866,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $returnReasonCodeId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setReturnReasonCodeId($returnReasonCodeId = null)
     {
@@ -4904,17 +4904,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set ReturnReplacementCreated value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_ReturnReplacementCreated::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_ReturnReplacementCreated::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_ReturnReplacementCreated::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_ReturnReplacementCreated::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $returnReplacementCreated
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setReturnReplacementCreated($returnReplacementCreated = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_ReturnReplacementCreated::valueIsValid($returnReplacementCreated)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $returnReplacementCreated, implode(', ', \rase\EnumType\AxdExtType_ReturnReplacementCreated::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_ReturnReplacementCreated::valueIsValid($returnReplacementCreated)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $returnReplacementCreated, implode(', ', \RaseConnector\EnumType\AxdExtType_ReturnReplacementCreated::getValidValues())), __LINE__);
         }
         if (is_null($returnReplacementCreated) || (is_array($returnReplacementCreated) && empty($returnReplacementCreated))) {
             unset($this->ReturnReplacementCreated);
@@ -4939,7 +4939,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $returnReplacementId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setReturnReplacementId($returnReplacementId = null)
     {
@@ -4977,17 +4977,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set ReturnStatus value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_ReturnStatusHeader::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_ReturnStatusHeader::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_ReturnStatusHeader::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_ReturnStatusHeader::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $returnStatus
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setReturnStatus($returnStatus = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_ReturnStatusHeader::valueIsValid($returnStatus)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $returnStatus, implode(', ', \rase\EnumType\AxdEnum_ReturnStatusHeader::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_ReturnStatusHeader::valueIsValid($returnStatus)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $returnStatus, implode(', ', \RaseConnector\EnumType\AxdEnum_ReturnStatusHeader::getValidValues())), __LINE__);
         }
         if (is_null($returnStatus) || (is_array($returnStatus) && empty($returnStatus))) {
             unset($this->ReturnStatus);
@@ -5012,7 +5012,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $salesGroup
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesGroup($salesGroup = null)
     {
@@ -5051,7 +5051,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $salesId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesId($salesId = null)
     {
@@ -5090,7 +5090,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $salesName
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesName($salesName = null)
     {
@@ -5129,7 +5129,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $salesPoolId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesPoolId($salesPoolId = null)
     {
@@ -5168,7 +5168,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $salesResponsible
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesResponsible($salesResponsible = null)
     {
@@ -5206,17 +5206,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set SalesStatus value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_SalesStatus::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_SalesStatus::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_SalesStatus::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_SalesStatus::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $salesStatus
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesStatus($salesStatus = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_SalesStatus::valueIsValid($salesStatus)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $salesStatus, implode(', ', \rase\EnumType\AxdEnum_SalesStatus::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_SalesStatus::valueIsValid($salesStatus)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $salesStatus, implode(', ', \RaseConnector\EnumType\AxdEnum_SalesStatus::getValidValues())), __LINE__);
         }
         if (is_null($salesStatus) || (is_array($salesStatus) && empty($salesStatus))) {
             unset($this->SalesStatus);
@@ -5240,17 +5240,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set SalesType value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_SalesType::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_SalesType::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_SalesType::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_SalesType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $salesType
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesType($salesType = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_SalesType::valueIsValid($salesType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $salesType, implode(', ', \rase\EnumType\AxdEnum_SalesType::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_SalesType::valueIsValid($salesType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $salesType, implode(', ', \RaseConnector\EnumType\AxdEnum_SalesType::getValidValues())), __LINE__);
         }
         if (is_null($salesType) || (is_array($salesType) && empty($salesType))) {
             unset($this->SalesType);
@@ -5275,7 +5275,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $salesUnitId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesUnitId($salesUnitId = null)
     {
@@ -5313,17 +5313,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set SettleVoucher value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_SalesSettlementType::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_SalesSettlementType::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_SalesSettlementType::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_SalesSettlementType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $settleVoucher
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSettleVoucher($settleVoucher = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_SalesSettlementType::valueIsValid($settleVoucher)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $settleVoucher, implode(', ', \rase\EnumType\AxdExtType_SalesSettlementType::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_SalesSettlementType::valueIsValid($settleVoucher)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $settleVoucher, implode(', ', \RaseConnector\EnumType\AxdExtType_SalesSettlementType::getValidValues())), __LINE__);
         }
         if (is_null($settleVoucher) || (is_array($settleVoucher) && empty($settleVoucher))) {
             unset($this->SettleVoucher);
@@ -5348,7 +5348,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $shipCarrierAccount
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShipCarrierAccount($shipCarrierAccount = null)
     {
@@ -5387,7 +5387,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $shipCarrierAccountCode
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShipCarrierAccountCode($shipCarrierAccountCode = null)
     {
@@ -5425,17 +5425,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set ShipCarrierBlindShipment value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_ShipCarrierBlindShipment::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_ShipCarrierBlindShipment::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_ShipCarrierBlindShipment::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_ShipCarrierBlindShipment::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $shipCarrierBlindShipment
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShipCarrierBlindShipment($shipCarrierBlindShipment = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_ShipCarrierBlindShipment::valueIsValid($shipCarrierBlindShipment)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $shipCarrierBlindShipment, implode(', ', \rase\EnumType\AxdExtType_ShipCarrierBlindShipment::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_ShipCarrierBlindShipment::valueIsValid($shipCarrierBlindShipment)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $shipCarrierBlindShipment, implode(', ', \RaseConnector\EnumType\AxdExtType_ShipCarrierBlindShipment::getValidValues())), __LINE__);
         }
         if (is_null($shipCarrierBlindShipment) || (is_array($shipCarrierBlindShipment) && empty($shipCarrierBlindShipment))) {
             unset($this->ShipCarrierBlindShipment);
@@ -5460,7 +5460,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $shipCarrierDeliveryContact
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShipCarrierDeliveryContact($shipCarrierDeliveryContact = null)
     {
@@ -5498,17 +5498,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set ShipCarrierDlvType value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_ShipCarrierDlvType::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_ShipCarrierDlvType::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_ShipCarrierDlvType::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_ShipCarrierDlvType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $shipCarrierDlvType
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShipCarrierDlvType($shipCarrierDlvType = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_ShipCarrierDlvType::valueIsValid($shipCarrierDlvType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $shipCarrierDlvType, implode(', ', \rase\EnumType\AxdEnum_ShipCarrierDlvType::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_ShipCarrierDlvType::valueIsValid($shipCarrierDlvType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $shipCarrierDlvType, implode(', ', \RaseConnector\EnumType\AxdEnum_ShipCarrierDlvType::getValidValues())), __LINE__);
         }
         if (is_null($shipCarrierDlvType) || (is_array($shipCarrierDlvType) && empty($shipCarrierDlvType))) {
             unset($this->ShipCarrierDlvType);
@@ -5532,17 +5532,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set ShipCarrierExpeditedShipment value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_ShipCarrierExpeditedShipment::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_ShipCarrierExpeditedShipment::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_ShipCarrierExpeditedShipment::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_ShipCarrierExpeditedShipment::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $shipCarrierExpeditedShipment
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShipCarrierExpeditedShipment($shipCarrierExpeditedShipment = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_ShipCarrierExpeditedShipment::valueIsValid($shipCarrierExpeditedShipment)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $shipCarrierExpeditedShipment, implode(', ', \rase\EnumType\AxdExtType_ShipCarrierExpeditedShipment::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_ShipCarrierExpeditedShipment::valueIsValid($shipCarrierExpeditedShipment)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $shipCarrierExpeditedShipment, implode(', ', \RaseConnector\EnumType\AxdExtType_ShipCarrierExpeditedShipment::getValidValues())), __LINE__);
         }
         if (is_null($shipCarrierExpeditedShipment) || (is_array($shipCarrierExpeditedShipment) && empty($shipCarrierExpeditedShipment))) {
             unset($this->ShipCarrierExpeditedShipment);
@@ -5566,17 +5566,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set ShipCarrierFuelSurcharge value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_ShipCarrierFuelSurcharge::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_ShipCarrierFuelSurcharge::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_ShipCarrierFuelSurcharge::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_ShipCarrierFuelSurcharge::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $shipCarrierFuelSurcharge
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShipCarrierFuelSurcharge($shipCarrierFuelSurcharge = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_ShipCarrierFuelSurcharge::valueIsValid($shipCarrierFuelSurcharge)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $shipCarrierFuelSurcharge, implode(', ', \rase\EnumType\AxdExtType_ShipCarrierFuelSurcharge::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_ShipCarrierFuelSurcharge::valueIsValid($shipCarrierFuelSurcharge)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $shipCarrierFuelSurcharge, implode(', ', \RaseConnector\EnumType\AxdExtType_ShipCarrierFuelSurcharge::getValidValues())), __LINE__);
         }
         if (is_null($shipCarrierFuelSurcharge) || (is_array($shipCarrierFuelSurcharge) && empty($shipCarrierFuelSurcharge))) {
             unset($this->ShipCarrierFuelSurcharge);
@@ -5601,7 +5601,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $shipCarrierID
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShipCarrierID($shipCarrierID = null)
     {
@@ -5639,17 +5639,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set ShipCarrierResidential value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_ShipCarrierResidentialDest::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_ShipCarrierResidentialDest::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_ShipCarrierResidentialDest::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_ShipCarrierResidentialDest::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $shipCarrierResidential
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShipCarrierResidential($shipCarrierResidential = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_ShipCarrierResidentialDest::valueIsValid($shipCarrierResidential)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $shipCarrierResidential, implode(', ', \rase\EnumType\AxdExtType_ShipCarrierResidentialDest::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_ShipCarrierResidentialDest::valueIsValid($shipCarrierResidential)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $shipCarrierResidential, implode(', ', \RaseConnector\EnumType\AxdExtType_ShipCarrierResidentialDest::getValidValues())), __LINE__);
         }
         if (is_null($shipCarrierResidential) || (is_array($shipCarrierResidential) && empty($shipCarrierResidential))) {
             unset($this->ShipCarrierResidential);
@@ -5674,7 +5674,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $shippingDateConfirmed
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShippingDateConfirmed($shippingDateConfirmed = null)
     {
@@ -5705,7 +5705,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $shippingDateRequested
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setShippingDateRequested($shippingDateRequested = null)
     {
@@ -5736,7 +5736,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $sLGFinancialCompany
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSLGFinancialCompany($sLGFinancialCompany = null)
     {
@@ -5774,17 +5774,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set SLGIntrastat value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_SLGIntrastat::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_SLGIntrastat::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_SLGIntrastat::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_SLGIntrastat::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $sLGIntrastat
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSLGIntrastat($sLGIntrastat = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_SLGIntrastat::valueIsValid($sLGIntrastat)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $sLGIntrastat, implode(', ', \rase\EnumType\AxdEnum_SLGIntrastat::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_SLGIntrastat::valueIsValid($sLGIntrastat)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $sLGIntrastat, implode(', ', \RaseConnector\EnumType\AxdEnum_SLGIntrastat::getValidValues())), __LINE__);
         }
         if (is_null($sLGIntrastat) || (is_array($sLGIntrastat) && empty($sLGIntrastat))) {
             unset($this->SLGIntrastat);
@@ -5809,7 +5809,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $sLGTaxRepresentativeAddress
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSLGTaxRepresentativeAddress($sLGTaxRepresentativeAddress = null)
     {
@@ -5848,7 +5848,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $sLGTaxRepresentativeCity
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSLGTaxRepresentativeCity($sLGTaxRepresentativeCity = null)
     {
@@ -5887,7 +5887,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $sLGTaxRepresentativeCountryId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSLGTaxRepresentativeCountryId($sLGTaxRepresentativeCountryId = null)
     {
@@ -5918,7 +5918,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $sLGTaxRepresentativeStreet
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSLGTaxRepresentativeStreet($sLGTaxRepresentativeStreet = null)
     {
@@ -5957,7 +5957,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $sLGTaxRepresentativeVATNum
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSLGTaxRepresentativeVATNum($sLGTaxRepresentativeVATNum = null)
     {
@@ -5996,7 +5996,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $sLGTaxRepresentativeZipCodeId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSLGTaxRepresentativeZipCodeId($sLGTaxRepresentativeZipCodeId = null)
     {
@@ -6027,7 +6027,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $smmCampaignId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSmmCampaignId($smmCampaignId = null)
     {
@@ -6066,7 +6066,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $smmSalesAmountTotal
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSmmSalesAmountTotal($smmSalesAmountTotal = null)
     {
@@ -6096,17 +6096,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set Solvability value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_Solvability::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_Solvability::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_Solvability::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_Solvability::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $solvability
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSolvability($solvability = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_Solvability::valueIsValid($solvability)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $solvability, implode(', ', \rase\EnumType\AxdEnum_Solvability::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_Solvability::valueIsValid($solvability)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $solvability, implode(', ', \RaseConnector\EnumType\AxdEnum_Solvability::getValidValues())), __LINE__);
         }
         if (is_null($solvability) || (is_array($solvability) && empty($solvability))) {
             unset($this->Solvability);
@@ -6131,7 +6131,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $statProcId
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setStatProcId($statProcId = null)
     {
@@ -6170,7 +6170,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $taxGroup
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setTaxGroup($taxGroup = null)
     {
@@ -6209,7 +6209,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $totalBalance
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setTotalBalance($totalBalance = null)
     {
@@ -6240,7 +6240,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $totalCashDiscount
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setTotalCashDiscount($totalCashDiscount = null)
     {
@@ -6271,7 +6271,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $totalInvoice
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setTotalInvoice($totalInvoice = null)
     {
@@ -6302,7 +6302,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $totalMiscCharges
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setTotalMiscCharges($totalMiscCharges = null)
     {
@@ -6333,7 +6333,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $totalSalesTax
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setTotalSalesTax($totalSalesTax = null)
     {
@@ -6364,7 +6364,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $transactionCode
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setTransactionCode($transactionCode = null)
     {
@@ -6403,7 +6403,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $transport
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setTransport($transport = null)
     {
@@ -6442,7 +6442,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $uRL
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setURL($uRL = null)
     {
@@ -6481,7 +6481,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $vATNum
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setVATNum($vATNum = null)
     {
@@ -6519,17 +6519,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * Set WMSIsRush value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_WMSIsRush::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_WMSIsRush::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_WMSIsRush::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_WMSIsRush::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $wMSIsRush
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setWMSIsRush($wMSIsRush = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_WMSIsRush::valueIsValid($wMSIsRush)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $wMSIsRush, implode(', ', \rase\EnumType\AxdExtType_WMSIsRush::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_WMSIsRush::valueIsValid($wMSIsRush)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $wMSIsRush, implode(', ', \RaseConnector\EnumType\AxdExtType_WMSIsRush::getValidValues())), __LINE__);
         }
         if (is_null($wMSIsRush) || (is_array($wMSIsRush) && empty($wMSIsRush))) {
             unset($this->WMSIsRush);
@@ -6540,7 +6540,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
     }
     /**
      * Get SalesLine value
-     * @return \rase\StructType\AxdEntity_SalesLine[]|null
+     * @return \RaseConnector\StructType\AxdEntity_SalesLine[]|null
      */
     public function getSalesLine()
     {
@@ -6549,15 +6549,15 @@ class AxdEntity_SalesTable extends AbstractStructBase
     /**
      * Set SalesLine value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\AxdEntity_SalesLine[] $salesLine
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @param \RaseConnector\StructType\AxdEntity_SalesLine[] $salesLine
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setSalesLine(array $salesLine = array())
     {
         foreach ($salesLine as $axdEntity_SalesTableSalesLineItem) {
             // validation for constraint: itemType
-            if (!$axdEntity_SalesTableSalesLineItem instanceof \rase\StructType\AxdEntity_SalesLine) {
-                throw new \InvalidArgumentException(sprintf('The SalesLine property can only contain items of \rase\StructType\AxdEntity_SalesLine, "%s" given', is_object($axdEntity_SalesTableSalesLineItem) ? get_class($axdEntity_SalesTableSalesLineItem) : gettype($axdEntity_SalesTableSalesLineItem)), __LINE__);
+            if (!$axdEntity_SalesTableSalesLineItem instanceof \RaseConnector\StructType\AxdEntity_SalesLine) {
+                throw new \InvalidArgumentException(sprintf('The SalesLine property can only contain items of \RaseConnector\StructType\AxdEntity_SalesLine, "%s" given', is_object($axdEntity_SalesTableSalesLineItem) ? get_class($axdEntity_SalesTableSalesLineItem) : gettype($axdEntity_SalesTableSalesLineItem)), __LINE__);
             }
         }
         $this->SalesLine = $salesLine;
@@ -6566,21 +6566,21 @@ class AxdEntity_SalesTable extends AbstractStructBase
     /**
      * Add item to SalesLine value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\AxdEntity_SalesLine $item
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @param \RaseConnector\StructType\AxdEntity_SalesLine $item
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
-    public function addToSalesLine(\rase\StructType\AxdEntity_SalesLine $item)
+    public function addToSalesLine(\RaseConnector\StructType\AxdEntity_SalesLine $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \rase\StructType\AxdEntity_SalesLine) {
-            throw new \InvalidArgumentException(sprintf('The SalesLine property can only contain items of \rase\StructType\AxdEntity_SalesLine, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \RaseConnector\StructType\AxdEntity_SalesLine) {
+            throw new \InvalidArgumentException(sprintf('The SalesLine property can only contain items of \RaseConnector\StructType\AxdEntity_SalesLine, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->SalesLine[] = $item;
         return $this;
     }
     /**
      * Get DocuRefHeader value
-     * @return \rase\StructType\AxdEntity_DocuRefHeader[]|null
+     * @return \RaseConnector\StructType\AxdEntity_DocuRefHeader[]|null
      */
     public function getDocuRefHeader()
     {
@@ -6589,15 +6589,15 @@ class AxdEntity_SalesTable extends AbstractStructBase
     /**
      * Set DocuRefHeader value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\AxdEntity_DocuRefHeader[] $docuRefHeader
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @param \RaseConnector\StructType\AxdEntity_DocuRefHeader[] $docuRefHeader
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setDocuRefHeader(array $docuRefHeader = array())
     {
         foreach ($docuRefHeader as $axdEntity_SalesTableDocuRefHeaderItem) {
             // validation for constraint: itemType
-            if (!$axdEntity_SalesTableDocuRefHeaderItem instanceof \rase\StructType\AxdEntity_DocuRefHeader) {
-                throw new \InvalidArgumentException(sprintf('The DocuRefHeader property can only contain items of \rase\StructType\AxdEntity_DocuRefHeader, "%s" given', is_object($axdEntity_SalesTableDocuRefHeaderItem) ? get_class($axdEntity_SalesTableDocuRefHeaderItem) : gettype($axdEntity_SalesTableDocuRefHeaderItem)), __LINE__);
+            if (!$axdEntity_SalesTableDocuRefHeaderItem instanceof \RaseConnector\StructType\AxdEntity_DocuRefHeader) {
+                throw new \InvalidArgumentException(sprintf('The DocuRefHeader property can only contain items of \RaseConnector\StructType\AxdEntity_DocuRefHeader, "%s" given', is_object($axdEntity_SalesTableDocuRefHeaderItem) ? get_class($axdEntity_SalesTableDocuRefHeaderItem) : gettype($axdEntity_SalesTableDocuRefHeaderItem)), __LINE__);
             }
         }
         $this->DocuRefHeader = $docuRefHeader;
@@ -6606,21 +6606,21 @@ class AxdEntity_SalesTable extends AbstractStructBase
     /**
      * Add item to DocuRefHeader value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\AxdEntity_DocuRefHeader $item
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @param \RaseConnector\StructType\AxdEntity_DocuRefHeader $item
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
-    public function addToDocuRefHeader(\rase\StructType\AxdEntity_DocuRefHeader $item)
+    public function addToDocuRefHeader(\RaseConnector\StructType\AxdEntity_DocuRefHeader $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \rase\StructType\AxdEntity_DocuRefHeader) {
-            throw new \InvalidArgumentException(sprintf('The DocuRefHeader property can only contain items of \rase\StructType\AxdEntity_DocuRefHeader, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \RaseConnector\StructType\AxdEntity_DocuRefHeader) {
+            throw new \InvalidArgumentException(sprintf('The DocuRefHeader property can only contain items of \RaseConnector\StructType\AxdEntity_DocuRefHeader, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->DocuRefHeader[] = $item;
         return $this;
     }
     /**
      * Get MarkupTransHeader value
-     * @return \rase\StructType\AxdEntity_MarkupTransHeader[]|null
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransHeader[]|null
      */
     public function getMarkupTransHeader()
     {
@@ -6629,15 +6629,15 @@ class AxdEntity_SalesTable extends AbstractStructBase
     /**
      * Set MarkupTransHeader value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\AxdEntity_MarkupTransHeader[] $markupTransHeader
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @param \RaseConnector\StructType\AxdEntity_MarkupTransHeader[] $markupTransHeader
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setMarkupTransHeader(array $markupTransHeader = array())
     {
         foreach ($markupTransHeader as $axdEntity_SalesTableMarkupTransHeaderItem) {
             // validation for constraint: itemType
-            if (!$axdEntity_SalesTableMarkupTransHeaderItem instanceof \rase\StructType\AxdEntity_MarkupTransHeader) {
-                throw new \InvalidArgumentException(sprintf('The MarkupTransHeader property can only contain items of \rase\StructType\AxdEntity_MarkupTransHeader, "%s" given', is_object($axdEntity_SalesTableMarkupTransHeaderItem) ? get_class($axdEntity_SalesTableMarkupTransHeaderItem) : gettype($axdEntity_SalesTableMarkupTransHeaderItem)), __LINE__);
+            if (!$axdEntity_SalesTableMarkupTransHeaderItem instanceof \RaseConnector\StructType\AxdEntity_MarkupTransHeader) {
+                throw new \InvalidArgumentException(sprintf('The MarkupTransHeader property can only contain items of \RaseConnector\StructType\AxdEntity_MarkupTransHeader, "%s" given', is_object($axdEntity_SalesTableMarkupTransHeaderItem) ? get_class($axdEntity_SalesTableMarkupTransHeaderItem) : gettype($axdEntity_SalesTableMarkupTransHeaderItem)), __LINE__);
             }
         }
         $this->MarkupTransHeader = $markupTransHeader;
@@ -6646,14 +6646,14 @@ class AxdEntity_SalesTable extends AbstractStructBase
     /**
      * Add item to MarkupTransHeader value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\AxdEntity_MarkupTransHeader $item
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @param \RaseConnector\StructType\AxdEntity_MarkupTransHeader $item
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
-    public function addToMarkupTransHeader(\rase\StructType\AxdEntity_MarkupTransHeader $item)
+    public function addToMarkupTransHeader(\RaseConnector\StructType\AxdEntity_MarkupTransHeader $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \rase\StructType\AxdEntity_MarkupTransHeader) {
-            throw new \InvalidArgumentException(sprintf('The MarkupTransHeader property can only contain items of \rase\StructType\AxdEntity_MarkupTransHeader, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \RaseConnector\StructType\AxdEntity_MarkupTransHeader) {
+            throw new \InvalidArgumentException(sprintf('The MarkupTransHeader property can only contain items of \RaseConnector\StructType\AxdEntity_MarkupTransHeader, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->MarkupTransHeader[] = $item;
         return $this;
@@ -6668,17 +6668,17 @@ class AxdEntity_SalesTable extends AbstractStructBase
     }
     /**
      * Set action value
-     * @uses \rase\EnumType\AxdEnum_AxdEntityAction::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_AxdEntityAction::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_AxdEntityAction::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_AxdEntityAction::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $action
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public function setAction($action = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_AxdEntityAction::valueIsValid($action)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $action, implode(', ', \rase\EnumType\AxdEnum_AxdEntityAction::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_AxdEntityAction::valueIsValid($action)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $action, implode(', ', \RaseConnector\EnumType\AxdEnum_AxdEntityAction::getValidValues())), __LINE__);
         }
         $this->action = $action;
         return $this;
@@ -6689,7 +6689,7 @@ class AxdEntity_SalesTable extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\AxdEntity_SalesTable
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable
      */
     public static function __set_state(array $array)
     {

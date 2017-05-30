@@ -26,7 +26,7 @@ class AifFault extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - nillable: true
-     * @var \rase\ArrayType\ArrayOfFaultMessageList
+     * @var \RaseConnector\ArrayType\ArrayOfFaultMessageList
      */
     public $FaultMessageListArray;
     /**
@@ -34,9 +34,9 @@ class AifFault extends AbstractStructBase
      * @uses AifFault::setCustomDetailXml()
      * @uses AifFault::setFaultMessageListArray()
      * @param string $customDetailXml
-     * @param \rase\ArrayType\ArrayOfFaultMessageList $faultMessageListArray
+     * @param \RaseConnector\ArrayType\ArrayOfFaultMessageList $faultMessageListArray
      */
-    public function __construct($customDetailXml = null, \rase\ArrayType\ArrayOfFaultMessageList $faultMessageListArray = null)
+    public function __construct($customDetailXml = null, \RaseConnector\ArrayType\ArrayOfFaultMessageList $faultMessageListArray = null)
     {
         $this
             ->setCustomDetailXml($customDetailXml)
@@ -58,7 +58,7 @@ class AifFault extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $customDetailXml
-     * @return \rase\StructType\AifFault
+     * @return \RaseConnector\StructType\AifFault
      */
     public function setCustomDetailXml($customDetailXml = null)
     {
@@ -78,7 +78,7 @@ class AifFault extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \rase\ArrayType\ArrayOfFaultMessageList|null
+     * @return \RaseConnector\ArrayType\ArrayOfFaultMessageList|null
      */
     public function getFaultMessageListArray()
     {
@@ -88,10 +88,10 @@ class AifFault extends AbstractStructBase
      * Set FaultMessageListArray value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @param \rase\ArrayType\ArrayOfFaultMessageList $faultMessageListArray
-     * @return \rase\StructType\AifFault
+     * @param \RaseConnector\ArrayType\ArrayOfFaultMessageList $faultMessageListArray
+     * @return \RaseConnector\StructType\AifFault
      */
-    public function setFaultMessageListArray(\rase\ArrayType\ArrayOfFaultMessageList $faultMessageListArray = null)
+    public function setFaultMessageListArray(\RaseConnector\ArrayType\ArrayOfFaultMessageList $faultMessageListArray = null)
     {
         if (is_null($faultMessageListArray) || (is_array($faultMessageListArray) && empty($faultMessageListArray))) {
             unset($this->FaultMessageListArray);
@@ -106,7 +106,7 @@ class AifFault extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\AifFault
+     * @return \RaseConnector\StructType\AifFault
      */
     public static function __set_state(array $array)
     {

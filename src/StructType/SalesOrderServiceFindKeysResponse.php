@@ -15,22 +15,22 @@ class SalesOrderServiceFindKeysResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - ref: q2:EntityKeyList
-     * @var \rase\StructType\EntityKeyList
+     * @var \RaseConnector\StructType\EntityKeyList
      */
     public $EntityKeyList;
     /**
      * Constructor method for SalesOrderServiceFindKeysResponse
      * @uses SalesOrderServiceFindKeysResponse::setEntityKeyList()
-     * @param \rase\StructType\EntityKeyList $entityKeyList
+     * @param \RaseConnector\StructType\EntityKeyList $entityKeyList
      */
-    public function __construct(\rase\StructType\EntityKeyList $entityKeyList = null)
+    public function __construct(\RaseConnector\StructType\EntityKeyList $entityKeyList = null)
     {
         $this
             ->setEntityKeyList($entityKeyList);
     }
     /**
      * Get EntityKeyList value
-     * @return \rase\StructType\EntityKeyList|null
+     * @return \RaseConnector\StructType\EntityKeyList|null
      */
     public function getEntityKeyList()
     {
@@ -38,10 +38,10 @@ class SalesOrderServiceFindKeysResponse extends AbstractStructBase
     }
     /**
      * Set EntityKeyList value
-     * @param \rase\StructType\EntityKeyList $entityKeyList
-     * @return \rase\StructType\SalesOrderServiceFindKeysResponse
+     * @param \RaseConnector\StructType\EntityKeyList $entityKeyList
+     * @return \RaseConnector\StructType\SalesOrderServiceFindKeysResponse
      */
-    public function setEntityKeyList(\rase\StructType\EntityKeyList $entityKeyList = null)
+    public function setEntityKeyList(\RaseConnector\StructType\EntityKeyList $entityKeyList = null)
     {
         $this->EntityKeyList = $entityKeyList;
         return $this;
@@ -52,7 +52,7 @@ class SalesOrderServiceFindKeysResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\SalesOrderServiceFindKeysResponse
+     * @return \RaseConnector\StructType\SalesOrderServiceFindKeysResponse
      */
     public static function __set_state(array $array)
     {

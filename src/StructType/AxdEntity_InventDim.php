@@ -215,7 +215,7 @@ class AxdEntity_InventDim extends AbstractStructBase
     /**
      * Set class value
      * @param string $class
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setClass($class = null)
     {
@@ -242,7 +242,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $configId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setConfigId($configId = null)
     {
@@ -281,7 +281,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $inventBatchId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setInventBatchId($inventBatchId = null)
     {
@@ -320,7 +320,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $inventColorId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setInventColorId($inventColorId = null)
     {
@@ -359,7 +359,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $inventDimId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setInventDimId($inventDimId = null)
     {
@@ -398,7 +398,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $inventLocationId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setInventLocationId($inventLocationId = null)
     {
@@ -437,7 +437,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $inventSerialId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setInventSerialId($inventSerialId = null)
     {
@@ -476,7 +476,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $inventSiteId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setInventSiteId($inventSiteId = null)
     {
@@ -515,7 +515,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $inventSizeId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setInventSizeId($inventSizeId = null)
     {
@@ -554,7 +554,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $recId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setRecId($recId = null)
     {
@@ -585,7 +585,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $recVersion
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setRecVersion($recVersion = null)
     {
@@ -616,7 +616,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $wMSLocationId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setWMSLocationId($wMSLocationId = null)
     {
@@ -655,7 +655,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $wMSPalletId
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setWMSPalletId($wMSPalletId = null)
     {
@@ -688,17 +688,17 @@ class AxdEntity_InventDim extends AbstractStructBase
     }
     /**
      * Set action value
-     * @uses \rase\EnumType\AxdEnum_AxdEntityAction::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_AxdEntityAction::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_AxdEntityAction::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_AxdEntityAction::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $action
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public function setAction($action = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_AxdEntityAction::valueIsValid($action)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $action, implode(', ', \rase\EnumType\AxdEnum_AxdEntityAction::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_AxdEntityAction::valueIsValid($action)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $action, implode(', ', \RaseConnector\EnumType\AxdEnum_AxdEntityAction::getValidValues())), __LINE__);
         }
         $this->action = $action;
         return $this;
@@ -709,7 +709,7 @@ class AxdEntity_InventDim extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\AxdEntity_InventDim
+     * @return \RaseConnector\StructType\AxdEntity_InventDim
      */
     public static function __set_state(array $array)
     {

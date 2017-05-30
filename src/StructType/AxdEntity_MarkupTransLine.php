@@ -430,7 +430,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
     /**
      * Set MarkupCode value
      * @param string $markupCode
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setMarkupCode($markupCode = null)
     {
@@ -452,7 +452,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
     /**
      * Set class value
      * @param string $class
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setClass($class = null)
     {
@@ -479,7 +479,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $calculatedAmount
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setCalculatedAmount($calculatedAmount = null)
     {
@@ -510,7 +510,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $chargeIndicatorEinvoice
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setChargeIndicatorEinvoice($chargeIndicatorEinvoice = null)
     {
@@ -541,7 +541,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $currencyCode
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setCurrencyCode($currencyCode = null)
     {
@@ -571,17 +571,17 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * Set DocumentStatus value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_DocumentStatus::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_DocumentStatus::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_DocumentStatus::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_DocumentStatus::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $documentStatus
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setDocumentStatus($documentStatus = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_DocumentStatus::valueIsValid($documentStatus)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $documentStatus, implode(', ', \rase\EnumType\AxdEnum_DocumentStatus::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_DocumentStatus::valueIsValid($documentStatus)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $documentStatus, implode(', ', \RaseConnector\EnumType\AxdEnum_DocumentStatus::getValidValues())), __LINE__);
         }
         if (is_null($documentStatus) || (is_array($documentStatus) && empty($documentStatus))) {
             unset($this->DocumentStatus);
@@ -606,7 +606,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $interCompanyInvoiceId
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setInterCompanyInvoiceId($interCompanyInvoiceId = null)
     {
@@ -644,17 +644,17 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * Set InterCompanyMarkupUseValue value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_InterCompanyMarkupUseValue::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_InterCompanyMarkupUseValue::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_InterCompanyMarkupUseValue::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_InterCompanyMarkupUseValue::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $interCompanyMarkupUseValue
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setInterCompanyMarkupUseValue($interCompanyMarkupUseValue = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_InterCompanyMarkupUseValue::valueIsValid($interCompanyMarkupUseValue)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $interCompanyMarkupUseValue, implode(', ', \rase\EnumType\AxdExtType_InterCompanyMarkupUseValue::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_InterCompanyMarkupUseValue::valueIsValid($interCompanyMarkupUseValue)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $interCompanyMarkupUseValue, implode(', ', \RaseConnector\EnumType\AxdExtType_InterCompanyMarkupUseValue::getValidValues())), __LINE__);
         }
         if (is_null($interCompanyMarkupUseValue) || (is_array($interCompanyMarkupUseValue) && empty($interCompanyMarkupUseValue))) {
             unset($this->InterCompanyMarkupUseValue);
@@ -679,7 +679,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $interCompanyMarkupValue
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setInterCompanyMarkupValue($interCompanyMarkupValue = null)
     {
@@ -710,7 +710,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $interCompanyRefRecId
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setInterCompanyRefRecId($interCompanyRefRecId = null)
     {
@@ -740,17 +740,17 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * Set Keep value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_MarkupKeep::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_MarkupKeep::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_MarkupKeep::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_MarkupKeep::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $keep
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setKeep($keep = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_MarkupKeep::valueIsValid($keep)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $keep, implode(', ', \rase\EnumType\AxdExtType_MarkupKeep::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_MarkupKeep::valueIsValid($keep)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $keep, implode(', ', \RaseConnector\EnumType\AxdExtType_MarkupKeep::getValidValues())), __LINE__);
         }
         if (is_null($keep) || (is_array($keep) && empty($keep))) {
             unset($this->Keep);
@@ -775,7 +775,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $lineNum
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setLineNum($lineNum = null)
     {
@@ -805,17 +805,17 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * Set MarkupCategory value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_MarkupCategoryType::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_MarkupCategoryType::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_MarkupCategoryType::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_MarkupCategoryType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $markupCategory
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setMarkupCategory($markupCategory = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_MarkupCategoryType::valueIsValid($markupCategory)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $markupCategory, implode(', ', \rase\EnumType\AxdExtType_MarkupCategoryType::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_MarkupCategoryType::valueIsValid($markupCategory)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $markupCategory, implode(', ', \RaseConnector\EnumType\AxdExtType_MarkupCategoryType::getValidValues())), __LINE__);
         }
         if (is_null($markupCategory) || (is_array($markupCategory) && empty($markupCategory))) {
             unset($this->MarkupCategory);
@@ -839,17 +839,17 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * Set ModuleCategory value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_MarkupModuleCategory::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_MarkupModuleCategory::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_MarkupModuleCategory::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_MarkupModuleCategory::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $moduleCategory
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setModuleCategory($moduleCategory = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_MarkupModuleCategory::valueIsValid($moduleCategory)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $moduleCategory, implode(', ', \rase\EnumType\AxdExtType_MarkupModuleCategory::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_MarkupModuleCategory::valueIsValid($moduleCategory)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $moduleCategory, implode(', ', \RaseConnector\EnumType\AxdExtType_MarkupModuleCategory::getValidValues())), __LINE__);
         }
         if (is_null($moduleCategory) || (is_array($moduleCategory) && empty($moduleCategory))) {
             unset($this->ModuleCategory);
@@ -873,17 +873,17 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * Set ModuleType value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_MarkupModule::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_MarkupModule::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_MarkupModule::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_MarkupModule::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $moduleType
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setModuleType($moduleType = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_MarkupModule::valueIsValid($moduleType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $moduleType, implode(', ', \rase\EnumType\AxdExtType_MarkupModule::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_MarkupModule::valueIsValid($moduleType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $moduleType, implode(', ', \RaseConnector\EnumType\AxdExtType_MarkupModule::getValidValues())), __LINE__);
         }
         if (is_null($moduleType) || (is_array($moduleType) && empty($moduleType))) {
             unset($this->ModuleType);
@@ -908,7 +908,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $origRecId
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setOrigRecId($origRecId = null)
     {
@@ -939,7 +939,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $origTableId
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setOrigTableId($origTableId = null)
     {
@@ -970,7 +970,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $posted
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setPosted($posted = null)
     {
@@ -1001,7 +1001,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $recId
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setRecId($recId = null)
     {
@@ -1032,7 +1032,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $recVersion
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setRecVersion($recVersion = null)
     {
@@ -1063,7 +1063,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $taxAmount
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setTaxAmount($taxAmount = null)
     {
@@ -1093,17 +1093,17 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * Set TaxAutogenerated value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdExtType_TaxAutoGenerated::valueIsValid()
-     * @uses \rase\EnumType\AxdExtType_TaxAutoGenerated::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdExtType_TaxAutoGenerated::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdExtType_TaxAutoGenerated::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $taxAutogenerated
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setTaxAutogenerated($taxAutogenerated = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdExtType_TaxAutoGenerated::valueIsValid($taxAutogenerated)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $taxAutogenerated, implode(', ', \rase\EnumType\AxdExtType_TaxAutoGenerated::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdExtType_TaxAutoGenerated::valueIsValid($taxAutogenerated)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $taxAutogenerated, implode(', ', \RaseConnector\EnumType\AxdExtType_TaxAutoGenerated::getValidValues())), __LINE__);
         }
         if (is_null($taxAutogenerated) || (is_array($taxAutogenerated) && empty($taxAutogenerated))) {
             unset($this->TaxAutogenerated);
@@ -1128,7 +1128,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $taxGroup
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setTaxGroup($taxGroup = null)
     {
@@ -1167,7 +1167,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $taxItemGroup
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setTaxItemGroup($taxItemGroup = null)
     {
@@ -1206,7 +1206,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $taxWriteCode
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setTaxWriteCode($taxWriteCode = null)
     {
@@ -1245,7 +1245,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $transDate
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setTransDate($transDate = null)
     {
@@ -1276,7 +1276,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $transRecId
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setTransRecId($transRecId = null)
     {
@@ -1307,7 +1307,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $transTableId
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setTransTableId($transTableId = null)
     {
@@ -1338,7 +1338,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $txt
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setTxt($txt = null)
     {
@@ -1377,7 +1377,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $value
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setValue($value = null)
     {
@@ -1408,7 +1408,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $voucher
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setVoucher($voucher = null)
     {
@@ -1441,17 +1441,17 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
     }
     /**
      * Set action value
-     * @uses \rase\EnumType\AxdEnum_AxdEntityAction::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_AxdEntityAction::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_AxdEntityAction::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_AxdEntityAction::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $action
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public function setAction($action = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_AxdEntityAction::valueIsValid($action)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $action, implode(', ', \rase\EnumType\AxdEnum_AxdEntityAction::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_AxdEntityAction::valueIsValid($action)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $action, implode(', ', \RaseConnector\EnumType\AxdEnum_AxdEntityAction::getValidValues())), __LINE__);
         }
         $this->action = $action;
         return $this;
@@ -1462,7 +1462,7 @@ class AxdEntity_MarkupTransLine extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\AxdEntity_MarkupTransLine
+     * @return \RaseConnector\StructType\AxdEntity_MarkupTransLine
      */
     public static function __set_state(array $array)
     {

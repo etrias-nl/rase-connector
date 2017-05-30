@@ -16,10 +16,10 @@ class Find extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \rase\StructType\SalesOrderServiceFindKeysRequest $parameters
-     * @return \rase\StructType\SalesOrderServiceFindKeysResponse|bool
+     * @param \RaseConnector\StructType\SalesOrderServiceFindKeysRequest $parameters
+     * @return \RaseConnector\StructType\SalesOrderServiceFindKeysResponse|bool
      */
-    public function findKeys(\rase\StructType\SalesOrderServiceFindKeysRequest $parameters)
+    public function findKeys(\RaseConnector\StructType\SalesOrderServiceFindKeysRequest $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->findKeys($parameters));
@@ -35,10 +35,10 @@ class Find extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \rase\StructType\SalesOrderServiceFindRequest $parameters
-     * @return \rase\StructType\SalesOrderServiceFindResponse|bool
+     * @param \RaseConnector\StructType\SalesOrderServiceFindRequest $parameters
+     * @return \RaseConnector\StructType\SalesOrderServiceFindResponse|bool
      */
-    public function find(\rase\StructType\SalesOrderServiceFindRequest $parameters)
+    public function find(\RaseConnector\StructType\SalesOrderServiceFindRequest $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->find($parameters));
@@ -51,7 +51,7 @@ class Find extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \rase\StructType\SalesOrderServiceFindKeysResponse|\rase\StructType\SalesOrderServiceFindResponse
+     * @return \RaseConnector\StructType\SalesOrderServiceFindKeysResponse|\RaseConnector\StructType\SalesOrderServiceFindResponse
      */
     public function getResult()
     {

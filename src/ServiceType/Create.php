@@ -16,10 +16,10 @@ class Create extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \rase\StructType\SalesOrderServiceCreateRequest $parameters
-     * @return \rase\StructType\SalesOrderServiceCreateResponse|bool
+     * @param \RaseConnector\StructType\SalesOrderServiceCreateRequest $parameters
+     * @return \RaseConnector\StructType\SalesOrderServiceCreateResponse|bool
      */
-    public function create(\rase\StructType\SalesOrderServiceCreateRequest $parameters)
+    public function create(\RaseConnector\StructType\SalesOrderServiceCreateRequest $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->create($parameters));
@@ -32,7 +32,7 @@ class Create extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \rase\StructType\SalesOrderServiceCreateResponse
+     * @return \RaseConnector\StructType\SalesOrderServiceCreateResponse
      */
     public function getResult()
     {

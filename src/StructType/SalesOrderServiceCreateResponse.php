@@ -15,22 +15,22 @@ class SalesOrderServiceCreateResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - ref: q8:EntityKeyList
-     * @var \rase\StructType\EntityKeyList
+     * @var \RaseConnector\StructType\EntityKeyList
      */
     public $EntityKeyList;
     /**
      * Constructor method for SalesOrderServiceCreateResponse
      * @uses SalesOrderServiceCreateResponse::setEntityKeyList()
-     * @param \rase\StructType\EntityKeyList $entityKeyList
+     * @param \RaseConnector\StructType\EntityKeyList $entityKeyList
      */
-    public function __construct(\rase\StructType\EntityKeyList $entityKeyList = null)
+    public function __construct(\RaseConnector\StructType\EntityKeyList $entityKeyList = null)
     {
         $this
             ->setEntityKeyList($entityKeyList);
     }
     /**
      * Get EntityKeyList value
-     * @return \rase\StructType\EntityKeyList|null
+     * @return \RaseConnector\StructType\EntityKeyList|null
      */
     public function getEntityKeyList()
     {
@@ -38,10 +38,10 @@ class SalesOrderServiceCreateResponse extends AbstractStructBase
     }
     /**
      * Set EntityKeyList value
-     * @param \rase\StructType\EntityKeyList $entityKeyList
-     * @return \rase\StructType\SalesOrderServiceCreateResponse
+     * @param \RaseConnector\StructType\EntityKeyList $entityKeyList
+     * @return \RaseConnector\StructType\SalesOrderServiceCreateResponse
      */
-    public function setEntityKeyList(\rase\StructType\EntityKeyList $entityKeyList = null)
+    public function setEntityKeyList(\RaseConnector\StructType\EntityKeyList $entityKeyList = null)
     {
         $this->EntityKeyList = $entityKeyList;
         return $this;
@@ -52,7 +52,7 @@ class SalesOrderServiceCreateResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\SalesOrderServiceCreateResponse
+     * @return \RaseConnector\StructType\SalesOrderServiceCreateResponse
      */
     public static function __set_state(array $array)
     {

@@ -16,10 +16,10 @@ class Delete extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \rase\StructType\SalesOrderServiceDeleteRequest $parameters
+     * @param \RaseConnector\StructType\SalesOrderServiceDeleteRequest $parameters
      * @return void|bool
      */
-    public function delete(\rase\StructType\SalesOrderServiceDeleteRequest $parameters)
+    public function delete(\RaseConnector\StructType\SalesOrderServiceDeleteRequest $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->delete($parameters));

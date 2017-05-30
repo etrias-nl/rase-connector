@@ -19,13 +19,13 @@ class ArrayOfFaultMessage extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \rase\StructType\FaultMessage[]
+     * @var \RaseConnector\StructType\FaultMessage[]
      */
     public $FaultMessage;
     /**
      * Constructor method for ArrayOfFaultMessage
      * @uses ArrayOfFaultMessage::setFaultMessage()
-     * @param \rase\StructType\FaultMessage[] $faultMessage
+     * @param \RaseConnector\StructType\FaultMessage[] $faultMessage
      */
     public function __construct(array $faultMessage = array())
     {
@@ -37,7 +37,7 @@ class ArrayOfFaultMessage extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \rase\StructType\FaultMessage[]|null
+     * @return \RaseConnector\StructType\FaultMessage[]|null
      */
     public function getFaultMessage()
     {
@@ -48,15 +48,15 @@ class ArrayOfFaultMessage extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\FaultMessage[] $faultMessage
-     * @return \rase\ArrayType\ArrayOfFaultMessage
+     * @param \RaseConnector\StructType\FaultMessage[] $faultMessage
+     * @return \RaseConnector\ArrayType\ArrayOfFaultMessage
      */
     public function setFaultMessage(array $faultMessage = array())
     {
         foreach ($faultMessage as $arrayOfFaultMessageFaultMessageItem) {
             // validation for constraint: itemType
-            if (!$arrayOfFaultMessageFaultMessageItem instanceof \rase\StructType\FaultMessage) {
-                throw new \InvalidArgumentException(sprintf('The FaultMessage property can only contain items of \rase\StructType\FaultMessage, "%s" given', is_object($arrayOfFaultMessageFaultMessageItem) ? get_class($arrayOfFaultMessageFaultMessageItem) : gettype($arrayOfFaultMessageFaultMessageItem)), __LINE__);
+            if (!$arrayOfFaultMessageFaultMessageItem instanceof \RaseConnector\StructType\FaultMessage) {
+                throw new \InvalidArgumentException(sprintf('The FaultMessage property can only contain items of \RaseConnector\StructType\FaultMessage, "%s" given', is_object($arrayOfFaultMessageFaultMessageItem) ? get_class($arrayOfFaultMessageFaultMessageItem) : gettype($arrayOfFaultMessageFaultMessageItem)), __LINE__);
             }
         }
         if (is_null($faultMessage) || (is_array($faultMessage) && empty($faultMessage))) {
@@ -69,14 +69,14 @@ class ArrayOfFaultMessage extends AbstractStructArrayBase
     /**
      * Add item to FaultMessage value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\FaultMessage $item
-     * @return \rase\ArrayType\ArrayOfFaultMessage
+     * @param \RaseConnector\StructType\FaultMessage $item
+     * @return \RaseConnector\ArrayType\ArrayOfFaultMessage
      */
-    public function addToFaultMessage(\rase\StructType\FaultMessage $item)
+    public function addToFaultMessage(\RaseConnector\StructType\FaultMessage $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \rase\StructType\FaultMessage) {
-            throw new \InvalidArgumentException(sprintf('The FaultMessage property can only contain items of \rase\StructType\FaultMessage, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \RaseConnector\StructType\FaultMessage) {
+            throw new \InvalidArgumentException(sprintf('The FaultMessage property can only contain items of \RaseConnector\StructType\FaultMessage, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->FaultMessage[] = $item;
         return $this;
@@ -84,7 +84,7 @@ class ArrayOfFaultMessage extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \rase\StructType\FaultMessage|null
+     * @return \RaseConnector\StructType\FaultMessage|null
      */
     public function current()
     {
@@ -94,7 +94,7 @@ class ArrayOfFaultMessage extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \rase\StructType\FaultMessage|null
+     * @return \RaseConnector\StructType\FaultMessage|null
      */
     public function item($index)
     {
@@ -103,7 +103,7 @@ class ArrayOfFaultMessage extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \rase\StructType\FaultMessage|null
+     * @return \RaseConnector\StructType\FaultMessage|null
      */
     public function first()
     {
@@ -112,7 +112,7 @@ class ArrayOfFaultMessage extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \rase\StructType\FaultMessage|null
+     * @return \RaseConnector\StructType\FaultMessage|null
      */
     public function last()
     {
@@ -122,7 +122,7 @@ class ArrayOfFaultMessage extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \rase\StructType\FaultMessage|null
+     * @return \RaseConnector\StructType\FaultMessage|null
      */
     public function offsetGet($offset)
     {
@@ -143,7 +143,7 @@ class ArrayOfFaultMessage extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\ArrayType\ArrayOfFaultMessage
+     * @return \RaseConnector\ArrayType\ArrayOfFaultMessage
      */
     public static function __set_state(array $array)
     {

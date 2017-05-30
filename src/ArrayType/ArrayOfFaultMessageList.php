@@ -19,13 +19,13 @@ class ArrayOfFaultMessageList extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \rase\StructType\FaultMessageList[]
+     * @var \RaseConnector\StructType\FaultMessageList[]
      */
     public $FaultMessageList;
     /**
      * Constructor method for ArrayOfFaultMessageList
      * @uses ArrayOfFaultMessageList::setFaultMessageList()
-     * @param \rase\StructType\FaultMessageList[] $faultMessageList
+     * @param \RaseConnector\StructType\FaultMessageList[] $faultMessageList
      */
     public function __construct(array $faultMessageList = array())
     {
@@ -37,7 +37,7 @@ class ArrayOfFaultMessageList extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \rase\StructType\FaultMessageList[]|null
+     * @return \RaseConnector\StructType\FaultMessageList[]|null
      */
     public function getFaultMessageList()
     {
@@ -48,15 +48,15 @@ class ArrayOfFaultMessageList extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\FaultMessageList[] $faultMessageList
-     * @return \rase\ArrayType\ArrayOfFaultMessageList
+     * @param \RaseConnector\StructType\FaultMessageList[] $faultMessageList
+     * @return \RaseConnector\ArrayType\ArrayOfFaultMessageList
      */
     public function setFaultMessageList(array $faultMessageList = array())
     {
         foreach ($faultMessageList as $arrayOfFaultMessageListFaultMessageListItem) {
             // validation for constraint: itemType
-            if (!$arrayOfFaultMessageListFaultMessageListItem instanceof \rase\StructType\FaultMessageList) {
-                throw new \InvalidArgumentException(sprintf('The FaultMessageList property can only contain items of \rase\StructType\FaultMessageList, "%s" given', is_object($arrayOfFaultMessageListFaultMessageListItem) ? get_class($arrayOfFaultMessageListFaultMessageListItem) : gettype($arrayOfFaultMessageListFaultMessageListItem)), __LINE__);
+            if (!$arrayOfFaultMessageListFaultMessageListItem instanceof \RaseConnector\StructType\FaultMessageList) {
+                throw new \InvalidArgumentException(sprintf('The FaultMessageList property can only contain items of \RaseConnector\StructType\FaultMessageList, "%s" given', is_object($arrayOfFaultMessageListFaultMessageListItem) ? get_class($arrayOfFaultMessageListFaultMessageListItem) : gettype($arrayOfFaultMessageListFaultMessageListItem)), __LINE__);
             }
         }
         if (is_null($faultMessageList) || (is_array($faultMessageList) && empty($faultMessageList))) {
@@ -69,14 +69,14 @@ class ArrayOfFaultMessageList extends AbstractStructArrayBase
     /**
      * Add item to FaultMessageList value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\FaultMessageList $item
-     * @return \rase\ArrayType\ArrayOfFaultMessageList
+     * @param \RaseConnector\StructType\FaultMessageList $item
+     * @return \RaseConnector\ArrayType\ArrayOfFaultMessageList
      */
-    public function addToFaultMessageList(\rase\StructType\FaultMessageList $item)
+    public function addToFaultMessageList(\RaseConnector\StructType\FaultMessageList $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \rase\StructType\FaultMessageList) {
-            throw new \InvalidArgumentException(sprintf('The FaultMessageList property can only contain items of \rase\StructType\FaultMessageList, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \RaseConnector\StructType\FaultMessageList) {
+            throw new \InvalidArgumentException(sprintf('The FaultMessageList property can only contain items of \RaseConnector\StructType\FaultMessageList, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->FaultMessageList[] = $item;
         return $this;
@@ -84,7 +84,7 @@ class ArrayOfFaultMessageList extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \rase\StructType\FaultMessageList|null
+     * @return \RaseConnector\StructType\FaultMessageList|null
      */
     public function current()
     {
@@ -94,7 +94,7 @@ class ArrayOfFaultMessageList extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \rase\StructType\FaultMessageList|null
+     * @return \RaseConnector\StructType\FaultMessageList|null
      */
     public function item($index)
     {
@@ -103,7 +103,7 @@ class ArrayOfFaultMessageList extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \rase\StructType\FaultMessageList|null
+     * @return \RaseConnector\StructType\FaultMessageList|null
      */
     public function first()
     {
@@ -112,7 +112,7 @@ class ArrayOfFaultMessageList extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \rase\StructType\FaultMessageList|null
+     * @return \RaseConnector\StructType\FaultMessageList|null
      */
     public function last()
     {
@@ -122,7 +122,7 @@ class ArrayOfFaultMessageList extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \rase\StructType\FaultMessageList|null
+     * @return \RaseConnector\StructType\FaultMessageList|null
      */
     public function offsetGet($offset)
     {
@@ -143,7 +143,7 @@ class ArrayOfFaultMessageList extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\ArrayType\ArrayOfFaultMessageList
+     * @return \RaseConnector\ArrayType\ArrayOfFaultMessageList
      */
     public static function __set_state(array $array)
     {

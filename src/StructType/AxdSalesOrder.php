@@ -36,7 +36,7 @@ class AxdSalesOrder extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \rase\StructType\AxdEntity_SalesTable[]
+     * @var \RaseConnector\StructType\AxdEntity_SalesTable[]
      */
     public $SalesTable;
     /**
@@ -46,7 +46,7 @@ class AxdSalesOrder extends AbstractStructBase
      * @uses AxdSalesOrder::setSalesTable()
      * @param string $docPurpose
      * @param string $senderId
-     * @param \rase\StructType\AxdEntity_SalesTable[] $salesTable
+     * @param \RaseConnector\StructType\AxdEntity_SalesTable[] $salesTable
      */
     public function __construct($docPurpose = null, $senderId = null, array $salesTable = array())
     {
@@ -70,17 +70,17 @@ class AxdSalesOrder extends AbstractStructBase
      * Set DocPurpose value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \rase\EnumType\AxdEnum_XMLDocPurpose::valueIsValid()
-     * @uses \rase\EnumType\AxdEnum_XMLDocPurpose::getValidValues()
+     * @uses \RaseConnector\EnumType\AxdEnum_XMLDocPurpose::valueIsValid()
+     * @uses \RaseConnector\EnumType\AxdEnum_XMLDocPurpose::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $docPurpose
-     * @return \rase\StructType\AxdSalesOrder
+     * @return \RaseConnector\StructType\AxdSalesOrder
      */
     public function setDocPurpose($docPurpose = null)
     {
         // validation for constraint: enumeration
-        if (!\rase\EnumType\AxdEnum_XMLDocPurpose::valueIsValid($docPurpose)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $docPurpose, implode(', ', \rase\EnumType\AxdEnum_XMLDocPurpose::getValidValues())), __LINE__);
+        if (!\RaseConnector\EnumType\AxdEnum_XMLDocPurpose::valueIsValid($docPurpose)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $docPurpose, implode(', ', \RaseConnector\EnumType\AxdEnum_XMLDocPurpose::getValidValues())), __LINE__);
         }
         if (is_null($docPurpose) || (is_array($docPurpose) && empty($docPurpose))) {
             unset($this->DocPurpose);
@@ -105,7 +105,7 @@ class AxdSalesOrder extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $senderId
-     * @return \rase\StructType\AxdSalesOrder
+     * @return \RaseConnector\StructType\AxdSalesOrder
      */
     public function setSenderId($senderId = null)
     {
@@ -130,7 +130,7 @@ class AxdSalesOrder extends AbstractStructBase
     }
     /**
      * Get SalesTable value
-     * @return \rase\StructType\AxdEntity_SalesTable[]|null
+     * @return \RaseConnector\StructType\AxdEntity_SalesTable[]|null
      */
     public function getSalesTable()
     {
@@ -139,15 +139,15 @@ class AxdSalesOrder extends AbstractStructBase
     /**
      * Set SalesTable value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\AxdEntity_SalesTable[] $salesTable
-     * @return \rase\StructType\AxdSalesOrder
+     * @param \RaseConnector\StructType\AxdEntity_SalesTable[] $salesTable
+     * @return \RaseConnector\StructType\AxdSalesOrder
      */
     public function setSalesTable(array $salesTable = array())
     {
         foreach ($salesTable as $axdSalesOrderSalesTableItem) {
             // validation for constraint: itemType
-            if (!$axdSalesOrderSalesTableItem instanceof \rase\StructType\AxdEntity_SalesTable) {
-                throw new \InvalidArgumentException(sprintf('The SalesTable property can only contain items of \rase\StructType\AxdEntity_SalesTable, "%s" given', is_object($axdSalesOrderSalesTableItem) ? get_class($axdSalesOrderSalesTableItem) : gettype($axdSalesOrderSalesTableItem)), __LINE__);
+            if (!$axdSalesOrderSalesTableItem instanceof \RaseConnector\StructType\AxdEntity_SalesTable) {
+                throw new \InvalidArgumentException(sprintf('The SalesTable property can only contain items of \RaseConnector\StructType\AxdEntity_SalesTable, "%s" given', is_object($axdSalesOrderSalesTableItem) ? get_class($axdSalesOrderSalesTableItem) : gettype($axdSalesOrderSalesTableItem)), __LINE__);
             }
         }
         $this->SalesTable = $salesTable;
@@ -156,14 +156,14 @@ class AxdSalesOrder extends AbstractStructBase
     /**
      * Add item to SalesTable value
      * @throws \InvalidArgumentException
-     * @param \rase\StructType\AxdEntity_SalesTable $item
-     * @return \rase\StructType\AxdSalesOrder
+     * @param \RaseConnector\StructType\AxdEntity_SalesTable $item
+     * @return \RaseConnector\StructType\AxdSalesOrder
      */
-    public function addToSalesTable(\rase\StructType\AxdEntity_SalesTable $item)
+    public function addToSalesTable(\RaseConnector\StructType\AxdEntity_SalesTable $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \rase\StructType\AxdEntity_SalesTable) {
-            throw new \InvalidArgumentException(sprintf('The SalesTable property can only contain items of \rase\StructType\AxdEntity_SalesTable, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \RaseConnector\StructType\AxdEntity_SalesTable) {
+            throw new \InvalidArgumentException(sprintf('The SalesTable property can only contain items of \RaseConnector\StructType\AxdEntity_SalesTable, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->SalesTable[] = $item;
         return $this;
@@ -174,7 +174,7 @@ class AxdSalesOrder extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\AxdSalesOrder
+     * @return \RaseConnector\StructType\AxdSalesOrder
      */
     public static function __set_state(array $array)
     {

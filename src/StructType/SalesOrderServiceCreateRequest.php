@@ -15,22 +15,22 @@ class SalesOrderServiceCreateRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - ref: q7:SalesOrder
-     * @var \rase\StructType\AxdSalesOrder
+     * @var \RaseConnector\StructType\AxdSalesOrder
      */
     public $SalesOrder;
     /**
      * Constructor method for SalesOrderServiceCreateRequest
      * @uses SalesOrderServiceCreateRequest::setSalesOrder()
-     * @param \rase\StructType\AxdSalesOrder $salesOrder
+     * @param \RaseConnector\StructType\AxdSalesOrder $salesOrder
      */
-    public function __construct(\rase\StructType\AxdSalesOrder $salesOrder = null)
+    public function __construct(\RaseConnector\StructType\AxdSalesOrder $salesOrder = null)
     {
         $this
             ->setSalesOrder($salesOrder);
     }
     /**
      * Get SalesOrder value
-     * @return \rase\StructType\AxdSalesOrder|null
+     * @return \RaseConnector\StructType\AxdSalesOrder|null
      */
     public function getSalesOrder()
     {
@@ -38,10 +38,10 @@ class SalesOrderServiceCreateRequest extends AbstractStructBase
     }
     /**
      * Set SalesOrder value
-     * @param \rase\StructType\AxdSalesOrder $salesOrder
-     * @return \rase\StructType\SalesOrderServiceCreateRequest
+     * @param \RaseConnector\StructType\AxdSalesOrder $salesOrder
+     * @return \RaseConnector\StructType\SalesOrderServiceCreateRequest
      */
-    public function setSalesOrder(\rase\StructType\AxdSalesOrder $salesOrder = null)
+    public function setSalesOrder(\RaseConnector\StructType\AxdSalesOrder $salesOrder = null)
     {
         $this->SalesOrder = $salesOrder;
         return $this;
@@ -52,7 +52,7 @@ class SalesOrderServiceCreateRequest extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \rase\StructType\SalesOrderServiceCreateRequest
+     * @return \RaseConnector\StructType\SalesOrderServiceCreateRequest
      */
     public static function __set_state(array $array)
     {
