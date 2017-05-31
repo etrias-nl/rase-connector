@@ -2,7 +2,7 @@
 
 namespace RaseConnector\ServiceType;
 
-use \jamesiarmes\PhpNtlm\SoapClient;
+use \RaseConnector\SoapClient;
 
 /**
  * This class stands for Update ServiceType
