@@ -2,20 +2,20 @@
 
 namespace RaseConnector\ServiceType;
 
-use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
+use \jamesiarmes\PhpNtlm\SoapClient;
 
 /**
  * This class stands for Read ServiceType
  * @subpackage Services
  */
-class Read extends AbstractSoapClientBase
+class Read extends SoapClient
 {
     /**
      * Method to call the operation originally named read
-     * @uses AbstractSoapClientBase::getSoapClient()
-     * @uses AbstractSoapClientBase::setResult()
-     * @uses AbstractSoapClientBase::getResult()
-     * @uses AbstractSoapClientBase::saveLastError()
+     * @uses SoapClient::getSoapClient()
+     * @uses SoapClient::setResult()
+     * @uses SoapClient::getResult()
+     * @uses SoapClient::saveLastError()
      * @param \RaseConnector\StructType\SalesOrderServiceReadRequest $parameters
      * @return \RaseConnector\StructType\SalesOrderServiceReadResponse|bool
      */
@@ -31,7 +31,7 @@ class Read extends AbstractSoapClientBase
     }
     /**
      * Returns the result
-     * @see AbstractSoapClientBase::getResult()
+     * @see SoapClient::getResult()
      * @return \RaseConnector\StructType\SalesOrderServiceReadResponse
      */
     public function getResult()

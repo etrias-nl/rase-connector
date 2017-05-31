@@ -56,5 +56,6 @@ php wsdltophp.phar generate:package \
     --urlorpath="http://webservice.ra-group.be:4751/salesorderservice.svc?wsdl" \
     --destination ./ \
     --composer-name="etrias/rase-connector" \
-    --namespace RaseConnector --force
+    --namespace RaseConnector \
+    --force
 ```

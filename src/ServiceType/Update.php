@@ -2,20 +2,20 @@
 
 namespace RaseConnector\ServiceType;
 
-use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
+use \jamesiarmes\PhpNtlm\SoapClient;
 
 /**
  * This class stands for Update ServiceType
  * @subpackage Services
  */
-class Update extends AbstractSoapClientBase
+class Update extends SoapClient
 {
     /**
      * Method to call the operation originally named update
-     * @uses AbstractSoapClientBase::getSoapClient()
-     * @uses AbstractSoapClientBase::setResult()
-     * @uses AbstractSoapClientBase::getResult()
-     * @uses AbstractSoapClientBase::saveLastError()
+     * @uses SoapClient::getSoapClient()
+     * @uses SoapClient::setResult()
+     * @uses SoapClient::getResult()
+     * @uses SoapClient::saveLastError()
      * @param \RaseConnector\StructType\SalesOrderServiceUpdateRequest $parameters
      * @return void|bool
      */
@@ -31,7 +31,7 @@ class Update extends AbstractSoapClientBase
     }
     /**
      * Returns the result
-     * @see AbstractSoapClientBase::getResult()
+     * @see SoapClient::getResult()
      * @return void
      */
     public function getResult()

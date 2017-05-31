@@ -2,20 +2,20 @@
 
 namespace RaseConnector\ServiceType;
 
-use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
+use \jamesiarmes\PhpNtlm\SoapClient;
 
 /**
  * This class stands for Find ServiceType
  * @subpackage Services
  */
-class Find extends AbstractSoapClientBase
+class Find extends SoapClient
 {
     /**
      * Method to call the operation originally named findKeys
-     * @uses AbstractSoapClientBase::getSoapClient()
-     * @uses AbstractSoapClientBase::setResult()
-     * @uses AbstractSoapClientBase::getResult()
-     * @uses AbstractSoapClientBase::saveLastError()
+     * @uses SoapClient::getSoapClient()
+     * @uses SoapClient::setResult()
+     * @uses SoapClient::getResult()
+     * @uses SoapClient::saveLastError()
      * @param \RaseConnector\StructType\SalesOrderServiceFindKeysRequest $parameters
      * @return \RaseConnector\StructType\SalesOrderServiceFindKeysResponse|bool
      */
@@ -31,10 +31,10 @@ class Find extends AbstractSoapClientBase
     }
     /**
      * Method to call the operation originally named find
-     * @uses AbstractSoapClientBase::getSoapClient()
-     * @uses AbstractSoapClientBase::setResult()
-     * @uses AbstractSoapClientBase::getResult()
-     * @uses AbstractSoapClientBase::saveLastError()
+     * @uses SoapClient::getSoapClient()
+     * @uses SoapClient::setResult()
+     * @uses SoapClient::getResult()
+     * @uses SoapClient::saveLastError()
      * @param \RaseConnector\StructType\SalesOrderServiceFindRequest $parameters
      * @return \RaseConnector\StructType\SalesOrderServiceFindResponse|bool
      */
@@ -50,7 +50,7 @@ class Find extends AbstractSoapClientBase
     }
     /**
      * Returns the result
-     * @see AbstractSoapClientBase::getResult()
+     * @see SoapClient::getResult()
      * @return \RaseConnector\StructType\SalesOrderServiceFindKeysResponse|\RaseConnector\StructType\SalesOrderServiceFindResponse
      */
     public function getResult()

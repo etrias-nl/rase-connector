@@ -2,20 +2,20 @@
 
 namespace RaseConnector\ServiceType;
 
-use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
+use \jamesiarmes\PhpNtlm\SoapClient;
 
 /**
  * This class stands for Create ServiceType
  * @subpackage Services
  */
-class Create extends AbstractSoapClientBase
+class Create extends SoapClient
 {
     /**
      * Method to call the operation originally named create
-     * @uses AbstractSoapClientBase::getSoapClient()
-     * @uses AbstractSoapClientBase::setResult()
-     * @uses AbstractSoapClientBase::getResult()
-     * @uses AbstractSoapClientBase::saveLastError()
+     * @uses SoapClient::getSoapClient()
+     * @uses SoapClient::setResult()
+     * @uses SoapClient::getResult()
+     * @uses SoapClient::saveLastError()
      * @param \RaseConnector\StructType\SalesOrderServiceCreateRequest $parameters
      * @return \RaseConnector\StructType\SalesOrderServiceCreateResponse|bool
      */
@@ -31,7 +31,7 @@ class Create extends AbstractSoapClientBase
     }
     /**
      * Returns the result
-     * @see AbstractSoapClientBase::getResult()
+     * @see SoapClient::getResult()
      * @return \RaseConnector\StructType\SalesOrderServiceCreateResponse
      */
     public function getResult()
