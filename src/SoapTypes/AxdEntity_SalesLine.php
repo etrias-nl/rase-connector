@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of PHP CS Fixer.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Etrias\RaseConnector\SoapTypes;
 
 class AxdEntity_SalesLine
 {
-
     /**
      * @var AxdExtType_ProjActivityNumber
      */
@@ -546,14 +555,14 @@ class AxdEntity_SalesLine
     protected $action = null;
 
     /**
-     * Constructor
+     * Constructor.
+     *
      * @param string $itemId
-     * @param int $salesQty
+     * @param int    $salesQty
      * @param string $salesUnit
      */
     public function __construct($itemId, $salesQty, $salesUnit
-    )
-    {
+    ) {
         $this->ItemId = $itemId;
         $this->SalesQty = $salesQty;
         $this->SalesUnit = $salesUnit;
@@ -570,11 +579,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ProjActivityNumber $ActivityNumber
+     *
      * @return $this
      */
     public function setActivityNumber($ActivityNumber)
     {
         $this->ActivityNumber = $ActivityNumber;
+
         return $this;
     }
 
@@ -588,11 +599,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_Backorder $BackOrder
+     *
      * @return $this
      */
     public function setBackOrder($BackOrder)
     {
         $this->BackOrder = $BackOrder;
+
         return $this;
     }
 
@@ -606,11 +619,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesBarCode $BarCode
+     *
      * @return $this
      */
     public function setBarCode($BarCode)
     {
         $this->BarCode = $BarCode;
+
         return $this;
     }
 
@@ -624,11 +639,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_BarcodeSetupId $BarCodeType
+     *
      * @return $this
      */
     public function setBarCodeType($BarCodeType)
     {
         $this->BarCodeType = $BarCodeType;
+
         return $this;
     }
 
@@ -642,11 +659,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesBlanketRefTransId $BlanketRefTransId
+     *
      * @return $this
      */
     public function setBlanketRefTransId($BlanketRefTransId)
     {
         $this->BlanketRefTransId = $BlanketRefTransId;
+
         return $this;
     }
 
@@ -660,11 +679,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_LineStopped $Blocked
+     *
      * @return $this
      */
     public function setBlocked($Blocked)
     {
         $this->Blocked = $Blocked;
+
         return $this;
     }
 
@@ -678,11 +699,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_RFIDCaseTagging $CaseTagging
+     *
      * @return $this
      */
     public function setCaseTagging($CaseTagging)
     {
         $this->CaseTagging = $CaseTagging;
+
         return $this;
     }
 
@@ -696,11 +719,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_LineComplete $Complete
+     *
      * @return $this
      */
     public function setComplete($Complete)
     {
         $this->Complete = $Complete;
+
         return $this;
     }
 
@@ -714,11 +739,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesShippingDate $ConfirmedDlv
+     *
      * @return $this
      */
     public function setConfirmedDlv($ConfirmedDlv)
     {
         $this->ConfirmedDlv = $ConfirmedDlv;
+
         return $this;
     }
 
@@ -732,11 +759,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ReturnCostPrice $CostPrice
+     *
      * @return $this
      */
     public function setCostPrice($CostPrice)
     {
         $this->CostPrice = $CostPrice;
+
         return $this;
     }
 
@@ -750,11 +779,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdUnion_AxdExtType_CustCurrencyCode_AxdType_ExtCodeValue $CurrencyCode
+     *
      * @return $this
      */
     public function setCurrencyCode($CurrencyCode)
     {
         $this->CurrencyCode = $CurrencyCode;
+
         return $this;
     }
 
@@ -768,11 +799,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdUnion_AxdExtType_CustAccount_AxdType_ExtCodeValue $CustAccount
+     *
      * @return $this
      */
     public function setCustAccount($CustAccount)
     {
         $this->CustAccount = $CustAccount;
+
         return $this;
     }
 
@@ -786,11 +819,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_CustGroupId $CustGroup
+     *
      * @return $this
      */
     public function setCustGroup($CustGroup)
     {
         $this->CustGroup = $CustGroup;
+
         return $this;
     }
 
@@ -804,11 +839,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_CustLineNum $CustomerLineNum
+     *
      * @return $this
      */
     public function setCustomerLineNum($CustomerLineNum)
     {
         $this->CustomerLineNum = $CustomerLineNum;
+
         return $this;
     }
 
@@ -822,11 +859,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_CustRefLine $CustomerRef
+     *
      * @return $this
      */
     public function setCustomerRef($CustomerRef)
     {
         $this->CustomerRef = $CustomerRef;
+
         return $this;
     }
 
@@ -840,11 +879,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesQty $DeliveredIntotal
+     *
      * @return $this
      */
     public function setDeliveredIntotal($DeliveredIntotal)
     {
         $this->DeliveredIntotal = $DeliveredIntotal;
+
         return $this;
     }
 
@@ -858,11 +899,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_Addressing $DeliveryAddress
+     *
      * @return $this
      */
     public function setDeliveryAddress($DeliveryAddress)
     {
         $this->DeliveryAddress = $DeliveryAddress;
+
         return $this;
     }
 
@@ -876,11 +919,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_AddressCity $DeliveryCity
+     *
      * @return $this
      */
     public function setDeliveryCity($DeliveryCity)
     {
         $this->DeliveryCity = $DeliveryCity;
+
         return $this;
     }
 
@@ -895,11 +940,13 @@ class AxdEntity_SalesLine
     /**
      * @param AxdUnion_AxdExtType_AddressCountryRegionId_AxdType_ExtCodeValue
      * $DeliveryCountryRegionId
+     *
      * @return $this
      */
     public function setDeliveryCountryRegionId($DeliveryCountryRegionId)
     {
         $this->DeliveryCountryRegionId = $DeliveryCountryRegionId;
+
         return $this;
     }
 
@@ -913,11 +960,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdUnion_AxdExtType_AddressCountyId_AxdType_ExtCodeValue $DeliveryCounty
+     *
      * @return $this
      */
     public function setDeliveryCounty($DeliveryCounty)
     {
         $this->DeliveryCounty = $DeliveryCounty;
+
         return $this;
     }
 
@@ -931,11 +980,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEnum_SalesDeliveryDateControlType $DeliveryDateControlType
+     *
      * @return $this
      */
     public function setDeliveryDateControlType($DeliveryDateControlType)
     {
         $this->DeliveryDateControlType = $DeliveryDateControlType;
+
         return $this;
     }
 
@@ -949,11 +1000,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_CustName $DeliveryName
+     *
      * @return $this
      */
     public function setDeliveryName($DeliveryName)
     {
         $this->DeliveryName = $DeliveryName;
+
         return $this;
     }
 
@@ -967,11 +1020,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdUnion_AxdExtType_AddressStateId_AxdType_ExtCodeValue $DeliveryState
+     *
      * @return $this
      */
     public function setDeliveryState($DeliveryState)
     {
         $this->DeliveryState = $DeliveryState;
+
         return $this;
     }
 
@@ -985,11 +1040,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_AddressStreet $DeliveryStreet
+     *
      * @return $this
      */
     public function setDeliveryStreet($DeliveryStreet)
     {
         $this->DeliveryStreet = $DeliveryStreet;
+
         return $this;
     }
 
@@ -1003,11 +1060,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_TradeLineDlvTypeId $DeliveryType
+     *
      * @return $this
      */
     public function setDeliveryType($DeliveryType)
     {
         $this->DeliveryType = $DeliveryType;
+
         return $this;
     }
 
@@ -1022,11 +1081,13 @@ class AxdEntity_SalesLine
     /**
      * @param AxdUnion_AxdExtType_AddressZipCodeId_AxdType_ExtCodeValue
      * $DeliveryZipCode
+     *
      * @return $this
      */
     public function setDeliveryZipCode($DeliveryZipCode)
     {
         $this->DeliveryZipCode = $DeliveryZipCode;
+
         return $this;
     }
 
@@ -1040,11 +1101,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdArray_AxdExtType_Dimension $Dimension
+     *
      * @return $this
      */
     public function setDimension($Dimension)
     {
         $this->Dimension = $Dimension;
+
         return $this;
     }
 
@@ -1058,11 +1121,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdUnion_AxdExtType_DlvModeId_AxdType_ExtCodeValue $DlvMode
+     *
      * @return $this
      */
     public function setDlvMode($DlvMode)
     {
         $this->DlvMode = $DlvMode;
+
         return $this;
     }
 
@@ -1076,11 +1141,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_EInvoiceAccountCode $EInvoiceAccountCode
+     *
      * @return $this
      */
     public function setEInvoiceAccountCode($EInvoiceAccountCode)
     {
         $this->EInvoiceAccountCode = $EInvoiceAccountCode;
+
         return $this;
     }
 
@@ -1094,11 +1161,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ReturnExpectedRetQty $ExpectedRetQty
+     *
      * @return $this
      */
     public function setExpectedRetQty($ExpectedRetQty)
     {
         $this->ExpectedRetQty = $ExpectedRetQty;
+
         return $this;
     }
 
@@ -1112,11 +1181,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesExternalItemId $ExternalItemId
+     *
      * @return $this
      */
     public function setExternalItemId($ExternalItemId)
     {
         $this->ExternalItemId = $ExternalItemId;
+
         return $this;
     }
 
@@ -1130,11 +1201,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_InventQty $InventDeliverNow
+     *
      * @return $this
      */
     public function setInventDeliverNow($InventDeliverNow)
     {
         $this->InventDeliverNow = $InventDeliverNow;
+
         return $this;
     }
 
@@ -1148,11 +1221,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_InventDimId $InventDimId
+     *
      * @return $this
      */
     public function setInventDimId($InventDimId)
     {
         $this->InventDimId = $InventDimId;
+
         return $this;
     }
 
@@ -1166,11 +1241,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_InventRefId $InventRefId
+     *
      * @return $this
      */
     public function setInventRefId($InventRefId)
     {
         $this->InventRefId = $InventRefId;
+
         return $this;
     }
 
@@ -1184,11 +1261,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_InventRefTransId $InventRefTransId
+     *
      * @return $this
      */
     public function setInventRefTransId($InventRefTransId)
     {
         $this->InventRefTransId = $InventRefTransId;
+
         return $this;
     }
 
@@ -1202,11 +1281,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEnum_InventRefType $InventRefType
+     *
      * @return $this
      */
     public function setInventRefType($InventRefType)
     {
         $this->InventRefType = $InventRefType;
+
         return $this;
     }
 
@@ -1220,11 +1301,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_InventTransId $InventTransId
+     *
      * @return $this
      */
     public function setInventTransId($InventTransId)
     {
         $this->InventTransId = $InventTransId;
+
         return $this;
     }
 
@@ -1238,11 +1321,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_InventTransIdReturn $InventTransIdReturn
+     *
      * @return $this
      */
     public function setInventTransIdReturn($InventTransIdReturn)
     {
         $this->InventTransIdReturn = $InventTransIdReturn;
+
         return $this;
     }
 
@@ -1256,11 +1341,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ItemBOMId $ItemBOMId
+     *
      * @return $this
      */
     public function setItemBOMId($ItemBOMId)
     {
         $this->ItemBOMId = $ItemBOMId;
+
         return $this;
     }
 
@@ -1274,11 +1361,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdUnion_AxdExtType_ItemIdSmall_AxdType_ExtCodeValue $ItemId
+     *
      * @return $this
      */
     public function setItemId($ItemId)
     {
         $this->ItemId = $ItemId;
+
         return $this;
     }
 
@@ -1292,11 +1381,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ReturnItemReplaced $itemReplaced
+     *
      * @return $this
      */
     public function setItemReplaced($itemReplaced)
     {
         $this->itemReplaced = $itemReplaced;
+
         return $this;
     }
 
@@ -1310,11 +1401,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_RFIDItemTagging $ItemTagging
+     *
      * @return $this
      */
     public function setItemTagging($ItemTagging)
     {
         $this->ItemTagging = $ItemTagging;
+
         return $this;
     }
 
@@ -1328,11 +1421,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesLedgerAccount $LedgerAccount
+     *
      * @return $this
      */
     public function setLedgerAccount($LedgerAccount)
     {
         $this->LedgerAccount = $LedgerAccount;
+
         return $this;
     }
 
@@ -1346,11 +1441,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesLineAmount $LineAmount
+     *
      * @return $this
      */
     public function setLineAmount($LineAmount)
     {
         $this->LineAmount = $LineAmount;
+
         return $this;
     }
 
@@ -1364,11 +1461,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesLineDisc $LineDisc
+     *
      * @return $this
      */
     public function setLineDisc($LineDisc)
     {
         $this->LineDisc = $LineDisc;
+
         return $this;
     }
 
@@ -1382,11 +1481,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_LineHeader $LineHeader
+     *
      * @return $this
      */
     public function setLineHeader($LineHeader)
     {
         $this->LineHeader = $LineHeader;
+
         return $this;
     }
 
@@ -1400,11 +1501,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_LineNum $LineNum
+     *
      * @return $this
      */
     public function setLineNum($LineNum)
     {
         $this->LineNum = $LineNum;
+
         return $this;
     }
 
@@ -1418,11 +1521,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesLinePercent $LinePercent
+     *
      * @return $this
      */
     public function setLinePercent($LinePercent)
     {
         $this->LinePercent = $LinePercent;
+
         return $this;
     }
 
@@ -1436,11 +1541,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesMultiLnDisc $MultiLnDisc
+     *
      * @return $this
      */
     public function setMultiLnDisc($MultiLnDisc)
     {
         $this->MultiLnDisc = $MultiLnDisc;
+
         return $this;
     }
 
@@ -1454,11 +1561,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesMultiLnPercent $MultiLnPercent
+     *
      * @return $this
      */
     public function setMultiLnPercent($MultiLnPercent)
     {
         $this->MultiLnPercent = $MultiLnPercent;
+
         return $this;
     }
 
@@ -1472,11 +1581,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ItemFreeTxt $Name
+     *
      * @return $this
      */
     public function setName($Name)
     {
         $this->Name = $Name;
+
         return $this;
     }
 
@@ -1490,11 +1601,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesOverDeliveryPct $OverDeliveryPct
+     *
      * @return $this
      */
     public function setOverDeliveryPct($OverDeliveryPct)
     {
         $this->OverDeliveryPct = $OverDeliveryPct;
+
         return $this;
     }
 
@@ -1508,11 +1621,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdUnion_AxdExtType_InventPackingUnit_AxdType_ExtCodeValue $PackingUnit
+     *
      * @return $this
      */
     public function setPackingUnit($PackingUnit)
     {
         $this->PackingUnit = $PackingUnit;
+
         return $this;
     }
 
@@ -1526,11 +1641,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_InventPackingUnitQty $PackingUnitQty
+     *
      * @return $this
      */
     public function setPackingUnitQty($PackingUnitQty)
     {
         $this->PackingUnitQty = $PackingUnitQty;
+
         return $this;
     }
 
@@ -1544,11 +1661,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_RFIDPalletTagging $PalletTagging
+     *
      * @return $this
      */
     public function setPalletTagging($PalletTagging)
     {
         $this->PalletTagging = $PalletTagging;
+
         return $this;
     }
 
@@ -1562,11 +1681,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_IntrastatPortId $Port
+     *
      * @return $this
      */
     public function setPort($Port)
     {
         $this->Port = $Port;
+
         return $this;
     }
 
@@ -1580,11 +1701,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_PriceUnit $PriceUnit
+     *
      * @return $this
      */
     public function setPriceUnit($PriceUnit)
     {
         $this->PriceUnit = $PriceUnit;
+
         return $this;
     }
 
@@ -1598,11 +1721,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ProjCategoryId $ProjCategoryId
+     *
      * @return $this
      */
     public function setProjCategoryId($ProjCategoryId)
     {
         $this->ProjCategoryId = $ProjCategoryId;
+
         return $this;
     }
 
@@ -1616,11 +1741,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ProjId $ProjId
+     *
      * @return $this
      */
     public function setProjId($ProjId)
     {
         $this->ProjId = $ProjId;
+
         return $this;
     }
 
@@ -1634,11 +1761,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ProjLinePropertyId $ProjLinePropertyId
+     *
      * @return $this
      */
     public function setProjLinePropertyId($ProjLinePropertyId)
     {
         $this->ProjLinePropertyId = $ProjLinePropertyId;
+
         return $this;
     }
 
@@ -1652,11 +1781,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ProjItemTransId $ProjTransId
+     *
      * @return $this
      */
     public function setProjTransId($ProjTransId)
     {
         $this->ProjTransId = $ProjTransId;
+
         return $this;
     }
 
@@ -1670,11 +1801,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_CustPurchaseOrder $PurchorderFormNum
+     *
      * @return $this
      */
     public function setPurchorderFormNum($PurchorderFormNum)
     {
         $this->PurchorderFormNum = $PurchorderFormNum;
+
         return $this;
     }
 
@@ -1688,11 +1821,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_InventQty $QtyOrdered
+     *
      * @return $this
      */
     public function setQtyOrdered($QtyOrdered)
     {
         $this->QtyOrdered = $QtyOrdered;
+
         return $this;
     }
 
@@ -1706,11 +1841,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesReceiptDateConfirmed $ReceiptDateConfirmed
+     *
      * @return $this
      */
     public function setReceiptDateConfirmed($ReceiptDateConfirmed)
     {
         $this->ReceiptDateConfirmed = $ReceiptDateConfirmed;
+
         return $this;
     }
 
@@ -1724,11 +1861,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesReceiptDateRequested $ReceiptDateRequested
+     *
      * @return $this
      */
     public function setReceiptDateRequested($ReceiptDateRequested)
     {
         $this->ReceiptDateRequested = $ReceiptDateRequested;
+
         return $this;
     }
 
@@ -1742,11 +1881,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_recId $RecId
+     *
      * @return $this
      */
     public function setRecId($RecId)
     {
         $this->RecId = $RecId;
+
         return $this;
     }
 
@@ -1760,11 +1901,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_recVersion $RecVersion
+     *
      * @return $this
      */
     public function setRecVersion($RecVersion)
     {
         $this->RecVersion = $RecVersion;
+
         return $this;
     }
 
@@ -1778,11 +1921,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_InventQty $RemainInventFinancial
+     *
      * @return $this
      */
     public function setRemainInventFinancial($RemainInventFinancial)
     {
         $this->RemainInventFinancial = $RemainInventFinancial;
+
         return $this;
     }
 
@@ -1796,11 +1941,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_InventQty $RemainInventPhysical
+     *
      * @return $this
      */
     public function setRemainInventPhysical($RemainInventPhysical)
     {
         $this->RemainInventPhysical = $RemainInventPhysical;
+
         return $this;
     }
 
@@ -1814,11 +1961,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesQty $RemainSalesFinancial
+     *
      * @return $this
      */
     public function setRemainSalesFinancial($RemainSalesFinancial)
     {
         $this->RemainSalesFinancial = $RemainSalesFinancial;
+
         return $this;
     }
 
@@ -1832,11 +1981,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesQty $RemainSalesPhysical
+     *
      * @return $this
      */
     public function setRemainSalesPhysical($RemainSalesPhysical)
     {
         $this->RemainSalesPhysical = $RemainSalesPhysical;
+
         return $this;
     }
 
@@ -1850,11 +2001,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEnum_ItemReservation $Reservation
+     *
      * @return $this
      */
     public function setReservation($Reservation)
     {
         $this->Reservation = $Reservation;
+
         return $this;
     }
 
@@ -1868,11 +2021,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ReturnAllowReservation $ReturnAllowReservation
+     *
      * @return $this
      */
     public function setReturnAllowReservation($ReturnAllowReservation)
     {
         $this->ReturnAllowReservation = $ReturnAllowReservation;
+
         return $this;
     }
 
@@ -1886,11 +2041,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ReturnArrivalDate $ReturnArrivalDate
+     *
      * @return $this
      */
     public function setReturnArrivalDate($ReturnArrivalDate)
     {
         $this->ReturnArrivalDate = $ReturnArrivalDate;
+
         return $this;
     }
 
@@ -1904,11 +2061,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ReturnClosedDate $ReturnClosedDate
+     *
      * @return $this
      */
     public function setReturnClosedDate($ReturnClosedDate)
     {
         $this->ReturnClosedDate = $ReturnClosedDate;
+
         return $this;
     }
 
@@ -1922,11 +2081,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ReturnDeadline $ReturnDeadLine
+     *
      * @return $this
      */
     public function setReturnDeadLine($ReturnDeadLine)
     {
         $this->ReturnDeadLine = $ReturnDeadLine;
+
         return $this;
     }
 
@@ -1940,11 +2101,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ReturnDispositionCodeId $ReturnDispositionCodeId
+     *
      * @return $this
      */
     public function setReturnDispositionCodeId($ReturnDispositionCodeId)
     {
         $this->ReturnDispositionCodeId = $ReturnDispositionCodeId;
+
         return $this;
     }
 
@@ -1958,11 +2121,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEnum_ReturnStatusLine $ReturnStatus
+     *
      * @return $this
      */
     public function setReturnStatus($ReturnStatus)
     {
         $this->ReturnStatus = $ReturnStatus;
+
         return $this;
     }
 
@@ -1976,11 +2141,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesQty $SalesDeliverNow
+     *
      * @return $this
      */
     public function setSalesDeliverNow($SalesDeliverNow)
     {
         $this->SalesDeliverNow = $SalesDeliverNow;
+
         return $this;
     }
 
@@ -1994,11 +2161,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_CommissSalesGroup $SalesGroup
+     *
      * @return $this
      */
     public function setSalesGroup($SalesGroup)
     {
         $this->SalesGroup = $SalesGroup;
+
         return $this;
     }
 
@@ -2012,11 +2181,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesIdBase $SalesId
+     *
      * @return $this
      */
     public function setSalesId($SalesId)
     {
         $this->SalesId = $SalesId;
+
         return $this;
     }
 
@@ -2030,11 +2201,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesMarkup $SalesMarkup
+     *
      * @return $this
      */
     public function setSalesMarkup($SalesMarkup)
     {
         $this->SalesMarkup = $SalesMarkup;
+
         return $this;
     }
 
@@ -2048,11 +2221,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesPrice $SalesPrice
+     *
      * @return $this
      */
     public function setSalesPrice($SalesPrice)
     {
         $this->SalesPrice = $SalesPrice;
+
         return $this;
     }
 
@@ -2066,11 +2241,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesOrderedQty $SalesQty
+     *
      * @return $this
      */
     public function setSalesQty($SalesQty)
     {
         $this->SalesQty = $SalesQty;
+
         return $this;
     }
 
@@ -2084,11 +2261,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEnum_SalesStatus $SalesStatus
+     *
      * @return $this
      */
     public function setSalesStatus($SalesStatus)
     {
         $this->SalesStatus = $SalesStatus;
+
         return $this;
     }
 
@@ -2102,11 +2281,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEnum_bool $SalesTableLineUpdate
+     *
      * @return $this
      */
     public function setSalesTableLineUpdate($SalesTableLineUpdate)
     {
         $this->SalesTableLineUpdate = $SalesTableLineUpdate;
+
         return $this;
     }
 
@@ -2120,11 +2301,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEnum_SalesType $SalesType
+     *
      * @return $this
      */
     public function setSalesType($SalesType)
     {
         $this->SalesType = $SalesType;
+
         return $this;
     }
 
@@ -2138,11 +2321,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdUnion_AxdExtType_SalesUnit_AxdType_ExtCodeValue $SalesUnit
+     *
      * @return $this
      */
     public function setSalesUnit($SalesUnit)
     {
         $this->SalesUnit = $SalesUnit;
+
         return $this;
     }
 
@@ -2156,11 +2341,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEnum_NoYes $Scrap
+     *
      * @return $this
      */
     public function setScrap($Scrap)
     {
         $this->Scrap = $Scrap;
+
         return $this;
     }
 
@@ -2174,11 +2361,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ShipCarrierAccount $ShipCarrierAccount
+     *
      * @return $this
      */
     public function setShipCarrierAccount($ShipCarrierAccount)
     {
         $this->ShipCarrierAccount = $ShipCarrierAccount;
+
         return $this;
     }
 
@@ -2192,11 +2381,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ShipCarrierAccountCode $ShipCarrierAccountCode
+     *
      * @return $this
      */
     public function setShipCarrierAccountCode($ShipCarrierAccountCode)
     {
         $this->ShipCarrierAccountCode = $ShipCarrierAccountCode;
+
         return $this;
     }
 
@@ -2210,11 +2401,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEnum_ShipCarrierDlvType $ShipCarrierDlvType
+     *
      * @return $this
      */
     public function setShipCarrierDlvType($ShipCarrierDlvType)
     {
         $this->ShipCarrierDlvType = $ShipCarrierDlvType;
+
         return $this;
     }
 
@@ -2228,11 +2421,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_ShipCarrierId $ShipCarrierID
+     *
      * @return $this
      */
     public function setShipCarrierID($ShipCarrierID)
     {
         $this->ShipCarrierID = $ShipCarrierID;
+
         return $this;
     }
 
@@ -2246,11 +2441,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesShippingDateConfirmed $ShippingDateConfirmed
+     *
      * @return $this
      */
     public function setShippingDateConfirmed($ShippingDateConfirmed)
     {
         $this->ShippingDateConfirmed = $ShippingDateConfirmed;
+
         return $this;
     }
 
@@ -2264,11 +2461,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesShippingDateRequested $ShippingDateRequested
+     *
      * @return $this
      */
     public function setShippingDateRequested($ShippingDateRequested)
     {
         $this->ShippingDateRequested = $ShippingDateRequested;
+
         return $this;
     }
 
@@ -2282,11 +2481,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_IntrastatProcId $StatProcId
+     *
      * @return $this
      */
     public function setStatProcId($StatProcId)
     {
         $this->StatProcId = $StatProcId;
+
         return $this;
     }
 
@@ -2300,11 +2501,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_IntrastatTriangularDeal $StatTriangularDeal
+     *
      * @return $this
      */
     public function setStatTriangularDeal($StatTriangularDeal)
     {
         $this->StatTriangularDeal = $StatTriangularDeal;
+
         return $this;
     }
 
@@ -2318,11 +2521,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_TaxAutoGenerated $TaxAutogenerated
+     *
      * @return $this
      */
     public function setTaxAutogenerated($TaxAutogenerated)
     {
         $this->TaxAutogenerated = $TaxAutogenerated;
+
         return $this;
     }
 
@@ -2336,11 +2541,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_TaxGroup $TaxGroup
+     *
      * @return $this
      */
     public function setTaxGroup($TaxGroup)
     {
         $this->TaxGroup = $TaxGroup;
+
         return $this;
     }
 
@@ -2354,11 +2561,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_TaxItemGroup $TaxItemGroup
+     *
      * @return $this
      */
     public function setTaxItemGroup($TaxItemGroup)
     {
         $this->TaxItemGroup = $TaxItemGroup;
+
         return $this;
     }
 
@@ -2372,11 +2581,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_IntrastatTransactionCodeId $TransactionCode
+     *
      * @return $this
      */
     public function setTransactionCode($TransactionCode)
     {
         $this->TransactionCode = $TransactionCode;
+
         return $this;
     }
 
@@ -2390,11 +2601,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_IntrastatTransport $Transport
+     *
      * @return $this
      */
     public function setTransport($Transport)
     {
         $this->Transport = $Transport;
+
         return $this;
     }
 
@@ -2408,11 +2621,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdExtType_SalesUnderDeliveryPct $UnderDeliveryPct
+     *
      * @return $this
      */
     public function setUnderDeliveryPct($UnderDeliveryPct)
     {
         $this->UnderDeliveryPct = $UnderDeliveryPct;
+
         return $this;
     }
 
@@ -2426,11 +2641,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEntity_InventDim[] $InventDim
+     *
      * @return $this
      */
     public function setInventDim($InventDim)
     {
         $this->InventDim = $InventDim;
+
         return $this;
     }
 
@@ -2452,11 +2669,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEntity_DocuRefLine $DocuRefLine
+     *
      * @return $this
      */
     public function setDocuRefLine($DocuRefLine)
     {
         $this->DocuRefLine = $DocuRefLine;
+
         return $this;
     }
 
@@ -2470,11 +2689,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEntity_MarkupTransLine $MarkupTransLine
+     *
      * @return $this
      */
     public function setMarkupTransLine($MarkupTransLine)
     {
         $this->MarkupTransLine = $MarkupTransLine;
+
         return $this;
     }
 
@@ -2488,11 +2709,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param UNKNOWN $class
+     *
      * @return $this
      */
     public function setClass($class)
     {
         $this->class = $class;
+
         return $this;
     }
 
@@ -2506,14 +2729,13 @@ class AxdEntity_SalesLine
 
     /**
      * @param AxdEnum_AxdEntityAction $action
+     *
      * @return $this
      */
     public function setAction($action)
     {
         $this->action = $action;
+
         return $this;
     }
-
-
 }
-

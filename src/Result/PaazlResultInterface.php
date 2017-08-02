@@ -14,7 +14,6 @@ namespace Etrias\RaseConnector\Result;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
-interface RaseResultInterface extends ResultInterface
+interface PaazlResultInterface extends ResultInterface
 {
-
 }

@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of PHP CS Fixer.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Etrias\RaseConnector\SoapTypes;
 
 class AxdEntity_SalesTable
 {
-
     /**
      * @var string
      */
@@ -715,11 +724,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $_DocumentHash
+     *
      * @return $this
      */
     public function set_DocumentHash($_DocumentHash)
     {
         $this->_DocumentHash = $_DocumentHash;
+
         return $this;
     }
 
@@ -733,11 +744,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_AmountExclTax $AmountExclTax
+     *
      * @return $this
      */
     public function setAmountExclTax($AmountExclTax)
     {
         $this->AmountExclTax = $AmountExclTax;
+
         return $this;
     }
 
@@ -751,11 +764,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_Backorder $BackOrder
+     *
      * @return $this
      */
     public function setBackOrder($BackOrder)
     {
         $this->BackOrder = $BackOrder;
+
         return $this;
     }
 
@@ -769,11 +784,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_RFIDCaseTagging $CaseTagging
+     *
      * @return $this
      */
     public function setCaseTagging($CaseTagging)
     {
         $this->CaseTagging = $CaseTagging;
+
         return $this;
     }
 
@@ -787,11 +804,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustCashDiscCode $CashDisc
+     *
      * @return $this
      */
     public function setCashDisc($CashDisc)
     {
         $this->CashDisc = $CashDisc;
+
         return $this;
     }
 
@@ -805,11 +824,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_DiscPct $CashDiscPercent
+     *
      * @return $this
      */
     public function setCashDiscPercent($CashDiscPercent)
     {
         $this->CashDiscPercent = $CashDiscPercent;
+
         return $this;
     }
 
@@ -823,11 +844,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CommissCustomerGroup $CommissionGroup
+     *
      * @return $this
      */
     public function setCommissionGroup($CommissionGroup)
     {
         $this->CommissionGroup = $CommissionGroup;
+
         return $this;
     }
 
@@ -841,11 +864,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_LineComplete $Complete
+     *
      * @return $this
      */
     public function setComplete($Complete)
     {
         $this->Complete = $Complete;
+
         return $this;
     }
 
@@ -859,11 +884,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ContactPersonId $ContactPersonId
+     *
      * @return $this
      */
     public function setContactPersonId($ContactPersonId)
     {
         $this->ContactPersonId = $ContactPersonId;
+
         return $this;
     }
 
@@ -877,11 +904,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CovStatus $CovStatus
+     *
      * @return $this
      */
     public function setCovStatus($CovStatus)
     {
         $this->CovStatus = $CovStatus;
+
         return $this;
     }
 
@@ -895,11 +924,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdUnion_AxdExtType_CustCurrencyCode_AxdType_ExtCodeValue $CurrencyCode
+     *
      * @return $this
      */
     public function setCurrencyCode($CurrencyCode)
     {
         $this->CurrencyCode = $CurrencyCode;
+
         return $this;
     }
 
@@ -913,11 +944,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $CustAccount
+     *
      * @return $this
      */
     public function setCustAccount($CustAccount)
     {
         $this->CustAccount = $CustAccount;
+
         return $this;
     }
 
@@ -931,11 +964,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustGroupId $CustGroup
+     *
      * @return $this
      */
     public function setCustGroup($CustGroup)
     {
         $this->CustGroup = $CustGroup;
+
         return $this;
     }
 
@@ -949,11 +984,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustInvoiceId $CustInvoiceId
+     *
      * @return $this
      */
     public function setCustInvoiceId($CustInvoiceId)
     {
         $this->CustInvoiceId = $CustInvoiceId;
+
         return $this;
     }
 
@@ -967,11 +1004,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $CustomerRef
+     *
      * @return $this
      */
     public function setCustomerRef($CustomerRef)
     {
         $this->CustomerRef = $CustomerRef;
+
         return $this;
     }
 
@@ -985,11 +1024,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_DateCreated $DateCreated
+     *
      * @return $this
      */
     public function setDateCreated($DateCreated)
     {
         $this->DateCreated = $DateCreated;
+
         return $this;
     }
 
@@ -1003,11 +1044,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesDeadline $Deadline
+     *
      * @return $this
      */
     public function setDeadline($Deadline)
     {
         $this->Deadline = $Deadline;
+
         return $this;
     }
 
@@ -1021,11 +1064,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_Addressing $DeliveryAddress
+     *
      * @return $this
      */
     public function setDeliveryAddress($DeliveryAddress)
     {
         $this->DeliveryAddress = $DeliveryAddress;
+
         return $this;
     }
 
@@ -1039,11 +1084,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $DeliveryCity
+     *
      * @return $this
      */
     public function setDeliveryCity($DeliveryCity)
     {
         $this->DeliveryCity = $DeliveryCity;
+
         return $this;
     }
 
@@ -1058,11 +1105,13 @@ class AxdEntity_SalesTable
     /**
      * @param string
      * $DeliveryCountryRegionId
+     *
      * @return $this
      */
     public function setDeliveryCountryRegionId($DeliveryCountryRegionId)
     {
         $this->DeliveryCountryRegionId = $DeliveryCountryRegionId;
+
         return $this;
     }
 
@@ -1076,11 +1125,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdUnion_AxdExtType_AddressCountyId_AxdType_ExtCodeValue $DeliveryCounty
+     *
      * @return $this
      */
     public function setDeliveryCounty($DeliveryCounty)
     {
         $this->DeliveryCounty = $DeliveryCounty;
+
         return $this;
     }
 
@@ -1094,11 +1145,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param \DateTime $DeliveryDate
+     *
      * @return $this
      */
     public function setDeliveryDate($DeliveryDate)
     {
         $this->DeliveryDate = $DeliveryDate;
+
         return $this;
     }
 
@@ -1112,11 +1165,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEnum_SalesDeliveryDateControlType $DeliveryDateControlType
+     *
      * @return $this
      */
     public function setDeliveryDateControlType($DeliveryDateControlType)
     {
         $this->DeliveryDateControlType = $DeliveryDateControlType;
+
         return $this;
     }
 
@@ -1130,11 +1185,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $DeliveryName
+     *
      * @return $this
      */
     public function setDeliveryName($DeliveryName)
     {
         $this->DeliveryName = $DeliveryName;
+
         return $this;
     }
 
@@ -1148,11 +1205,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdUnion_AxdExtType_AddressStateId_AxdType_ExtCodeValue $DeliveryState
+     *
      * @return $this
      */
     public function setDeliveryState($DeliveryState)
     {
         $this->DeliveryState = $DeliveryState;
+
         return $this;
     }
 
@@ -1166,11 +1225,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $DeliveryStreet
+     *
      * @return $this
      */
     public function setDeliveryStreet($DeliveryStreet)
     {
         $this->DeliveryStreet = $DeliveryStreet;
+
         return $this;
     }
 
@@ -1185,11 +1246,13 @@ class AxdEntity_SalesTable
     /**
      * @param string
      * $DeliveryZipCode
+     *
      * @return $this
      */
     public function setDeliveryZipCode($DeliveryZipCode)
     {
         $this->DeliveryZipCode = $DeliveryZipCode;
+
         return $this;
     }
 
@@ -1203,11 +1266,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdArray_AxdExtType_Dimension $Dimension
+     *
      * @return $this
      */
     public function setDimension($Dimension)
     {
         $this->Dimension = $Dimension;
+
         return $this;
     }
 
@@ -1221,11 +1286,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustDirectDebitMan\DateTimeRecId $DirectDebitMandate
+     *
      * @return $this
      */
     public function setDirectDebitMandate($DirectDebitMandate)
     {
         $this->DirectDebitMandate = $DirectDebitMandate;
+
         return $this;
     }
 
@@ -1239,11 +1306,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesEndDiscPct $DiscPercent
+     *
      * @return $this
      */
     public function setDiscPercent($DiscPercent)
     {
         $this->DiscPercent = $DiscPercent;
+
         return $this;
     }
 
@@ -1257,11 +1326,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $DlvMode
+     *
      * @return $this
      */
     public function setDlvMode($DlvMode)
     {
         $this->DlvMode = $DlvMode;
+
         return $this;
     }
 
@@ -1275,11 +1346,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_DlvReasonId $DlvReason
+     *
      * @return $this
      */
     public function setDlvReason($DlvReason)
     {
         $this->DlvReason = $DlvReason;
+
         return $this;
     }
 
@@ -1293,11 +1366,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdUnion_AxdExtType_CustDlvTermId_AxdType_ExtCodeValue $DlvTerm
+     *
      * @return $this
      */
     public function setDlvTerm($DlvTerm)
     {
         $this->DlvTerm = $DlvTerm;
+
         return $this;
     }
 
@@ -1311,11 +1386,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEnum_DocumentStatus $DocumentStatus
+     *
      * @return $this
      */
     public function setDocumentStatus($DocumentStatus)
     {
         $this->DocumentStatus = $DocumentStatus;
+
         return $this;
     }
 
@@ -1329,11 +1406,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_EInvoiceAccountCode $EInvoiceAccountCode
+     *
      * @return $this
      */
     public function setEInvoiceAccountCode($EInvoiceAccountCode)
     {
         $this->EInvoiceAccountCode = $EInvoiceAccountCode;
+
         return $this;
     }
 
@@ -1347,11 +1426,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_EInvoiceLineSpecific $EInvoiceLineSpec
+     *
      * @return $this
      */
     public function setEInvoiceLineSpec($EInvoiceLineSpec)
     {
         $this->EInvoiceLineSpec = $EInvoiceLineSpec;
+
         return $this;
     }
 
@@ -1365,11 +1446,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $Email
+     *
      * @return $this
      */
     public function setEmail($Email)
     {
         $this->Email = $Email;
+
         return $this;
     }
 
@@ -1383,11 +1466,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustEndDiscCode $EndDisc
+     *
      * @return $this
      */
     public function setEndDisc($EndDisc)
     {
         $this->EndDisc = $EndDisc;
+
         return $this;
     }
 
@@ -1401,11 +1486,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_TaxEnterpriseNumber $EnterpriseNumber
+     *
      * @return $this
      */
     public function setEnterpriseNumber($EnterpriseNumber)
     {
         $this->EnterpriseNumber = $EnterpriseNumber;
+
         return $this;
     }
 
@@ -1419,11 +1506,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesEstimateGross $Estimate
+     *
      * @return $this
      */
     public function setEstimate($Estimate)
     {
         $this->Estimate = $Estimate;
+
         return $this;
     }
 
@@ -1437,11 +1526,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesExportReason $ExportReason
+     *
      * @return $this
      */
     public function setExportReason($ExportReason)
     {
         $this->ExportReason = $ExportReason;
+
         return $this;
     }
 
@@ -1455,11 +1546,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesFixedDueDate $FixedDueDate
+     *
      * @return $this
      */
     public function setFixedDueDate($FixedDueDate)
     {
         $this->FixedDueDate = $FixedDueDate;
+
         return $this;
     }
 
@@ -1473,11 +1566,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesFixedExchRate $FixedExchRate
+     *
      * @return $this
      */
     public function setFixedExchRate($FixedExchRate)
     {
         $this->FixedExchRate = $FixedExchRate;
+
         return $this;
     }
 
@@ -1491,11 +1586,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustFreightSlipType $FreightSlipType
+     *
      * @return $this
      */
     public function setFreightSlipType($FreightSlipType)
     {
         $this->FreightSlipType = $FreightSlipType;
+
         return $this;
     }
 
@@ -1509,11 +1606,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustFreightZoneId $FreightZone
+     *
      * @return $this
      */
     public function setFreightZone($FreightZone)
     {
         $this->FreightZone = $FreightZone;
+
         return $this;
     }
 
@@ -1527,11 +1626,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_PaymentStubInvoiceId $GiroType
+     *
      * @return $this
      */
     public function setGiroType($GiroType)
     {
         $this->GiroType = $GiroType;
+
         return $this;
     }
 
@@ -1545,11 +1646,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $IgnoreMarkup
+     *
      * @return $this
      */
     public function setIgnoreMarkup($IgnoreMarkup)
     {
         $this->IgnoreMarkup = $IgnoreMarkup;
+
         return $this;
     }
 
@@ -1563,11 +1666,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $InclTax
+     *
      * @return $this
      */
     public function setInclTax($InclTax)
     {
         $this->InclTax = $InclTax;
+
         return $this;
     }
 
@@ -1582,11 +1687,13 @@ class AxdEntity_SalesTable
     /**
      * @param AxdExtType_InterCompanyOriginalCustAccount
      * $InterCompanyOriginalCustAccount
+     *
      * @return $this
      */
     public function setInterCompanyOriginalCustAccount($InterCompanyOriginalCustAccount)
     {
         $this->InterCompanyOriginalCustAccount = $InterCompanyOriginalCustAccount;
+
         return $this;
     }
 
@@ -1600,11 +1707,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_InterCompanyOriginalSalesId $InterCompanyOriginalSalesId
+     *
      * @return $this
      */
     public function setInterCompanyOriginalSalesId($InterCompanyOriginalSalesId)
     {
         $this->InterCompanyOriginalSalesId = $InterCompanyOriginalSalesId;
+
         return $this;
     }
 
@@ -1618,11 +1727,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesInventLocationId $InventLocationId
+     *
      * @return $this
      */
     public function setInventLocationId($InventLocationId)
     {
         $this->InventLocationId = $InventLocationId;
+
         return $this;
     }
 
@@ -1636,11 +1747,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_InventLocationIdCollect $InventLocationIdCollect
+     *
      * @return $this
      */
     public function setInventLocationIdCollect($InventLocationIdCollect)
     {
         $this->InventLocationIdCollect = $InventLocationIdCollect;
+
         return $this;
     }
 
@@ -1654,11 +1767,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_InventSiteId $InventSiteId
+     *
      * @return $this
      */
     public function setInventSiteId($InventSiteId)
     {
         $this->InventSiteId = $InventSiteId;
+
         return $this;
     }
 
@@ -1673,11 +1788,13 @@ class AxdEntity_SalesTable
     /**
      * @param AxdUnion_AxdExtType_CustInvoiceAccount_AxdType_ExtCodeValue
      * $InvoiceAccount
+     *
      * @return $this
      */
     public function setInvoiceAccount($InvoiceAccount)
     {
         $this->InvoiceAccount = $InvoiceAccount;
+
         return $this;
     }
 
@@ -1691,11 +1808,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdUnion_AxdType_Str_AxdType_ExtCodeValue $InvoiceFrequenceId
+     *
      * @return $this
      */
     public function setInvoiceFrequenceId($InvoiceFrequenceId)
     {
         $this->InvoiceFrequenceId = $InvoiceFrequenceId;
+
         return $this;
     }
 
@@ -1709,11 +1828,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_RFIDItemTagging $ItemTagging
+     *
      * @return $this
      */
     public function setItemTagging($ItemTagging)
     {
         $this->ItemTagging = $ItemTagging;
+
         return $this;
     }
 
@@ -1727,11 +1848,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustLanguageId $LanguageId
+     *
      * @return $this
      */
     public function setLanguageId($LanguageId)
     {
         $this->LanguageId = $LanguageId;
+
         return $this;
     }
 
@@ -1745,11 +1868,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustLineDiscCode $LineDisc
+     *
      * @return $this
      */
     public function setLineDisc($LineDisc)
     {
         $this->LineDisc = $LineDisc;
+
         return $this;
     }
 
@@ -1763,11 +1888,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ListcodeId $Listcode
+     *
      * @return $this
      */
     public function setListcode($Listcode)
     {
         $this->Listcode = $Listcode;
+
         return $this;
     }
 
@@ -1781,11 +1908,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustMarkupGroupId $MarkupGroup
+     *
      * @return $this
      */
     public function setMarkupGroup($MarkupGroup)
     {
         $this->MarkupGroup = $MarkupGroup;
+
         return $this;
     }
 
@@ -1799,11 +1928,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustMultiLineDiscCode $MultiLineDisc
+     *
      * @return $this
      */
     public function setMultiLineDisc($MultiLineDisc)
     {
         $this->MultiLineDisc = $MultiLineDisc;
+
         return $this;
     }
 
@@ -1817,11 +1948,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_NoCheckCreditLimit $NoCheckCreditLimit
+     *
      * @return $this
      */
     public function setNoCheckCreditLimit($NoCheckCreditLimit)
     {
         $this->NoCheckCreditLimit = $NoCheckCreditLimit;
+
         return $this;
     }
 
@@ -1835,11 +1968,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_NumberSequenceGroupId $NumberSequenceGroup
+     *
      * @return $this
      */
     public function setNumberSequenceGroup($NumberSequenceGroup)
     {
         $this->NumberSequenceGroup = $NumberSequenceGroup;
+
         return $this;
     }
 
@@ -1853,11 +1988,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_OneTimeCustomer $OneTimeCustomer
+     *
      * @return $this
      */
     public function setOneTimeCustomer($OneTimeCustomer)
     {
         $this->OneTimeCustomer = $OneTimeCustomer;
+
         return $this;
     }
 
@@ -1871,11 +2008,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_OrderComplete $OrderComplete
+     *
      * @return $this
      */
     public function setOrderComplete($OrderComplete)
     {
         $this->OrderComplete = $OrderComplete;
+
         return $this;
     }
 
@@ -1889,11 +2028,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_RFIDPalletTagging $PalletTagging
+     *
      * @return $this
      */
     public function setPalletTagging($PalletTagging)
     {
         $this->PalletTagging = $PalletTagging;
+
         return $this;
     }
 
@@ -1907,11 +2048,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustPaymTermId $Payment
+     *
      * @return $this
      */
     public function setPayment($Payment)
     {
         $this->Payment = $Payment;
+
         return $this;
     }
 
@@ -1925,11 +2068,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_PaymSchedId $PaymentSched
+     *
      * @return $this
      */
     public function setPaymentSched($PaymentSched)
     {
         $this->PaymentSched = $PaymentSched;
+
         return $this;
     }
 
@@ -1943,11 +2088,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustPaymMode $PaymMode
+     *
      * @return $this
      */
     public function setPaymMode($PaymMode)
     {
         $this->PaymMode = $PaymMode;
+
         return $this;
     }
 
@@ -1961,11 +2108,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustPaymSpec $PaymSpec
+     *
      * @return $this
      */
     public function setPaymSpec($PaymSpec)
     {
         $this->PaymSpec = $PaymSpec;
+
         return $this;
     }
 
@@ -1979,11 +2128,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_IntrastatPortId $Port
+     *
      * @return $this
      */
     public function setPort($Port)
     {
         $this->Port = $Port;
+
         return $this;
     }
 
@@ -1997,11 +2148,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustPostingProfile $PostingProfile
+     *
      * @return $this
      */
     public function setPostingProfile($PostingProfile)
     {
         $this->PostingProfile = $PostingProfile;
+
         return $this;
     }
 
@@ -2015,11 +2168,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CustPriceGroup $PriceGroupId
+     *
      * @return $this
      */
     public function setPriceGroupId($PriceGroupId)
     {
         $this->PriceGroupId = $PriceGroupId;
+
         return $this;
     }
 
@@ -2033,11 +2188,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEnum_NoYes $PrintPricesPackingSlip
+     *
      * @return $this
      */
     public function setPrintPricesPackingSlip($PrintPricesPackingSlip)
     {
         $this->PrintPricesPackingSlip = $PrintPricesPackingSlip;
+
         return $this;
     }
 
@@ -2051,11 +2208,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ProjId $ProjId
+     *
      * @return $this
      */
     public function setProjId($ProjId)
     {
         $this->ProjId = $ProjId;
+
         return $this;
     }
 
@@ -2069,11 +2228,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_PurchId $PurchId
+     *
      * @return $this
      */
     public function setPurchId($PurchId)
     {
         $this->PurchId = $PurchId;
+
         return $this;
     }
 
@@ -2087,11 +2248,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $PurchOrderFormNum
+     *
      * @return $this
      */
     public function setPurchOrderFormNum($PurchOrderFormNum)
     {
         $this->PurchOrderFormNum = $PurchOrderFormNum;
+
         return $this;
     }
 
@@ -2105,11 +2268,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_QuotationId $QuotationId
+     *
      * @return $this
      */
     public function setQuotationId($QuotationId)
     {
         $this->QuotationId = $QuotationId;
+
         return $this;
     }
 
@@ -2123,11 +2288,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesReceiptDateConfirmed $ReceiptDateConfirmed
+     *
      * @return $this
      */
     public function setReceiptDateConfirmed($ReceiptDateConfirmed)
     {
         $this->ReceiptDateConfirmed = $ReceiptDateConfirmed;
+
         return $this;
     }
 
@@ -2141,11 +2308,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param \DateTime $ReceiptDateRequested
+     *
      * @return $this
      */
     public function setReceiptDateRequested($ReceiptDateRequested)
     {
         $this->ReceiptDateRequested = $ReceiptDateRequested;
+
         return $this;
     }
 
@@ -2159,11 +2328,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_recId $RecId
+     *
      * @return $this
      */
     public function setRecId($RecId)
     {
         $this->RecId = $RecId;
+
         return $this;
     }
 
@@ -2177,11 +2348,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_recVersion $RecVersion
+     *
      * @return $this
      */
     public function setRecVersion($RecVersion)
     {
         $this->RecVersion = $RecVersion;
+
         return $this;
     }
 
@@ -2195,11 +2368,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEnum_ItemReservation $Reservation
+     *
      * @return $this
      */
     public function setReservation($Reservation)
     {
         $this->Reservation = $Reservation;
+
         return $this;
     }
 
@@ -2213,11 +2388,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ReturnDeadline $ReturnDeadline
+     *
      * @return $this
      */
     public function setReturnDeadline($ReturnDeadline)
     {
         $this->ReturnDeadline = $ReturnDeadline;
+
         return $this;
     }
 
@@ -2231,11 +2408,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesReturnItemNum $ReturnItemNum
+     *
      * @return $this
      */
     public function setReturnItemNum($ReturnItemNum)
     {
         $this->ReturnItemNum = $ReturnItemNum;
+
         return $this;
     }
 
@@ -2249,11 +2428,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ReturnReasonCodeId $ReturnReasonCodeId
+     *
      * @return $this
      */
     public function setReturnReasonCodeId($ReturnReasonCodeId)
     {
         $this->ReturnReasonCodeId = $ReturnReasonCodeId;
+
         return $this;
     }
 
@@ -2267,11 +2448,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ReturnReplacementCreated $ReturnReplacementCreated
+     *
      * @return $this
      */
     public function setReturnReplacementCreated($ReturnReplacementCreated)
     {
         $this->ReturnReplacementCreated = $ReturnReplacementCreated;
+
         return $this;
     }
 
@@ -2285,11 +2468,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ReturnReplacementId $ReturnReplacementId
+     *
      * @return $this
      */
     public function setReturnReplacementId($ReturnReplacementId)
     {
         $this->ReturnReplacementId = $ReturnReplacementId;
+
         return $this;
     }
 
@@ -2303,11 +2488,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEnum_ReturnStatusHeader $ReturnStatus
+     *
      * @return $this
      */
     public function setReturnStatus($ReturnStatus)
     {
         $this->ReturnStatus = $ReturnStatus;
+
         return $this;
     }
 
@@ -2321,11 +2508,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_CommissSalesGroup $SalesGroup
+     *
      * @return $this
      */
     public function setSalesGroup($SalesGroup)
     {
         $this->SalesGroup = $SalesGroup;
+
         return $this;
     }
 
@@ -2339,11 +2528,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesIdBase $SalesId
+     *
      * @return $this
      */
     public function setSalesId($SalesId)
     {
         $this->SalesId = $SalesId;
+
         return $this;
     }
 
@@ -2357,11 +2548,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesName $SalesName
+     *
      * @return $this
      */
     public function setSalesName($SalesName)
     {
         $this->SalesName = $SalesName;
+
         return $this;
     }
 
@@ -2375,11 +2568,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $SalesOriginId
+     *
      * @return $this
      */
     public function setSalesOriginId($SalesOriginId)
     {
         $this->SalesOriginId = $SalesOriginId;
+
         return $this;
     }
 
@@ -2393,11 +2588,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $SalesPoolId
+     *
      * @return $this
      */
     public function setSalesPoolId($SalesPoolId)
     {
         $this->SalesPoolId = $SalesPoolId;
+
         return $this;
     }
 
@@ -2411,11 +2608,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_EmplId $SalesResponsible
+     *
      * @return $this
      */
     public function setSalesResponsible($SalesResponsible)
     {
         $this->SalesResponsible = $SalesResponsible;
+
         return $this;
     }
 
@@ -2429,11 +2628,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEnum_SalesStatus $SalesStatus
+     *
      * @return $this
      */
     public function setSalesStatus($SalesStatus)
     {
         $this->SalesStatus = $SalesStatus;
+
         return $this;
     }
 
@@ -2447,11 +2648,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $SalesTaker
+     *
      * @return $this
      */
     public function setSalesTaker($SalesTaker)
     {
         $this->SalesTaker = $SalesTaker;
+
         return $this;
     }
 
@@ -2465,11 +2668,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $SalesType
+     *
      * @return $this
      */
     public function setSalesType($SalesType)
     {
         $this->SalesType = $SalesType;
+
         return $this;
     }
 
@@ -2483,11 +2688,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_smmSalesUnitId $SalesUnitId
+     *
      * @return $this
      */
     public function setSalesUnitId($SalesUnitId)
     {
         $this->SalesUnitId = $SalesUnitId;
+
         return $this;
     }
 
@@ -2501,11 +2708,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesSettlementType $SettleVoucher
+     *
      * @return $this
      */
     public function setSettleVoucher($SettleVoucher)
     {
         $this->SettleVoucher = $SettleVoucher;
+
         return $this;
     }
 
@@ -2519,11 +2728,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ShipCarrierAccount $ShipCarrierAccount
+     *
      * @return $this
      */
     public function setShipCarrierAccount($ShipCarrierAccount)
     {
         $this->ShipCarrierAccount = $ShipCarrierAccount;
+
         return $this;
     }
 
@@ -2537,11 +2748,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ShipCarrierAccountCode $ShipCarrierAccountCode
+     *
      * @return $this
      */
     public function setShipCarrierAccountCode($ShipCarrierAccountCode)
     {
         $this->ShipCarrierAccountCode = $ShipCarrierAccountCode;
+
         return $this;
     }
 
@@ -2555,11 +2768,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ShipCarrierBlindShipment $ShipCarrierBlindShipment
+     *
      * @return $this
      */
     public function setShipCarrierBlindShipment($ShipCarrierBlindShipment)
     {
         $this->ShipCarrierBlindShipment = $ShipCarrierBlindShipment;
+
         return $this;
     }
 
@@ -2573,11 +2788,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_Name $ShipCarrierDeliveryContact
+     *
      * @return $this
      */
     public function setShipCarrierDeliveryContact($ShipCarrierDeliveryContact)
     {
         $this->ShipCarrierDeliveryContact = $ShipCarrierDeliveryContact;
+
         return $this;
     }
 
@@ -2591,11 +2808,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEnum_ShipCarrierDlvType $ShipCarrierDlvType
+     *
      * @return $this
      */
     public function setShipCarrierDlvType($ShipCarrierDlvType)
     {
         $this->ShipCarrierDlvType = $ShipCarrierDlvType;
+
         return $this;
     }
 
@@ -2609,11 +2828,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ShipCarrierExpeditedShipment $ShipCarrierExpeditedShipment
+     *
      * @return $this
      */
     public function setShipCarrierExpeditedShipment($ShipCarrierExpeditedShipment)
     {
         $this->ShipCarrierExpeditedShipment = $ShipCarrierExpeditedShipment;
+
         return $this;
     }
 
@@ -2627,11 +2848,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ShipCarrierFuelSurcharge $ShipCarrierFuelSurcharge
+     *
      * @return $this
      */
     public function setShipCarrierFuelSurcharge($ShipCarrierFuelSurcharge)
     {
         $this->ShipCarrierFuelSurcharge = $ShipCarrierFuelSurcharge;
+
         return $this;
     }
 
@@ -2645,11 +2868,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ShipCarrierId $ShipCarrierID
+     *
      * @return $this
      */
     public function setShipCarrierID($ShipCarrierID)
     {
         $this->ShipCarrierID = $ShipCarrierID;
+
         return $this;
     }
 
@@ -2663,11 +2888,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_ShipCarrierResidentialDest $ShipCarrierResidential
+     *
      * @return $this
      */
     public function setShipCarrierResidential($ShipCarrierResidential)
     {
         $this->ShipCarrierResidential = $ShipCarrierResidential;
+
         return $this;
     }
 
@@ -2681,11 +2908,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesShippingDateConfirmed $ShippingDateConfirmed
+     *
      * @return $this
      */
     public function setShippingDateConfirmed($ShippingDateConfirmed)
     {
         $this->ShippingDateConfirmed = $ShippingDateConfirmed;
+
         return $this;
     }
 
@@ -2699,11 +2928,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SalesShippingDateRequested $ShippingDateRequested
+     *
      * @return $this
      */
     public function setShippingDateRequested($ShippingDateRequested)
     {
         $this->ShippingDateRequested = $ShippingDateRequested;
+
         return $this;
     }
 
@@ -2717,11 +2948,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_SLGFinancialDataAreaId $SLGFinancialCompany
+     *
      * @return $this
      */
     public function setSLGFinancialCompany($SLGFinancialCompany)
     {
         $this->SLGFinancialCompany = $SLGFinancialCompany;
+
         return $this;
     }
 
@@ -2735,11 +2968,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEnum_SLGIntrastat $SLGIntrastat
+     *
      * @return $this
      */
     public function setSLGIntrastat($SLGIntrastat)
     {
         $this->SLGIntrastat = $SLGIntrastat;
+
         return $this;
     }
 
@@ -2753,11 +2988,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_Addressing $SLGTaxRepresentativeAddress
+     *
      * @return $this
      */
     public function setSLGTaxRepresentativeAddress($SLGTaxRepresentativeAddress)
     {
         $this->SLGTaxRepresentativeAddress = $SLGTaxRepresentativeAddress;
+
         return $this;
     }
 
@@ -2771,11 +3008,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_AddressCity $SLGTaxRepresentativeCity
+     *
      * @return $this
      */
     public function setSLGTaxRepresentativeCity($SLGTaxRepresentativeCity)
     {
         $this->SLGTaxRepresentativeCity = $SLGTaxRepresentativeCity;
+
         return $this;
     }
 
@@ -2790,11 +3029,13 @@ class AxdEntity_SalesTable
     /**
      * @param AxdUnion_AxdExtType_AddressCountryRegionId_AxdType_ExtCodeValue
      * $SLGTaxRepresentativeCountryId
+     *
      * @return $this
      */
     public function setSLGTaxRepresentativeCountryId($SLGTaxRepresentativeCountryId)
     {
         $this->SLGTaxRepresentativeCountryId = $SLGTaxRepresentativeCountryId;
+
         return $this;
     }
 
@@ -2808,11 +3049,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_AddressStreet $SLGTaxRepresentativeStreet
+     *
      * @return $this
      */
     public function setSLGTaxRepresentativeStreet($SLGTaxRepresentativeStreet)
     {
         $this->SLGTaxRepresentativeStreet = $SLGTaxRepresentativeStreet;
+
         return $this;
     }
 
@@ -2826,11 +3069,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_VATNum $SLGTaxRepresentativeVATNum
+     *
      * @return $this
      */
     public function setSLGTaxRepresentativeVATNum($SLGTaxRepresentativeVATNum)
     {
         $this->SLGTaxRepresentativeVATNum = $SLGTaxRepresentativeVATNum;
+
         return $this;
     }
 
@@ -2845,11 +3090,13 @@ class AxdEntity_SalesTable
     /**
      * @param AxdUnion_AxdExtType_AddressZipCodeId_AxdType_ExtCodeValue
      * $SLGTaxRepresentativeZipCodeId
+     *
      * @return $this
      */
     public function setSLGTaxRepresentativeZipCodeId($SLGTaxRepresentativeZipCodeId)
     {
         $this->SLGTaxRepresentativeZipCodeId = $SLGTaxRepresentativeZipCodeId;
+
         return $this;
     }
 
@@ -2863,11 +3110,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_smmCampaignId $smmCampaignId
+     *
      * @return $this
      */
     public function setSmmCampaignId($smmCampaignId)
     {
         $this->smmCampaignId = $smmCampaignId;
+
         return $this;
     }
 
@@ -2881,11 +3130,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_smmSalesAmountTotal $smmSalesAmountTotal
+     *
      * @return $this
      */
     public function setSmmSalesAmountTotal($smmSalesAmountTotal)
     {
         $this->smmSalesAmountTotal = $smmSalesAmountTotal;
+
         return $this;
     }
 
@@ -2899,11 +3150,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEnum_Solvability $Solvability
+     *
      * @return $this
      */
     public function setSolvability($Solvability)
     {
         $this->Solvability = $Solvability;
+
         return $this;
     }
 
@@ -2917,11 +3170,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_IntrastatProcId $StatProcId
+     *
      * @return $this
      */
     public function setStatProcId($StatProcId)
     {
         $this->StatProcId = $StatProcId;
+
         return $this;
     }
 
@@ -2935,11 +3190,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_TaxGroup $TaxGroup
+     *
      * @return $this
      */
     public function setTaxGroup($TaxGroup)
     {
         $this->TaxGroup = $TaxGroup;
+
         return $this;
     }
 
@@ -2953,11 +3210,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_AmountCur $totalBalance
+     *
      * @return $this
      */
     public function setTotalBalance($totalBalance)
     {
         $this->totalBalance = $totalBalance;
+
         return $this;
     }
 
@@ -2971,11 +3230,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_DiscAmount $TotalCashDiscount
+     *
      * @return $this
      */
     public function setTotalCashDiscount($TotalCashDiscount)
     {
         $this->TotalCashDiscount = $TotalCashDiscount;
+
         return $this;
     }
 
@@ -2989,11 +3250,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_AmountCur $TotalInvoice
+     *
      * @return $this
      */
     public function setTotalInvoice($TotalInvoice)
     {
         $this->TotalInvoice = $TotalInvoice;
+
         return $this;
     }
 
@@ -3007,11 +3270,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_MarkupAmount $TotalMiscCharges
+     *
      * @return $this
      */
     public function setTotalMiscCharges($TotalMiscCharges)
     {
         $this->TotalMiscCharges = $TotalMiscCharges;
+
         return $this;
     }
 
@@ -3025,11 +3290,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_TaxAmountCur $TotalSalesTax
+     *
      * @return $this
      */
     public function setTotalSalesTax($TotalSalesTax)
     {
         $this->TotalSalesTax = $TotalSalesTax;
+
         return $this;
     }
 
@@ -3043,11 +3310,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_IntrastatTransactionCodeId $TransactionCode
+     *
      * @return $this
      */
     public function setTransactionCode($TransactionCode)
     {
         $this->TransactionCode = $TransactionCode;
+
         return $this;
     }
 
@@ -3061,11 +3330,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_IntrastatTransport $Transport
+     *
      * @return $this
      */
     public function setTransport($Transport)
     {
         $this->Transport = $Transport;
+
         return $this;
     }
 
@@ -3079,11 +3350,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_URL $URL
+     *
      * @return $this
      */
     public function setURL($URL)
     {
         $this->URL = $URL;
+
         return $this;
     }
 
@@ -3097,11 +3370,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_VATNumJournal $VATNum
+     *
      * @return $this
      */
     public function setVATNum($VATNum)
     {
         $this->VATNum = $VATNum;
+
         return $this;
     }
 
@@ -3115,11 +3390,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdExtType_WMSIsRush $WMSIsRush
+     *
      * @return $this
      */
     public function setWMSIsRush($WMSIsRush)
     {
         $this->WMSIsRush = $WMSIsRush;
+
         return $this;
     }
 
@@ -3133,11 +3410,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEntity_SalesLine[] $SalesLines
+     *
      * @return $this
      */
     public function setSalesLine(array $SalesLines)
     {
         $this->SalesLine = $SalesLines;
+
         return $this;
     }
 
@@ -3156,11 +3435,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEntity_DocuRefHeader $DocuRefHeader
+     *
      * @return $this
      */
     public function setDocuRefHeader($DocuRefHeader)
     {
         $this->DocuRefHeader = $DocuRefHeader;
+
         return $this;
     }
 
@@ -3174,11 +3455,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEntity_MarkupTransHeader $MarkupTransHeader
+     *
      * @return $this
      */
     public function setMarkupTransHeader($MarkupTransHeader)
     {
         $this->MarkupTransHeader = $MarkupTransHeader;
+
         return $this;
     }
 
@@ -3192,11 +3475,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param string $class
+     *
      * @return $this
      */
     public function setClass($class)
     {
         $this->class = $class;
+
         return $this;
     }
 
@@ -3210,14 +3495,13 @@ class AxdEntity_SalesTable
 
     /**
      * @param AxdEnum_AxdEntityAction $action
+     *
      * @return $this
      */
     public function setAction($action)
     {
         $this->action = $action;
+
         return $this;
     }
-
-
 }
-

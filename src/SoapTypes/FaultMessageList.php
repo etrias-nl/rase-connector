@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of PHP CS Fixer.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Etrias\RaseConnector\SoapTypes;
 
 class FaultMessageList
 {
-
     /**
      * @var string
      */
@@ -56,18 +65,29 @@ class FaultMessageList
     protected $XmlPosition = null;
 
     /**
-     * Constructor
+     * Constructor.
      *
-     * @var string $Document
-     * @var string $DocumentOperation
+     * @var string
+     * @var string              $DocumentOperation
      * @var ArrayOfFaultMessage $FaultMessageArray
-     * @var string $Field
-     * @var string $Service
-     * @var string $ServiceOperation
-     * @var string $ServiceOperationParameter
-     * @var string $XPath
-     * @var string $XmlLine
-     * @var string $XmlPosition
+     * @var string              $Field
+     * @var string              $Service
+     * @var string              $ServiceOperation
+     * @var string              $ServiceOperationParameter
+     * @var string              $XPath
+     * @var string              $XmlLine
+     * @var string              $XmlPosition
+     *
+     * @param mixed $Document
+     * @param mixed $DocumentOperation
+     * @param mixed $FaultMessageArray
+     * @param mixed $Field
+     * @param mixed $Service
+     * @param mixed $ServiceOperation
+     * @param mixed $ServiceOperationParameter
+     * @param mixed $XPath
+     * @param mixed $XmlLine
+     * @param mixed $XmlPosition
      */
     public function __construct($Document, $DocumentOperation, $FaultMessageArray, $Field, $Service, $ServiceOperation, $ServiceOperationParameter, $XPath, $XmlLine, $XmlPosition)
     {
@@ -93,11 +113,13 @@ class FaultMessageList
 
     /**
      * @param string $Document
+     *
      * @return $this
      */
     public function setDocument($Document)
     {
         $this->Document = $Document;
+
         return $this;
     }
 
@@ -111,11 +133,13 @@ class FaultMessageList
 
     /**
      * @param string $DocumentOperation
+     *
      * @return $this
      */
     public function setDocumentOperation($DocumentOperation)
     {
         $this->DocumentOperation = $DocumentOperation;
+
         return $this;
     }
 
@@ -129,11 +153,13 @@ class FaultMessageList
 
     /**
      * @param ArrayOfFaultMessage $FaultMessageArray
+     *
      * @return $this
      */
     public function setFaultMessageArray($FaultMessageArray)
     {
         $this->FaultMessageArray = $FaultMessageArray;
+
         return $this;
     }
 
@@ -147,11 +173,13 @@ class FaultMessageList
 
     /**
      * @param string $Field
+     *
      * @return $this
      */
     public function setField($Field)
     {
         $this->Field = $Field;
+
         return $this;
     }
 
@@ -165,11 +193,13 @@ class FaultMessageList
 
     /**
      * @param string $Service
+     *
      * @return $this
      */
     public function setService($Service)
     {
         $this->Service = $Service;
+
         return $this;
     }
 
@@ -183,11 +213,13 @@ class FaultMessageList
 
     /**
      * @param string $ServiceOperation
+     *
      * @return $this
      */
     public function setServiceOperation($ServiceOperation)
     {
         $this->ServiceOperation = $ServiceOperation;
+
         return $this;
     }
 
@@ -201,11 +233,13 @@ class FaultMessageList
 
     /**
      * @param string $ServiceOperationParameter
+     *
      * @return $this
      */
     public function setServiceOperationParameter($ServiceOperationParameter)
     {
         $this->ServiceOperationParameter = $ServiceOperationParameter;
+
         return $this;
     }
 
@@ -219,11 +253,13 @@ class FaultMessageList
 
     /**
      * @param string $XPath
+     *
      * @return $this
      */
     public function setXPath($XPath)
     {
         $this->XPath = $XPath;
+
         return $this;
     }
 
@@ -237,11 +273,13 @@ class FaultMessageList
 
     /**
      * @param string $XmlLine
+     *
      * @return $this
      */
     public function setXmlLine($XmlLine)
     {
         $this->XmlLine = $XmlLine;
+
         return $this;
     }
 
@@ -255,14 +293,13 @@ class FaultMessageList
 
     /**
      * @param string $XmlPosition
+     *
      * @return $this
      */
     public function setXmlPosition($XmlPosition)
     {
         $this->XmlPosition = $XmlPosition;
+
         return $this;
     }
-
-
 }
-

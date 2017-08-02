@@ -16,7 +16,6 @@ use Phpro\SoapClient\ClientInterface;
 
 /**
  * Interface RaseClientInterface.
- *
  */
 interface RaseClientInterface extends ClientInterface
 {

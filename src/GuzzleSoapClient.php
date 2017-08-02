@@ -17,11 +17,9 @@ namespace Etrias\RaseConnector;
 */
 use Etrias\RaseConnector\Client\RaseClientInterface;
 use Phpro\SoapClient\Client;
-use Phpro\SoapClient\Type\MixedResult;
 
 /**
  * Class SoapClient.
- *
  */
 class GuzzleSoapClient extends Client implements RaseClientInterface
 {

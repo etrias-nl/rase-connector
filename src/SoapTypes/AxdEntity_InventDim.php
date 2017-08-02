@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of PHP CS Fixer.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Etrias\RaseConnector\SoapTypes;
 
 class AxdEntity_InventDim
 {
-
     /**
      * @var AxdExtType_ConfigId
      */
@@ -76,8 +85,7 @@ class AxdEntity_InventDim
     protected $action = null;
 
     /**
-     * Constructor
-     *
+     * Constructor.
      */
     public function __construct()
     {
@@ -94,11 +102,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdExtType_ConfigId $configId
+     *
      * @return $this
      */
     public function setConfigId($configId)
     {
         $this->configId = $configId;
+
         return $this;
     }
 
@@ -112,11 +122,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdExtType_InventBatchId $InventBatchId
+     *
      * @return $this
      */
     public function setInventBatchId($InventBatchId)
     {
         $this->InventBatchId = $InventBatchId;
+
         return $this;
     }
 
@@ -130,11 +142,13 @@ class AxdEntity_InventDim
 
     /**
      * @param string $InventColorId
+     *
      * @return $this
      */
     public function setInventColorId($InventColorId)
     {
         $this->InventColorId = $InventColorId;
+
         return $this;
     }
 
@@ -148,11 +162,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdExtType_InventDimId $inventDimId
+     *
      * @return $this
      */
     public function setInventDimId($inventDimId)
     {
         $this->inventDimId = $inventDimId;
+
         return $this;
     }
 
@@ -166,11 +182,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdExtType_InventLocationId $InventLocationId
+     *
      * @return $this
      */
     public function setInventLocationId($InventLocationId)
     {
         $this->InventLocationId = $InventLocationId;
+
         return $this;
     }
 
@@ -184,11 +202,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdExtType_InventSerialId $inventSerialId
+     *
      * @return $this
      */
     public function setInventSerialId($inventSerialId)
     {
         $this->inventSerialId = $inventSerialId;
+
         return $this;
     }
 
@@ -202,11 +222,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdExtType_InventSiteId $InventSiteId
+     *
      * @return $this
      */
     public function setInventSiteId($InventSiteId)
     {
         $this->InventSiteId = $InventSiteId;
+
         return $this;
     }
 
@@ -220,11 +242,13 @@ class AxdEntity_InventDim
 
     /**
      * @param string $InventSizeId
+     *
      * @return $this
      */
     public function setInventSizeId($InventSizeId)
     {
         $this->InventSizeId = $InventSizeId;
+
         return $this;
     }
 
@@ -238,11 +262,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdExtType_recId $RecId
+     *
      * @return $this
      */
     public function setRecId($RecId)
     {
         $this->RecId = $RecId;
+
         return $this;
     }
 
@@ -256,11 +282,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdExtType_recVersion $RecVersion
+     *
      * @return $this
      */
     public function setRecVersion($RecVersion)
     {
         $this->RecVersion = $RecVersion;
+
         return $this;
     }
 
@@ -274,11 +302,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdExtType_WMSLocationId $wMSLocationId
+     *
      * @return $this
      */
     public function setWMSLocationId($wMSLocationId)
     {
         $this->wMSLocationId = $wMSLocationId;
+
         return $this;
     }
 
@@ -292,11 +322,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdExtType_WMSPalletId $wMSPalletId
+     *
      * @return $this
      */
     public function setWMSPalletId($wMSPalletId)
     {
         $this->wMSPalletId = $wMSPalletId;
+
         return $this;
     }
 
@@ -310,11 +342,13 @@ class AxdEntity_InventDim
 
     /**
      * @param UNKNOWN $class
+     *
      * @return $this
      */
     public function setClass($class)
     {
         $this->class = $class;
+
         return $this;
     }
 
@@ -328,14 +362,13 @@ class AxdEntity_InventDim
 
     /**
      * @param AxdEnum_AxdEntityAction $action
+     *
      * @return $this
      */
     public function setAction($action)
     {
         $this->action = $action;
+
         return $this;
     }
-
-
 }
-

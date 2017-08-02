@@ -15,23 +15,18 @@ namespace Tests\Etrias\PaazlConnector\Functional\Services;
 use DateTime;
 use Etrias\RaseConnector\Client\RaseClientInterface;
 use Etrias\RaseConnector\GuzzleSoapClient;
-use Etrias\RaseConnector\Middleware\RemoveNillNodesMiddleware;
 use Etrias\RaseConnector\Services\RaseService;
 use Etrias\RaseConnector\SoapTypes\AxdEntity_InventDim;
 use Etrias\RaseConnector\SoapTypes\AxdEntity_SalesLine;
 use Etrias\RaseConnector\SoapTypes\AxdEntity_SalesTable;
 use Etrias\RaseConnector\SoapTypes\AxdEnum_SalesType;
-use Etrias\RaseConnector\SoapTypes\AxdEnum_SalesUnit;
 use Etrias\RaseConnector\SoapTypes\AxdExtType_IgnoreMarkup;
 use Etrias\RaseConnector\SoapTypes\AxdExtType_InclTax;
 use Etrias\RaseConnector\SoapTypes\AxdSalesOrder;
 use Etrias\RaseConnector\SoapTypes\SalesOrderServiceCreateResponse;
 use GuzzleHttp\Client;
-use GuzzleHttp\Exception\RequestException;
-use GuzzleHttp\Exception\ServerException;
 use Phpro\SoapClient\ClientBuilder;
 use Phpro\SoapClient\ClientFactory;
-use Phpro\SoapClient\Exception\SoapException;
 use Phpro\SoapClient\Middleware\NtlmMiddleware;
 use Phpro\SoapClient\Middleware\RemoveEmptyNodesMiddleware;
 use Phpro\SoapClient\Middleware\Wsdl\DisableExtensionsMiddleware;
@@ -40,12 +35,15 @@ use Phpro\SoapClient\Soap\SoapClient;
 use Phpro\SoapClient\Wsdl\Provider\GuzzleWsdlProvider;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @coversNothing
+ */
 class RaseServiceTest extends TestCase
 {
     /** @var RaseClientInterface */
     protected $soapClient;
 
-    /** @var  RaseService|SoapClient */
+    /** @var RaseService|SoapClient */
     protected $raseService;
 
     public function setUp()
@@ -79,7 +77,7 @@ class RaseServiceTest extends TestCase
         $salesTable
             ->setSalesPoolId(getenv('CUSTACCOUNT'))
             ->setCustAccount('005450')
-            ->setCustomerRef('rase' . date('YmdHis'))
+            ->setCustomerRef('rase'.date('YmdHis'))
             ->setDeliveryCity('city')
             ->setDeliveryCountryRegionId('NL')
             ->setDeliveryName('delivery_name')
@@ -87,7 +85,7 @@ class RaseServiceTest extends TestCase
             ->setDeliveryZipCode('zip_code')
             ->setDlvMode('DHL_B2B')
             ->setEmail('noreply@email.com')
-            ->setPurchOrderFormNum('rase' . date('YmdHis'))
+            ->setPurchOrderFormNum('rase'.date('YmdHis'))
             ->setReceiptDateRequested(new DateTime('today'))
             ->setDeliveryDate(new DateTime('tomorrow'))
             ->setSalesOriginId(getenv('SALESORIGINID'))

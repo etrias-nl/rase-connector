@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of PHP CS Fixer.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Etrias\RaseConnector\SoapTypes;
 
 class AxdEntity_DocuRefHeader
 {
-
     /**
      * @var AxdExtType_selectableDataArea
      */
@@ -91,25 +100,43 @@ class AxdEntity_DocuRefHeader
     protected $action = null;
 
     /**
-     * Constructor
+     * Constructor.
      *
-     * @var AxdExtType_selectableDataArea $ActualCompanyId
-     * @var AxdExtType_smmDocuAuthorId $AuthorId
-     * @var AxdExtType_ContactPersonId $ContactPersonId
+     * @var AxdExtType_selectableDataArea
+     * @var AxdExtType_smmDocuAuthorId       $AuthorId
+     * @var AxdExtType_ContactPersonId       $ContactPersonId
      * @var AxdExtType_smmEncyclopediaItemId $EncyclopediaItemId
-     * @var AxdExtType_Description $Name
-     * @var AxdExtType_Notes $Notes
-     * @var AxdExtType_DirPartyId $PartyId
-     * @var AxdExtType_recId $RecId
-     * @var AxdExtType_recVersion $RecVersion
-     * @var AxdExtType_selectableDataArea $RefCompanyId
-     * @var AxdExtType_recId $RefRecId
-     * @var AxdExtType_tableId $RefTableId
-     * @var AxdEnum_DocuRestriction $Restriction
-     * @var AxdEnum_bool $smmTable
-     * @var AxdExtType_DocuTypeId $TypeId
-     * @var UNKNOWN $class
-     * @var AxdEnum_AxdEntityAction $action
+     * @var AxdExtType_Description           $Name
+     * @var AxdExtType_Notes                 $Notes
+     * @var AxdExtType_DirPartyId            $PartyId
+     * @var AxdExtType_recId                 $RecId
+     * @var AxdExtType_recVersion            $RecVersion
+     * @var AxdExtType_selectableDataArea    $RefCompanyId
+     * @var AxdExtType_recId                 $RefRecId
+     * @var AxdExtType_tableId               $RefTableId
+     * @var AxdEnum_DocuRestriction          $Restriction
+     * @var AxdEnum_bool                     $smmTable
+     * @var AxdExtType_DocuTypeId            $TypeId
+     * @var UNKNOWN                          $class
+     * @var AxdEnum_AxdEntityAction          $action
+     *
+     * @param mixed $ActualCompanyId
+     * @param mixed $AuthorId
+     * @param mixed $ContactPersonId
+     * @param mixed $EncyclopediaItemId
+     * @param mixed $Name
+     * @param mixed $Notes
+     * @param mixed $PartyId
+     * @param mixed $RecId
+     * @param mixed $RecVersion
+     * @param mixed $RefCompanyId
+     * @param mixed $RefRecId
+     * @param mixed $RefTableId
+     * @param mixed $Restriction
+     * @param mixed $smmTable
+     * @param mixed $TypeId
+     * @param mixed $class
+     * @param mixed $action
      */
     public function __construct($ActualCompanyId, $AuthorId, $ContactPersonId, $EncyclopediaItemId, $Name, $Notes, $PartyId, $RecId, $RecVersion, $RefCompanyId, $RefRecId, $RefTableId, $Restriction, $smmTable, $TypeId, $class, $action)
     {
@@ -142,11 +169,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_selectableDataArea $ActualCompanyId
+     *
      * @return $this
      */
     public function setActualCompanyId($ActualCompanyId)
     {
         $this->ActualCompanyId = $ActualCompanyId;
+
         return $this;
     }
 
@@ -160,11 +189,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_smmDocuAuthorId $AuthorId
+     *
      * @return $this
      */
     public function setAuthorId($AuthorId)
     {
         $this->AuthorId = $AuthorId;
+
         return $this;
     }
 
@@ -178,11 +209,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_ContactPersonId $ContactPersonId
+     *
      * @return $this
      */
     public function setContactPersonId($ContactPersonId)
     {
         $this->ContactPersonId = $ContactPersonId;
+
         return $this;
     }
 
@@ -196,11 +229,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_smmEncyclopediaItemId $EncyclopediaItemId
+     *
      * @return $this
      */
     public function setEncyclopediaItemId($EncyclopediaItemId)
     {
         $this->EncyclopediaItemId = $EncyclopediaItemId;
+
         return $this;
     }
 
@@ -214,11 +249,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_Description $Name
+     *
      * @return $this
      */
     public function setName($Name)
     {
         $this->Name = $Name;
+
         return $this;
     }
 
@@ -232,11 +269,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_Notes $Notes
+     *
      * @return $this
      */
     public function setNotes($Notes)
     {
         $this->Notes = $Notes;
+
         return $this;
     }
 
@@ -250,11 +289,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_DirPartyId $PartyId
+     *
      * @return $this
      */
     public function setPartyId($PartyId)
     {
         $this->PartyId = $PartyId;
+
         return $this;
     }
 
@@ -268,11 +309,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_recId $RecId
+     *
      * @return $this
      */
     public function setRecId($RecId)
     {
         $this->RecId = $RecId;
+
         return $this;
     }
 
@@ -286,11 +329,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_recVersion $RecVersion
+     *
      * @return $this
      */
     public function setRecVersion($RecVersion)
     {
         $this->RecVersion = $RecVersion;
+
         return $this;
     }
 
@@ -304,11 +349,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_selectableDataArea $RefCompanyId
+     *
      * @return $this
      */
     public function setRefCompanyId($RefCompanyId)
     {
         $this->RefCompanyId = $RefCompanyId;
+
         return $this;
     }
 
@@ -322,11 +369,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_recId $RefRecId
+     *
      * @return $this
      */
     public function setRefRecId($RefRecId)
     {
         $this->RefRecId = $RefRecId;
+
         return $this;
     }
 
@@ -340,11 +389,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_tableId $RefTableId
+     *
      * @return $this
      */
     public function setRefTableId($RefTableId)
     {
         $this->RefTableId = $RefTableId;
+
         return $this;
     }
 
@@ -358,11 +409,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdEnum_DocuRestriction $Restriction
+     *
      * @return $this
      */
     public function setRestriction($Restriction)
     {
         $this->Restriction = $Restriction;
+
         return $this;
     }
 
@@ -376,11 +429,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdEnum_bool $smmTable
+     *
      * @return $this
      */
     public function setSmmTable($smmTable)
     {
         $this->smmTable = $smmTable;
+
         return $this;
     }
 
@@ -394,11 +449,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdExtType_DocuTypeId $TypeId
+     *
      * @return $this
      */
     public function setTypeId($TypeId)
     {
         $this->TypeId = $TypeId;
+
         return $this;
     }
 
@@ -412,11 +469,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param UNKNOWN $class
+     *
      * @return $this
      */
     public function setClass($class)
     {
         $this->class = $class;
+
         return $this;
     }
 
@@ -430,14 +489,13 @@ class AxdEntity_DocuRefHeader
 
     /**
      * @param AxdEnum_AxdEntityAction $action
+     *
      * @return $this
      */
     public function setAction($action)
     {
         $this->action = $action;
+
         return $this;
     }
-
-
 }
-

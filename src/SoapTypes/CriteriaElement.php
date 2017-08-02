@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of PHP CS Fixer.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Etrias\RaseConnector\SoapTypes;
 
 class CriteriaElement
 {
-
     /**
      * @var string
      */
@@ -31,13 +40,19 @@ class CriteriaElement
     protected $Value2 = null;
 
     /**
-     * Constructor
+     * Constructor.
      *
-     * @var string $DataSourceName
-     * @var string $FieldName
+     * @var string
+     * @var string   $FieldName
      * @var Operator $Operator
-     * @var string $Value1
-     * @var string $Value2
+     * @var string   $Value1
+     * @var string   $Value2
+     *
+     * @param mixed $DataSourceName
+     * @param mixed $FieldName
+     * @param mixed $Operator
+     * @param mixed $Value1
+     * @param mixed $Value2
      */
     public function __construct($DataSourceName, $FieldName, $Operator, $Value1, $Value2)
     {
@@ -58,11 +73,13 @@ class CriteriaElement
 
     /**
      * @param string $DataSourceName
+     *
      * @return $this
      */
     public function setDataSourceName($DataSourceName)
     {
         $this->DataSourceName = $DataSourceName;
+
         return $this;
     }
 
@@ -76,11 +93,13 @@ class CriteriaElement
 
     /**
      * @param string $FieldName
+     *
      * @return $this
      */
     public function setFieldName($FieldName)
     {
         $this->FieldName = $FieldName;
+
         return $this;
     }
 
@@ -94,11 +113,13 @@ class CriteriaElement
 
     /**
      * @param Operator $Operator
+     *
      * @return $this
      */
     public function setOperator($Operator)
     {
         $this->Operator = $Operator;
+
         return $this;
     }
 
@@ -112,11 +133,13 @@ class CriteriaElement
 
     /**
      * @param string $Value1
+     *
      * @return $this
      */
     public function setValue1($Value1)
     {
         $this->Value1 = $Value1;
+
         return $this;
     }
 
@@ -130,14 +153,13 @@ class CriteriaElement
 
     /**
      * @param string $Value2
+     *
      * @return $this
      */
     public function setValue2($Value2)
     {
         $this->Value2 = $Value2;
+
         return $this;
     }
-
-
 }
-

@@ -1,13 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: cprinse
- * Date: 2-8-17
- * Time: 9:23
+
+/*
+ * This file is part of PHP CS Fixer.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Etrias\RaseConnector\Services;
-
 
 use Etrias\RaseConnector\Client\RaseClientInterface;
 use Etrias\RaseConnector\SoapTypes\AxdSalesOrder;
@@ -21,7 +24,7 @@ class RaseService
     /**
      * DocumentService constructor.
      *
-     * @param RaseClientInterface     $client
+     * @param RaseClientInterface $client
      */
     public function __construct(RaseClientInterface $client)
     {
@@ -58,8 +61,5 @@ class RaseService
         $request = new SalesOrderServiceCreateRequest($salesOrder);
 
         return $this->client->create($request);
-
     }
-
-
 }

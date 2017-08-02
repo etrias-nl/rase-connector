@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of PHP CS Fixer.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Etrias\RaseConnector\SoapTypes;
 
 class FaultMessage
 {
-
     /**
      * @var string
      */
@@ -16,10 +25,13 @@ class FaultMessage
     protected $Message = null;
 
     /**
-     * Constructor
+     * Constructor.
      *
-     * @var string $Code
+     * @var string
      * @var string $Message
+     *
+     * @param mixed $Code
+     * @param mixed $Message
      */
     public function __construct($Code, $Message)
     {
@@ -37,11 +49,13 @@ class FaultMessage
 
     /**
      * @param string $Code
+     *
      * @return $this
      */
     public function setCode($Code)
     {
         $this->Code = $Code;
+
         return $this;
     }
 
@@ -55,14 +69,13 @@ class FaultMessage
 
     /**
      * @param string $Message
+     *
      * @return $this
      */
     public function setMessage($Message)
     {
         $this->Message = $Message;
+
         return $this;
     }
-
-
 }
-

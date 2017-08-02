@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of PHP CS Fixer.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Etrias\RaseConnector\SoapTypes;
 
 class KeyField
 {
-
     /**
      * @var string
      */
@@ -16,10 +25,13 @@ class KeyField
     protected $Value = null;
 
     /**
-     * Constructor
+     * Constructor.
      *
-     * @var string $Field
+     * @var string
      * @var string $Value
+     *
+     * @param mixed $Field
+     * @param mixed $Value
      */
     public function __construct($Field, $Value)
     {
@@ -37,11 +49,13 @@ class KeyField
 
     /**
      * @param string $Field
+     *
      * @return $this
      */
     public function setField($Field)
     {
         $this->Field = $Field;
+
         return $this;
     }
 
@@ -55,14 +69,13 @@ class KeyField
 
     /**
      * @param string $Value
+     *
      * @return $this
      */
     public function setValue($Value)
     {
         $this->Value = $Value;
+
         return $this;
     }
-
-
 }
-
