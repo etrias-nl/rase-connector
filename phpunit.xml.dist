@@ -18,6 +18,8 @@
     >
 
     <php>
+        <env name="USER" value=""/>
+        <env name="PASSWORD" value=""/>
         <env name="CUSTACCOUNT" value=""/>
         <env name="SALESORIGINID" value=""/>
     </php>

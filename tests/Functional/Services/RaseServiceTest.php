@@ -63,7 +63,7 @@ class RaseServiceTest extends TestCase
         $clientBuilder->withClassMaps(require __DIR__.'/../../../src/ClassMapCollection.php');
         $clientBuilder->withHandler(GuzzleHandle::createForClient($guzzleClient));
         $clientBuilder->withWsdlProvider($wsdlProvider);
-        $clientBuilder->addMiddleware(new NtlmMiddleware('racompany\etrias-proxy', 'Xyx502$7!xc501!'));
+        $clientBuilder->addMiddleware(new NtlmMiddleware('racompany\\'.getenv('USER'), getenv('PASSWORD')));
         $clientBuilder->addMiddleware(new RemoveEmptyNodesMiddleware());
 
         $this->soapClient = $clientBuilder->build();
