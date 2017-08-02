@@ -1,26 +1,41 @@
 {
     "name": "etrias/rase-connector",
     "description": "Package generated from http://webservice.ra-group.be:4751/salesorderservice.svc?wsdl using wsdltophp/packagegenerator",
-    "autoload": {
-        "psr-4": {
-            "RaseConnector\\": "./src/"
-        }
-    },
-    "require": {
-        "php": ">=5.3.3",
-        "ext-soap": "*",
-        "wsdltophp/packagebase": "~1.0",
-        "jamesiarmes/php-ntlm": "1.0.x-dev"
-    },
-    "require-dev": {
-        "wsdltophp/packagegenerator": "^2.7"
-    },
     "authors": [
         {
             "name": "Christ-Jan",
             "email": "christ-jan@etrias.nl"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Etrias\\RaseConnector\\": "./src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Etrias\\RaseConnector\\": "./tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "ext-curl": "*",
+        "ext-soap": "*",
+        "phpro/soap-client": "^0.5.0",
+        "http-interop/http-factory": "^0.2.0",
+        "http-interop/http-factory-guzzle": "^0.1.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.4",
+        "phpunit/phpunit": "^6.2",
+        "zendframework/zend-code": "^3.1"
+    },
+    "scripts": {
+        "fix-style": [
+            "vendor/bin/php-cs-fixer fix --diff --show-progress run-in"
+        ]
+    },
     "minimum-stability": "stable",
     "extra": {
         "branch-alias": {
